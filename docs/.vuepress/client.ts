@@ -18,7 +18,8 @@ import {
   HiSolidLink,
   IoGameControllerSharp,
   IoCloud,
-  BiGearWideConnected
+  BiGearWideConnected,
+  MdCached
 } from 'oh-vue-icons/icons'
 
 addIcons(
@@ -39,7 +40,8 @@ addIcons(
   HiSolidLink,
   IoGameControllerSharp,
   IoCloud,
-  BiGearWideConnected
+  BiGearWideConnected,
+  MdCached
 )
 
 export default defineClientConfig({})

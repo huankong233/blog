@@ -49,6 +49,11 @@ export default <NavbarConfig>[
         text: '接口',
         link: 'https://api.huankong.top',
         icon: 'bi-gear-wide-connected'
+      },
+      {
+        text: '文件快递柜',
+        link: 'https://temp.huankong.top',
+        icon: 'md-cached'
       }
     ]
   }
