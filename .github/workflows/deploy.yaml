@@ -16,3 +16,4 @@ jobs:
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist/
         COMMIT_MESSAGE: 自动打包完成
+        CNAME: blog.huankong.top
