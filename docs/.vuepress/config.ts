@@ -97,9 +97,9 @@ export default defineUserConfig({
       chartjs: true,
       giscus: {
         repo: 'huankong233/blog',
-        repoId: 'R_kgDOI6yHSQ',
+        repoId: 'R_kgDOI60CcA',
         category: 'Announcements',
-        categoryId: 'DIC_kwDOI6yHSc4CUDFl',
+        categoryId: 'DIC_kwDOI60CcM4CUDKP',
         mapping: 'title',
         lazyLoad: true
       },
