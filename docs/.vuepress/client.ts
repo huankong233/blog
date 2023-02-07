@@ -12,7 +12,13 @@ import {
   RiGithubLine,
   RiSailboatLine,
   RiVuejsLine,
-  RiNeteaseCloudMusicFill
+  RiNeteaseCloudMusicFill,
+  BiGenderTrans,
+  BiImages,
+  HiSolidLink,
+  IoGameControllerSharp,
+  IoCloud,
+  BiGearWideConnected
 } from 'oh-vue-icons/icons'
 
 addIcons(
@@ -27,7 +33,13 @@ addIcons(
   OiGitCompare,
   OiRocket,
   RiSailboatLine,
-  RiNeteaseCloudMusicFill
+  RiNeteaseCloudMusicFill,
+  BiGenderTrans,
+  BiImages,
+  HiSolidLink,
+  IoGameControllerSharp,
+  IoCloud,
+  BiGearWideConnected
 )
 
 export default defineClientConfig({})
