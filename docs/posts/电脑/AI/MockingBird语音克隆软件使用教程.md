@@ -1,7 +1,6 @@
 ---
 layout: Post
 title: MockingBird语音克隆软件使用教程
-author: huan_kong
 date: 2022-11-30
 headerImage: https://api.huankong.top/random
 tags:

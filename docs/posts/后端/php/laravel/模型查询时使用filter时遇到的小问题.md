@@ -1,7 +1,6 @@
 ---
 layout: Post
 title: 模型查询时使用filter时遇到的小问题
-author: huan_kong
 date: 2022-12-08
 headerImage: https://api.huankong.top/random
 tags:

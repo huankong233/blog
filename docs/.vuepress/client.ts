@@ -1,46 +1,57 @@
 import { defineClientConfig } from '@vuepress/client'
 import { addIcons } from 'oh-vue-icons'
 import {
-  CoGit,
-  FaFortAwesome,
-  FaSatelliteDish,
-  FaTag,
-  OiGitCompare,
-  OiRocket,
   RiBilibiliLine,
   RiBook2Fill,
+  RiVuejsLine,
   RiGithubLine,
   RiSailboatLine,
-  RiVuejsLine,
   RiNeteaseCloudMusicFill,
+  FaFortAwesome,
+  FaTag,
+  FaSatelliteDish,
+  FaDownload,
+  CoGit,
+  OiGitCompare,
+  OiRocket,
   BiGenderTrans,
   BiImages,
+  BiGearWideConnected,
   HiSolidLink,
   IoGameControllerSharp,
   IoCloud,
-  BiGearWideConnected,
-  MdCached
+  MdCached,
+  BiBookFill
 } from 'oh-vue-icons/icons'
 
 addIcons(
   RiBilibiliLine,
+  RiBook2Fill,
+  RiVuejsLine,
+  RiGithubLine,
+  RiSailboatLine,
+  RiNeteaseCloudMusicFill,
+
   FaFortAwesome,
   FaTag,
   FaSatelliteDish,
-  RiBook2Fill,
-  RiVuejsLine,
+  FaDownload,
+
   CoGit,
-  RiGithubLine,
+
   OiGitCompare,
   OiRocket,
-  RiSailboatLine,
-  RiNeteaseCloudMusicFill,
+
   BiGenderTrans,
   BiImages,
+  BiGearWideConnected,
+  BiBookFill,
+
   HiSolidLink,
+
   IoGameControllerSharp,
   IoCloud,
-  BiGearWideConnected,
+
   MdCached
 )
 

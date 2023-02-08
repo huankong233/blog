@@ -1,8 +1,7 @@
 ---
 layout: Post
 title: CSS中百分比的概念
-author: huan_kong
-date: 2023-2-7
+date: 2023-02-07
 headerImage: https://api.huankong.top/random
 tags:
   - 前端

@@ -1,11 +1,9 @@
 import { viteBundler } from '@vuepress/bundler-vite'
-import { webpackBundler } from '@vuepress/bundler-webpack'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { defineUserConfig } from 'vuepress'
 import { gungnirTheme } from '@huan_kong/vuepress-theme-gungnir'
-import { baiduTongjiPlugin } from '@renovamen/vuepress-plugin-baidu-tongji'
-import navbar from './configs/navbar'
-import sidebar from './configs/sidebar'
+import navbar from './navbar'
+import sidebar from './sidebar'
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -25,8 +23,7 @@ export default defineUserConfig({
     ['meta', { name: 'msapplication-TileColor', content: '#377bb5' }]
   ],
 
-  // specify bundler via environment variable
-  bundler: process.env.DOCS_BUNDLER === 'webpack' ? webpackBundler() : viteBundler(),
+  bundler: viteBundler(),
 
   lang: 'zh-CN',
   title: '幸运的人一生都被童年治愈，不幸的人一生都在治愈童年。',
@@ -50,8 +47,6 @@ export default defineUserConfig({
       description: '幸运的人一生都被童年治愈，不幸的人一生都在治愈童年。',
       sns: {
         github: 'huankong233',
-        twitter: 'zilv_huankong',
-        email: '2564076459@qq.com',
         bilibili: {
           icon: 'ri-bilibili-line',
           link: 'https://space.bilibili.com/131929259'
@@ -74,7 +69,7 @@ export default defineUserConfig({
     // other pages
     pages: {
       tags: {
-        title: '标签们~',
+        title: '标签~',
         bgImage: {
           path: 'https://img.huankong.top/i/2023/02/07/63e1e7ee94296.png',
           mask: 'rgba(211, 136, 37, .5)'
@@ -123,6 +118,9 @@ export default defineUserConfig({
 
   markdown: {
     headers: {
+      level: [2, 3, 4, 5]
+    },
+    toc: {
       level: [2, 3, 4, 5]
     }
   },
@@ -176,8 +174,5 @@ export default defineUserConfig({
     //     }
     //   }
     // }),
-    baiduTongjiPlugin({
-      id: 'ae91ead8c0b4f5be6bfdfd4ab69e59a6'
-    })
   ]
 })

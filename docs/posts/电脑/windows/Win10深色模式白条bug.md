@@ -1,7 +1,6 @@
 ---
 layout: Post
 title: Win10深色模式白条bug
-author: huan_kong
 date: 2022-05-14
 headerImage: https://api.huankong.top/random
 tags:

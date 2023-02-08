@@ -1,7 +1,6 @@
 ---
 layout: Post
 title: win10任务栏系统图标bug
-author: huan_kong
 date: 2021-09-18
 headerImage: https://api.huankong.top/random
 tags:

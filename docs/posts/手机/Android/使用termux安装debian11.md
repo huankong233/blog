@@ -1,7 +1,6 @@
 ---
 layout: Post
 title: 使用termux安装debian11
-author: huan_kong
 date: 2022-12-05
 headerImage: https://api.huankong.top/random
 tags:

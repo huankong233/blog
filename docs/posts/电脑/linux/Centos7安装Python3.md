@@ -1,7 +1,6 @@
 ---
 layout: Post
 title: Centos7安装Python3
-author: huan_kong
 date: 2022-11-30
 headerImage: https://api.huankong.top/random
 tags:

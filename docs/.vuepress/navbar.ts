@@ -17,6 +17,16 @@ export default <NavbarConfig>[
     icon: 'fa-satellite-dish'
   },
   {
+    text: `文档`,
+    icon: 'bi-book-fill',
+    children: [
+      {
+        text: 'kkbot',
+        link: '/docs/kkbot/1.介绍.html'
+      }
+    ]
+  },
+  {
     text: `附属站点`,
     icon: 'co-git',
     children: [
@@ -39,6 +49,11 @@ export default <NavbarConfig>[
         text: '自制小游戏',
         link: 'https://game.huankong.top',
         icon: 'io-game-controller-sharp'
+      },
+      {
+        text: '资源中心',
+        link: 'https://dl.huankong.top',
+        icon: 'fa-download'
       },
       {
         text: '网盘',

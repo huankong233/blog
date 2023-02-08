@@ -1,7 +1,6 @@
 ---
 layout: Post
 title: adb连接手机提示please press any key to shudown
-author: huan_kong
 date: 2021-08-05
 headerImage: https://api.huankong.top/random
 tags:

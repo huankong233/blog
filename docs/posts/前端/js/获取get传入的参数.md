@@ -1,7 +1,6 @@
 ---
 layout: Post
 title: 获取get传入的参数
-author: huan_kong
 date: 2022-12-06
 headerImage: https://api.huankong.top/random
 tags:

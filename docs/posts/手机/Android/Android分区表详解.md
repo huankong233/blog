@@ -1,7 +1,6 @@
 ---
 layout: Post
 title: Android分区表详解
-author: huan_kong
 date: 2022-12-23
 headerImage: https://api.huankong.top/random
 tags:

@@ -1,7 +1,6 @@
 ---
 layout: Post
 title: 使用docker时的小问题
-author: huan_kong
 date: 2022-12-07
 headerImage: https://api.huankong.top/random
 tags:

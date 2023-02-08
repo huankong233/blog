@@ -1,8 +1,7 @@
 ---
 layout: Post
 title: mysql创建一个指定位数的随机字符串
-author: huan_kong
-date: 2022-1-30
+date: 2022-01-30
 headerImage: https://api.huankong.top/random
 tags:
   - 后端

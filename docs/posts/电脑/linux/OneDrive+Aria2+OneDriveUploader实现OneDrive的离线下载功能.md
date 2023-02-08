@@ -1,8 +1,7 @@
 ---
 layout: Post
 title: 实现OneDrive的离线下载功能
-author: huan_kong
-date: 2022-1-15 
+date: 2022-01-15
 headerImage: https://api.huankong.top/random
 tags:
   - 电脑

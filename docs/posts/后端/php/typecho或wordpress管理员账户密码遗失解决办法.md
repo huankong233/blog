@@ -1,8 +1,7 @@
 ---
 layout: Post
 title: typecho或wordpress管理员账户密码遗失解决办法
-author: huan_kong
-date: 2021-9-15
+date: 2021-09-15
 headerImage: https://api.huankong.top/random
 tags:
   - 后端

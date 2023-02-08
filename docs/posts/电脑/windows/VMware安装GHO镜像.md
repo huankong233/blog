@@ -1,7 +1,6 @@
 ---
 layout: Post
 title: VMware安装GHO镜像
-author: huan_kong
 date: 2021-08-01
 headerImage: https://api.huankong.top/random
 tags:
