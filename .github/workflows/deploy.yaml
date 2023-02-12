@@ -15,5 +15,7 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist/
+        TARGET_REPO: huankong233/blog-page
+        TARGET_BRANCH: master
         COMMIT_MESSAGE: 自动打包完成
         CNAME: blog.huankong.top
