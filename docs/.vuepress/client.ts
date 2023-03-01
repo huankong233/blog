@@ -21,7 +21,8 @@ import {
   IoGameControllerSharp,
   IoCloud,
   MdCached,
-  BiBookFill
+  BiBookFill,
+  BiSearch
 } from 'oh-vue-icons/icons'
 
 addIcons(
@@ -46,6 +47,7 @@ addIcons(
   BiImages,
   BiGearWideConnected,
   BiBookFill,
+  BiSearch,
 
   HiSolidLink,
 
