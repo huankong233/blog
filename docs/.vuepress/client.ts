@@ -22,6 +22,7 @@ import {
   IoCloud,
   MdCached,
   BiBookFill,
+  BiSearch,
   FaBars
 } from 'oh-vue-icons/icons'
 
@@ -48,6 +49,7 @@ addIcons(
   BiImages,
   BiGearWideConnected,
   BiBookFill,
+  BiSearch,
 
   HiSolidLink,
 
