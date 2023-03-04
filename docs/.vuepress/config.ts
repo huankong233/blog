@@ -93,10 +93,10 @@ export default defineUserConfig({
       mermaid: true,
       chartjs: true,
       giscus: {
-        repo: 'huankong233/blog',
-        repoId: 'R_kgDOI60CcA',
+        repo: 'huankong233/blog-page',
+        repoId: 'R_kgDOI84cvQ',
         category: 'Announcements',
-        categoryId: 'DIC_kwDOI60CcM4CUDKP',
+        categoryId: 'DIC_kwDOI84cvc4CUo2w',
         mapping: 'title',
         lazyLoad: true
       },
@@ -105,8 +105,17 @@ export default defineUserConfig({
       },
       pwa: true,
       // use @vuepress/plugin-docsearch instead
-      search: false
+      search: {
+        locales: {
+          '/': {
+            placeholder: '关键词'
+          }
+        }
+      }
     },
+
+    searchIcon: 'bi-search',
+    searchText: '搜索',
 
     footer: `
       &copy; <a href="https://github.com/huankong233" target="_blank">huan_kong</a> 2021-2023
@@ -125,54 +134,5 @@ export default defineUserConfig({
     }
   },
 
-  plugins: [
-    docsearchPlugin({
-      appId: 'U198Y5GBFG',
-      apiKey: '80e349df3e9a0f5a0909c1074df63c40',
-      indexName: 'huankong',
-      locales: {
-        '/': {
-          placeholder: '搜索',
-          translations: {
-            button: {
-              buttonText: '搜索',
-              buttonAriaLabel: '搜索'
-            },
-            modal: {
-              searchBox: {
-                resetButtonTitle: '清除查询条件',
-                resetButtonAriaLabel: '清除查询条件',
-                cancelButtonText: '取消',
-                cancelButtonAriaLabel: '取消'
-              },
-              startScreen: {
-                recentSearchesTitle: '搜索历史',
-                noRecentSearchesText: '没有搜索历史',
-                saveRecentSearchButtonTitle: '保存至搜索历史',
-                removeRecentSearchButtonTitle: '从搜索历史中移除',
-                favoriteSearchesTitle: '收藏',
-                removeFavoriteSearchButtonTitle: '从收藏中移除'
-              },
-              errorScreen: {
-                titleText: '无法获取结果',
-                helpText: '你可能需要检查你的网络连接'
-              },
-              footer: {
-                selectText: '选择',
-                navigateText: '切换',
-                closeText: '关闭',
-                searchByText: '搜索提供者'
-              },
-              noResultsScreen: {
-                noResultsText: '无法找到相关结果',
-                suggestedQueryText: '你可以尝试查询',
-                reportMissingResultsText: '你认为该查询应该有结果？',
-                reportMissingResultsLinkText: '点击反馈'
-              }
-            }
-          }
-        }
-      }
-    })
-  ]
+  plugins: []
 })
