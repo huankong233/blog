@@ -21,7 +21,8 @@ import {
   IoGameControllerSharp,
   IoCloud,
   MdCached,
-  BiBookFill
+  BiBookFill,
+  FaBars
 } from 'oh-vue-icons/icons'
 
 addIcons(
@@ -36,6 +37,7 @@ addIcons(
   FaTag,
   FaSatelliteDish,
   FaDownload,
+  FaBars,
 
   CoGit,
 
