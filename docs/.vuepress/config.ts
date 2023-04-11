@@ -93,10 +93,10 @@ export default defineUserConfig({
       mermaid: true,
       chartjs: true,
       giscus: {
-        repo: 'huankong233/blog',
-        repoId: 'R_kgDOI60CcA',
+        repo: 'huankong233/blog-page',
+        repoId: 'R_kgDOI84cvQ',
         category: 'Announcements',
-        categoryId: 'DIC_kwDOI60CcM4CUDKP',
+        categoryId: 'DIC_kwDOI84cvc4CUo2w',
         mapping: 'title',
         lazyLoad: true
       },
