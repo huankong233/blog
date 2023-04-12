@@ -1,5 +1,4 @@
 import { viteBundler } from '@vuepress/bundler-vite'
-import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { defineUserConfig } from 'vuepress'
 import { gungnirTheme } from '@huan_kong/vuepress-theme-gungnir'
 import navbar from './navbar'
