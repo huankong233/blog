@@ -41,8 +41,10 @@ omz自带的主题有[这几个](https://github.com/ohmyzsh/ohmyzsh/wiki/themes)
 下载文件
 
 ~~~bash
-wget http://mimosa-pudica.net/src/incr-0.2.zsh ~/.oh-my-zsh/plugins/incr/incr-0.2.zsh
+wget http://mimosa-pudica.net/src/incr-0.2.zsh
 ~~~
+
+并把文件移动到`~/.oh-my-zsh/plugins/incr/incr-0.2.zsh`
 
 安装，在`.zshrc`文件最后加上
 
