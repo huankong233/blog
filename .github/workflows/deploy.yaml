@@ -9,18 +9,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - uses: pnpm/action-setup@v2
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 7
-          run_install: false
-
       - name: vuepress-deploy
         uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BUILD_SCRIPT: pnpm install && pnpm run build
+          BUILD_SCRIPT: apt-install pnpm && pnpm install && pnpm run build
           BUILD_DIR: docs
           TARGET_REPO: huankong233/blog-page
           TARGET_BRANCH: master
