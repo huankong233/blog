@@ -6,16 +6,21 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@master
 
-    - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BUILD_SCRIPT: pnpm install && pnpm run build
-        BUILD_DIR: docs
-        TARGET_REPO: huankong233/blog-page
-        TARGET_BRANCH: master
-        COMMIT_MESSAGE: 自动打包完成
-        CNAME: blog.huankong.top
+      - name: pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
+
+      - name: vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BUILD_SCRIPT: pnpm install && pnpm run build
+          BUILD_DIR: docs
+          TARGET_REPO: huankong233/blog-page
+          TARGET_BRANCH: master
+          COMMIT_MESSAGE: 自动打包完成
+          CNAME: blog.huankong.top
