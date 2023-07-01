@@ -30,14 +30,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Install dependencies
-        run: pnpm install
-
       - name: vuepress-deploy
         uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BUILD_SCRIPT: pnpm run build
+          BUILD_SCRIPT: pnpm install && pnpm run build
           BUILD_DIR: docs
           TARGET_REPO: huankong233/blog-page
           TARGET_BRANCH: master
