@@ -53,6 +53,18 @@ article: false
 
 ----
 
+### ChatSydney-FastAPI
+
+![stars](https://img.shields.io/github/stars/huankong233/ChatSydney-FastAPI?style=social)
+
+仓库地址: [ChatSydney-FastAPI](https://github.com/huankong233/ChatSydney-FastAPI)
+
+**说明：**
+
+一个快捷的 `ChatSydney` 的 `Api` 实现
+
+----
+
 ### scripts
 
 ![stars](https://img.shields.io/github/stars/huankong233/scripts?style=social)
