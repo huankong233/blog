@@ -20,7 +20,6 @@ export default definePlumeNotesItemConfig({
       text: '自带的支持库',
       dir: 'libs',
       items: [
-        'bot',
         'eventReg',
         'fetch',
         'getDirname',

@@ -17,6 +17,8 @@ permalink: /note/kkbot/libs/loadConfig
 | ------------- | ----- | ---------- | ---------- |
 | `configName` | `String` | `config` 名字 | `undefined` |
 | `RegToGlobal` | `Boolean` | 是否加载到全局 | `true` |
+| `configPath` | `String` | 配置文件所在的位置 | `"./config"` |
+| `_pluginName` | `String` `null` | 用于在插件加载时自动加载配置文件 <br> (手动加载请勿使用此参数!!!) | `null` |
 
 ### 2.加载多个配置文件
 
@@ -28,3 +30,4 @@ permalink: /note/kkbot/libs/loadConfig
 | ------------- | ----- | ---------- | ---------- |
 | `configNames` | `Array` | `configs` 名字 | `undefined` |
 | `global`      | `Boolean` | 是否加载到全局   | `undefined` |
+| `configPath` | `String` | 配置文件所在的位置 | `"./config"` |
