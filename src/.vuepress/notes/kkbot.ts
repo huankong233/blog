@@ -31,7 +31,8 @@ export default definePlumeNotesItemConfig({
         'logger',
         'random',
         'sendMsg',
-        'time'
+        'time',
+        'sleep'
       ]
     }
   ]
