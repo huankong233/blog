@@ -35,6 +35,7 @@ req:
 | `url` | `Object` | 请求的链接 | `undefined` |
 | `data` | `Object` | 请求携带的数据 | `{}` |
 | `timeOut` | `Object` | 超时时间(单位:ms) | `60 * 1000` |
+| `headers` | `Object` | 自定义头部信息 | `undefined` |
 
 ### 2.不带重试的Post请求
 

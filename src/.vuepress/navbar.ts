@@ -40,6 +40,12 @@ export default [
         link: '/note/pinia',
         icon: 'logos:pinia',
         activeMatch: '/note/pinia'
+      },
+      {
+        text: 'rust',
+        link: '/note/rust',
+        icon: 'logos:rust',
+        activeMatch: '/note/rust'
       }
     ]
   }

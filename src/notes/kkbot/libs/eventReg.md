@@ -34,6 +34,7 @@ permalink: /note/kkbot/libs/eventReg
 | 字段          | 类型  | 说明       | 默认值    |
 | ------------- | ----- | ---------- | ---------- |
 | `context` | `Object` | 事件返回的 `context` 对象 | `undefined` |
+| `commandName` | `String` | 手动指定命令名 | `undefined` |
 
 返回值(匹配成功):
 
@@ -49,3 +50,40 @@ permalink: /note/kkbot/libs/eventReg
 ~~~ json
 false
 ~~~
+
+### 3.格式化命令
+
+函数名: `format`
+
+函数参数：
+
+| 字段          | 类型  | 说明       | 默认值    |
+| ------------- | ----- | ---------- | ---------- |
+| `message` | `String` | 消息 | `undefined` |
+
+返回值(是命令):
+
+~~~ json
+{
+  "name":"name",
+  "params":["123","234"]
+}
+~~~
+
+返回值(不是命令):
+
+~~~json
+false
+~~~
+
+### 3.缺少参数
+
+函数名: `missingParams`
+
+函数参数：
+
+| 字段          | 类型  | 说明       | 默认值    |
+| ------------- | ----- | ---------- | ---------- |
+| `context` | `Object` | 事件返回的 `context` 对象 | `undefined` |
+| `params` | `Array` | 参数的数组 | `undefined` |
+| `paramsLength` | `Number` | 需要的参数长度 | `undefined` |

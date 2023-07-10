@@ -22,6 +22,7 @@ export default definePlumeNotesItemConfig({
       items: [
         'eventReg',
         'fetch',
+        'fs',
         'getDirname',
         'globalReg',
         'handleUrl',

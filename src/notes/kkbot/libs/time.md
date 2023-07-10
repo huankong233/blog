@@ -7,7 +7,7 @@ permalink: /note/kkbot/libs/time
 
 ## 函数列表
 
-### 1.格式化时间,将秒转换为HH:MM:SS的格式
+### 1.格式化时间,将毫秒转换为HH:MM:SS的格式
 
 函数名: `formatTime`
 
@@ -15,4 +15,14 @@ permalink: /note/kkbot/libs/time
 
 | 字段          | 类型  | 说明       | 默认值    |
 | ------------- | ----- | ---------- | ---------- |
-| `seconds` | `Number` | 时间(单位:s) | `undefined` |
+| `ms` | `Number` | 时间(单位:ms) | `undefined` |
+
+### 2.判断是否为今天
+
+函数名: `isToday`
+
+函数参数：
+
+| 字段          | 类型  | 说明       | 默认值    |
+| ------------- | ----- | ---------- | ---------- |
+| `timestamp` | `Number` | 时间戳 | `undefined` |
