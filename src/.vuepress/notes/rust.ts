@@ -9,7 +9,20 @@ export default definePlumeNotesItemConfig({
     {
       text: '学习',
       dir: 'learn',
-      items: ['变量', '数据类型', '函数', '控制', 'struct', '枚举']
+      items: [
+        '变量',
+        '数据类型',
+        '函数',
+        '控制',
+        'Struct',
+        '枚举',
+        '集合',
+        '字符串',
+        'HashMap',
+        '泛型',
+        'Trait',
+        '生命周期'
+      ]
     }
   ]
 })

@@ -1,8 +1,8 @@
 ---
-title: struct
+title: Struct
 author: huan_kong
 createTime: 2023/07/10 10:14:30
-permalink: /note/rust/learn/own
+permalink: /note/rust/learn/Struct
 ---
 
 ## 介绍
