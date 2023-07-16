@@ -6,7 +6,7 @@ permalink: /projects/
 article: false
 ---
 
-## Open Source
+## 编写的开源项目
 
 ### kkbot
 
@@ -19,8 +19,6 @@ article: false
 一个简单的QQBot实现框架
 
 支持添加插件等实用功能
-
-(我用来学习/练习nodejs的)
 
 ----
 
@@ -49,6 +47,7 @@ article: false
 **说明：**
 
 一个使用 `php` 编写的解析程序
+
 支持解析单文件和多文件
 
 ----
@@ -77,12 +76,12 @@ article: false
 
 ----
 
-### BetterQQNT-HK-Theme
+### LiteLoaderQQNT-HK-Theme
 
-![stars](https://img.shields.io/github/stars/huankong233/BetterQQNT-HK-Theme?style=social)
+![stars](https://img.shields.io/github/stars/huankong233/LiteLoaderQQNT-HK-Theme?style=social)
 
-仓库地址: [BetterQQNT-HK-Theme](https://github.com/huankong233/BetterQQNT-HK-Theme)
+仓库地址: [LiteLoaderQQNT-HK-Theme](https://github.com/huankong233/LiteLoaderQQNT-HK-Theme)
 
 **说明：**
 
-一个我自己编写的简易的 [BetterQQNT](https://github.com/mo-jinran/BetterQQNT) 主题
+一个简易的 [LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT) 主题

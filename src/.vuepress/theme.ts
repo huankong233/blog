@@ -15,7 +15,8 @@ export default plumeTheme({
   navbar,
   notes,
   footer: {
-    copyright: 'Copyright © 2020-present huan_kong'
+    copyright:
+      'Proudly written with <a href="https://github.com/vuepress/vuepress-next">VuePress Next</a> and <a href="https://github.com/pengzhanbo/vuepress-theme-plume">vuepress-theme-plume theme</a>.<br>Copyright © 2020-present <a href="https://huankong.top">huan_kong</a>'
   },
   themePlugins: {
     shiki: {
@@ -27,9 +28,6 @@ export default plumeTheme({
     search: {
       locales: {
         '/': {
-          placeholder: 'Search'
-        },
-        '/zh/': {
           placeholder: '搜索'
         }
       }

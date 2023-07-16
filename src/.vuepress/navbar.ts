@@ -1,17 +1,18 @@
 import { NavItem } from '@vuepress-plume/vuepress-theme-plume'
 
 export default [
-  { text: '首页', link: '/', icon: 'material-symbols:home' },
+  { text: '首页', icon: 'material-symbols:home', link: '/' },
   {
     text: '博客',
-    link: '/blog/',
-    activeMatch: '/(blog|article)/',
-    icon: 'material-symbols:menu-book'
+    icon: 'material-symbols:menu-book',
+    link: '/blog',
+    activeMatch: '/(blog|article)/'
   },
   {
-    text: 'Projects',
-    link: '/projects/',
+    text: '开源项目',
     icon: 'ri:open-source-fill',
+
+    link: '/projects',
     activeMatch: '/projects'
   },
   {
@@ -20,14 +21,9 @@ export default [
     items: [
       {
         text: 'kkbot',
-        icon: 'carbon:bot',
-        items: [
-          {
-            text: 'v0.1',
-            link: '/notes/kkbot',
-            activeMatch: '/notes/kkbot'
-          }
-        ]
+        icon: 'fluent:bot-24-regular',
+        link: '/note/kkbot',
+        activeMatch: '/note/kkbot'
       }
     ]
   },
