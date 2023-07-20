@@ -85,3 +85,27 @@ article: false
 **说明：**
 
 一个简易的 [LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT) 主题
+
+----
+
+### NOWPayments
+
+![stars](https://img.shields.io/github/stars/huankong233/NOWPayments?style=social)
+
+仓库地址: [NOWPayments](https://github.com/huankong233/NOWPayments)
+
+**说明：**
+
+用于独角数码添加对加密货币交易平台 [NOWPayments](https://nowpayments.io/) 支持的插件
+
+----
+
+### dujiaoka-theme-huankong
+
+![stars](https://img.shields.io/github/stars/huankong233/dujiaoka-theme-huankong?style=social)
+
+仓库地址: [dujiaoka-theme-huankong](https://github.com/huankong233/dujiaoka-theme-huankong)
+
+**说明：**
+
+一个简易的 [dujiaoka](https://github.com/assimon/dujiaoka) 主题
