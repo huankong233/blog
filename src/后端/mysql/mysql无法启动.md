@@ -7,7 +7,7 @@ permalink: /article/tkjc7erp/
 
 ## 错误提示
 
-~~~ log
+~~~ text
 Table ".\mysql\db" is marked as crashed and last (automatic?) repair failed
 ~~~
 
