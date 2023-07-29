@@ -16,8 +16,10 @@ sudo pacman -S perl-image-exiftool
 ### 命令
 
 ~~~ bash
-exiftool -all="" -overwrite_original -r .
+exiftool -all="" -overwrite_original -r . 
 ~~~
+
+加上 `-progress` 即可显示处理进度
 
 这样替换后会有一个 `*_original` 文件
 
