@@ -16,11 +16,11 @@ article: false
 
 **说明：**
 
-一个简单的QQBot实现框架
+一个简单的 QQBot 实现框架
 
 支持添加插件等实用功能
 
-----
+---
 
 ### ImageSearcher-ts
 
@@ -36,7 +36,7 @@ article: false
 
 新版已用 `ts` 重写，原 `js` 版本已弃用
 
-----
+---
 
 ### lanzou_url
 
@@ -50,7 +50,7 @@ article: false
 
 支持解析单文件和多文件
 
-----
+---
 
 ### ChatSydney-FastAPI
 
@@ -62,7 +62,7 @@ article: false
 
 一个快捷的 `ChatSydney` 的 `Api` 实现
 
-----
+---
 
 ### scripts
 
@@ -74,7 +74,7 @@ article: false
 
 整合了一些我平时会用的脚本
 
-----
+---
 
 ### LiteLoaderQQNT-HK-Theme
 
@@ -86,7 +86,7 @@ article: false
 
 一个简易的 [LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT) 主题
 
-----
+---
 
 ### NOWPayments
 
@@ -98,7 +98,7 @@ article: false
 
 用于独角数码添加对加密货币交易平台 [NOWPayments](https://nowpayments.io/) 支持的插件
 
-----
+---
 
 ### dujiaoka-theme-huankong
 

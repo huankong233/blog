@@ -13,10 +13,10 @@ permalink: /note/kkbot/libs/loadPlugin
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值 |
-| ------------- | ----- | ---------- | --- |
-| `pluginName`  | string | 插件文件夹名 | `undefined` |
-| `pluginDir`   | string | 插件文件夹 | `"plugins"` |
+| 字段         | 类型   | 说明         | 默认值      |
+| ------------ | ------ | ------------ | ----------- |
+| `pluginName` | string | 插件文件夹名 | `undefined` |
+| `pluginDir`  | string | 插件文件夹   | `"plugins"` |
 
 ### 2.加载多个插件
 
@@ -24,10 +24,10 @@ permalink: /note/kkbot/libs/loadPlugin
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值 |
-| ------------- | ----- | ---------- | --- |
-| `plugins` | `Array` | 插件文件夹名 | `undefined` |
-| `pluginDir` | `String` | 插件文件夹 | `"plugins"` |
+| 字段        | 类型     | 说明         | 默认值      |
+| ----------- | -------- | ------------ | ----------- |
+| `plugins`   | `Array`  | 插件文件夹名 | `undefined` |
+| `pluginDir` | `String` | 插件文件夹   | `"plugins"` |
 
 ### 3.加载文件夹内的所有插件
 
@@ -35,6 +35,6 @@ permalink: /note/kkbot/libs/loadPlugin
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值    |
-| ------------- | ----- | ---------- | ---------- |
+| 字段        | 类型     | 说明       | 默认值      |
+| ----------- | -------- | ---------- | ----------- |
 | `pluginDir` | `String` | 插件文件夹 | `undefined` |

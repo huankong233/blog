@@ -8,23 +8,23 @@ tags:
   - css3
 ---
 
-## 1.子元素height和width的百分比
+## 1.子元素 height 和 width 的百分比
 
-子元素的height或width中使用百分比，是相对于子元素的直接父元素，width相对于父元素的width，height相对于父元素的height。
+子元素的 height 或 width 中使用百分比，是相对于子元素的直接父元素，width 相对于父元素的 width，height 相对于父元素的 height。
 
-## 2.top和bottom 、left和right
+## 2.top 和 bottom 、left 和 right
 
-子元素的top和bottom如果设置百分比，则相对于直接非static定位(默认定位)的父元素的高度，
+子元素的 top 和 bottom 如果设置百分比，则相对于直接非 static 定位(默认定位)的父元素的高度，
 同样
-子元素的left和right如果设置百分比，则相对于直接非static定位(默认定位的)父元素的宽度。
+子元素的 left 和 right 如果设置百分比，则相对于直接非 static 定位(默认定位的)父元素的宽度。
 
 ## 3.padding
 
-子元素的padding如果设置百分比，不论是垂直方向或者是水平方向，都相对于直接父亲元素的width，而与父元素的height无关。
+子元素的 padding 如果设置百分比，不论是垂直方向或者是水平方向，都相对于直接父亲元素的 width，而与父元素的 height 无关。
 
 ## 4.margin
 
-跟padding一样，margin也是如此，子元素的margin如果设置成百分比，不论是垂直方向还是水平方向，都相对于直接父元素的width。
+跟 padding 一样，margin 也是如此，子元素的 margin 如果设置成百分比，不论是垂直方向还是水平方向，都相对于直接父元素的 width。
 
 ## 5.border-radius，translate，background-size
 

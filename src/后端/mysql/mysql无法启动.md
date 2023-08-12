@@ -7,13 +7,13 @@ permalink: /article/tkjc7erp/
 
 ## 错误提示
 
-~~~ text
+```text
 Table ".\mysql\db" is marked as crashed and last (automatic?) repair failed
-~~~
+```
 
 ## 原因
 
-你的 `mysql` 数据库中的db表损坏了，需要修复。你可以尝试以下方法来修复它：
+你的 `mysql` 数据库中的 db 表损坏了，需要修复。你可以尝试以下方法来修复它：
 
 ## 解决方法
 

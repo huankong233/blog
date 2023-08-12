@@ -13,9 +13,9 @@ permalink: /note/kkbot/libs/handleUrl
 
 变量值:
 
-~~~ javascript
-['danbooru.donmai.us', 'konachan.com', 'fanbox.cc', 'pixiv.net']
-~~~
+```javascript
+;['danbooru.donmai.us', 'konachan.com', 'fanbox.cc', 'pixiv.net']
+```
 
 ## 函数列表
 
@@ -25,10 +25,10 @@ permalink: /note/kkbot/libs/handleUrl
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值    |
-| ------------- | ----- | ---------- | ---------- |
-| `url` | `String` | 需要混淆的链接 | `undefined` |
-| `force` | `Boolean` | 是否强制修改 | `false` |
+| 字段    | 类型      | 说明           | 默认值      |
+| ------- | --------- | -------------- | ----------- |
+| `url`   | `String`  | 需要混淆的链接 | `undefined` |
+| `force` | `Boolean` | 是否强制修改   | `false`     |
 
 ### 2.缩短 `pixiv` 链接
 
@@ -36,8 +36,8 @@ permalink: /note/kkbot/libs/handleUrl
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值    |
-| ------------- | ----- | ---------- | ---------- |
+| 字段  | 类型     | 说明                      | 默认值      |
+| ----- | -------- | ------------------------- | ----------- |
 | `url` | `String` | 需要缩短的 `pixiv` 的链接 | `undefined` |
 
 ### 3.去除 `QQ` 的追踪参数
@@ -46,6 +46,6 @@ permalink: /note/kkbot/libs/handleUrl
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值    |
-| ------------- | ----- | ---------- | ---------- |
-| `url` | `String` | 图片的链接 | `""` |
+| 字段  | 类型     | 说明       | 默认值 |
+| ----- | -------- | ---------- | ------ |
+| `url` | `String` | 图片的链接 | `""`   |

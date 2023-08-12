@@ -20,6 +20,7 @@ export default definePlumeNotesItemConfig({
       text: '自带的支持库',
       dir: 'libs',
       items: [
+        'api',
         'eventReg',
         'fetch',
         'fs',
@@ -29,11 +30,12 @@ export default definePlumeNotesItemConfig({
         'loadConfig',
         'loadPlugin',
         'loadVersion',
+        'log',
         'logger',
         'random',
         'sendMsg',
-        'time',
-        'sleep'
+        'sleep',
+        'time'
       ]
     }
   ]

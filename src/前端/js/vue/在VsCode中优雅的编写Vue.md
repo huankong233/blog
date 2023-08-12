@@ -11,14 +11,13 @@ tags:
   - ide
 ---
 
-
 ## 一、安装插件
 
 ![1669807355203.png](https://img.huankong.top/i/2022/11/30/63873cfc639dc.png)
 
 然后再安装 `Aya Vue3 extension Pack` 插件包
 
-## 二、配置settings.json信息
+## 二、配置 settings.json 信息
 
 File->Preference->Settings
 
@@ -30,7 +29,7 @@ File->Preference->Settings
 
 代码：
 
-~~~ json
+```json
 {
   // 关闭自动设置tabsize
   "editor.detectIndentation": false,
@@ -123,8 +122,8 @@ File->Preference->Settings
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontSize": 15,
+  "editor.fontSize": 15
 }
-~~~
+```
 
 以后只要代码被保存就会自动格式化代码了,鼠标失焦也会自动保存。

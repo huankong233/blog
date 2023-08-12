@@ -11,9 +11,9 @@ tags:
 
 ## 安装
 
-官方推荐使用[docker安装](#_1-2docker)
+官方推荐使用[docker 安装](#_1-2docker)
 
-我推荐使用[composer安装](#_1-1composer)
+我推荐使用[composer 安装](#_1-1composer)
 
 ### Composer
 
@@ -27,23 +27,23 @@ tags:
 
 通过 Composer 安装 Laravel 安装器：
 
-~~~ bash
+```bash
 composer global require "laravel/installer"
-~~~
+```
 
-安装完成后，通过简单的 `laravel new` 命令即可在当前目录下创建一个新的 Laravel 应用。
+安装完成后，通过简单的  `laravel new`  命令即可在当前目录下创建一个新的 Laravel 应用。
 
-例如，`laravel new blog` 将会创建一个名为 `blog` 的新应用，且包含所有  Laravel 依赖。
+例如，`laravel new blog`  将会创建一个名为  `blog`  的新应用，且包含所有  Laravel 依赖。
 
 ### Docker
 
 ::: tip
 需要[安装`wsl2`环境](https://zhuanlan.zhihu.com/p/386590591)
-并且安装完成docker环境
+并且安装完成 docker 环境
 :::
 
 终端运行
 
-~~~ bash
+```bash
 curl -s https://laravel.build/example-app | bash
-~~~
+```

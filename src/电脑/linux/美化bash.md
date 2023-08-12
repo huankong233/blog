@@ -8,23 +8,23 @@ tags:
   - linux
 ---
 
-## 1.安装zsh
+## 1.安装 zsh
 
-~~~bash
+```bash
 sudo pacman -S zsh
-~~~
+```
 
 ## 2.切换终端
 
-~~~bash
+```bash
 chsh -s /bin/zsh
-~~~
+```
 
-## 3.安装oh-my-zsh
+## 3.安装 oh-my-zsh
 
-~~~bash
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-~~~
+```
 
 ## 4.字体问题
 
@@ -38,7 +38,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 运行`locale`，检查他的输出，通常应该如下显示，如果有所不同，请务必修改一下，
 确保没有问题，如果后面没问题可以再改掉，关于如何修改请自行搜索
 
-~~~bash
+```bash
 $ locale
 LANG=en_US.utf8
 LANGUAGE=
@@ -55,7 +55,7 @@ LC_TELEPHONE="en_US.utf8"
 LC_MEASUREMENT="en_US.utf8"
 LC_IDENTIFICATION="en_US.utf8"
 LC_ALL=
-~~~
+```
 
 ### 2.字体
 
@@ -63,7 +63,7 @@ LC_ALL=
 
 #### 1.安装`powerline`字体
 
-~~~bash
+```bash
 # clone
 git clone https://github.com/powerline/fonts.git --depth=1
 # install
@@ -72,18 +72,18 @@ cd fonts
 # clean-up a bit
 cd ..
 rm -rf fonts
-~~~
+```
 
 #### 2.安装`Nerd Font`字体
 
-~~~bash
+```bash
 nano ~/.zshrc
 mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts
 curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
-~~~
+```
 
-#### 3.给ssh端安装
+#### 3.给 ssh 端安装
 
 如果你是远程连接的服务器，请给本地电脑也安装一下字体，然后在虚拟终端中选中所用的字体
 [安装教程](https://github.com/romkatv/powerlevel10k#manual-font-installation)
@@ -99,22 +99,22 @@ curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.
 
 我们可以把这段代码插入到`~/.zshrc`文件的末尾
 
-~~~bash
+```bash
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
     export TERM='xterm-256color'
 else
     export TERM='xterm-color'
 fi
-~~~
+```
 
 保存完成后，然后重新`source .zshrc`一下
 
-## 5.安装powerlevel10k
+## 5.安装 powerlevel10k
 
-~~~bash
+```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-~~~
+```
 
 安装完成后运行`source .zshrc`即可进入配置模式
 
@@ -127,24 +127,24 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 安装
 
-~~~bash
+```bash
 yay -S zsh-syntax-highlighting zsh-autosuggestions
 sudo ln -s /usr/share/zsh/plugins/zsh-syntax-highlighting ~/.oh-my-zsh/plugins/
 sudo ln -s /usr/share/zsh/plugins/zsh-autosuggestions ~/.oh-my-zsh/plugins/
-~~~
+```
 
 在 `.zshrc` 的 `plugins` 中添加 `zsh-syntax-highlighting` `zsh-autosuggestions`
 
 例子:
 
-~~~ toml
+```toml
 plugins=(
   sudo
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
 )
-~~~
+```
 
 ### 2.文件解压
 

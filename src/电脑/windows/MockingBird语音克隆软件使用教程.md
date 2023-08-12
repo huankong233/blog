@@ -16,7 +16,7 @@ tags:
 
 ![1669808410423.png](https://img.huankong.top/i/2022/11/30/6387411c20645.png)
 
-## 2.安装python
+## 2.安装 python
 
 ![1669808498456.png](https://img.huankong.top/i/2022/11/30/63874173d4144.png)
 
@@ -24,11 +24,11 @@ tags:
 
 ![1669808567353.png](https://img.huankong.top/i/2022/11/30/638741b8b8b08.png)
 
-## 3.打开[MockingBirdGithub仓库](https://github.com/babysor/MockingBird)
+## 3.打开[MockingBirdGithub 仓库](https://github.com/babysor/MockingBird)
 
-打开官方wiki，选择[快速上手](https://github.com/babysor/MockingBird/wiki/Quick-Start-(Newbie))
+打开官方 wiki，选择[快速上手](<https://github.com/babysor/MockingBird/wiki/Quick-Start-(Newbie)>)
 
-## 4.安装Anaconda
+## 4.安装 Anaconda
 
 [教程链接](https://zhuanlan.zhihu.com/p/348120084)
 
@@ -40,21 +40,21 @@ Tip：安装完成后在 `cmd` 里无法直接启动，你可以在开始菜单�
 
 ## 5.创建环境
 
-~~~ batch
+```batch
 conda create-n 环境名
-~~~
+```
 
 ## 6.激活环境
 
-~~~ batch
+```batch
 Conda activate 环境名
-~~~
+```
 
-## 7.下载安装PyTorch
+## 7.下载安装 PyTorch
 
 打开[PyTorch](https://pytorch.org/get-started/locally/)
 
-你如果选择了CUDA，那你就有必要进行一下CUDA的安装了。
+你如果选择了 CUDA，那你就有必要进行一下 CUDA 的安装了。
 
 [视频教程](https://www.bilibili.com/video/BV1q54y1y7Mf) [文字教程](/article/0fl508ok/)
 
@@ -74,11 +74,11 @@ Conda activate 环境名
 
 ![1669808995375.png](https://img.huankong.top/i/2022/11/30/6387436429501.png)
 
-进入bin目录,复制路径,右键此电脑
+进入 bin 目录,复制路径,右键此电脑
 
 ![1669809014781.png](https://img.huankong.top/i/2022/11/30/638743784806f.png)
 
-选择属性，找到高级设置（windowns版本不同位置不同）
+选择属性，找到高级设置（windowns 版本不同位置不同）
 
 ![1669809033483.png](https://img.huankong.top/i/2022/11/30/6387438bd5e0f.png)
 ![1669809047182.png](https://img.huankong.top/i/2022/11/30/63874397eb711.png)
@@ -98,37 +98,37 @@ Conda activate 环境名
 
 ## 9.测试是否配置正确
 
-打开cmd，输入`ffmpeg -version`
+打开 cmd，输入`ffmpeg -version`
 如果可以正常输出，即为配置成功
 
 ![1669809164814.png](https://img.huankong.top/i/2022/11/30/6387440d9315e.png)
 
-## 10.克隆Github库
+## 10.克隆 Github 库
 
-~~~ batch
+```batch
 git clone https://github.com/babysor/MockingBird
-~~~
+```
 
 ## 11.补全支持库
 
-~~~ batch
+```batch
 pip install -r requirements.txt
-~~~
+```
 
 等待跑码完成。
 跑码过程中可能报错：
 
 ![1669809240232.png](https://img.huankong.top/i/2022/11/30/63874458f2cd6.png)
 
-手动安装低版本后删除requirements.txt中的PyQt5,重新执行命令,就不会出现报错的问题了。
+手动安装低版本后删除 requirements.txt 中的 PyQt5,重新执行命令,就不会出现报错的问题了。
 
 ![1669809265352.png](https://img.huankong.top/i/2022/11/30/638744725e6e8.png)
 
-## 12.安装webrtcvad
+## 12.安装 webrtcvad
 
-~~~batch
+```batch
 pip install webrtcvad-wheels
-~~~
+```
 
 ![1669809301698.png](https://img.huankong.top/i/2022/11/30/6387449679680.png)
 
@@ -138,16 +138,16 @@ pip install webrtcvad-wheels
 
 进入 `synthesizer` 文件夹，创建名称为 `saved_models` 的文件夹。
 
-下载模型文件（文件来自[B站视频](https://www.bilibili.com/video/BV1DL4y1q7VL)）
+下载模型文件（文件来自[B 站视频](https://www.bilibili.com/video/BV1DL4y1q7VL)）
 
 [下载链接](https://x5cxfh7xs6.feishu.cn/file/boxcnk9Fzkx2yV6lqkPTZVikFif)
 
-## 14.运行demo
+## 14.运行 demo
 
 运行命令
 
-~~~ batch
+```batch
 python demo_toolbox.py -d .\samples
-~~~
+```
 
 耐心等待后显示了界面，说明一切顺利！

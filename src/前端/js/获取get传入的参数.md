@@ -17,30 +17,29 @@ tags:
 
 ## 获取指定参数方法
 
-~~~ js
+```js
 function getQueryVariable(variable) {
-  let query = window.location.search.substring(1);
-  let vars = query.split("&");
+  let query = window.location.search.substring(1)
+  let vars = query.split('&')
   for (let i = 0; i < vars.length; i++) {
-    let pair = vars[i].split("=");
+    let pair = vars[i].split('=')
     if (pair[0] === variable) return pair[1]
   }
-  return false;
+  return false
 }
-~~~
+```
 
 ## 获取所有参数
 
-~~~ js
-function getAllQueryVariable()
-{
-  let query = window.location.search.substring(1);
-  let vars = query.split("&");
-  let temp = {};
-  vars.forEach(item=>{
-    let pair = item.split("=");
-    temp[pair[0]] = pair[1];
+```js
+function getAllQueryVariable() {
+  let query = window.location.search.substring(1)
+  let vars = query.split('&')
+  let temp = {}
+  vars.forEach(item => {
+    let pair = item.split('=')
+    temp[pair[0]] = pair[1]
   })
-  return temp;
+  return temp
 }
-~~~
+```

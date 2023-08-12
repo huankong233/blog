@@ -17,15 +17,11 @@ permalink: /note/kkbot/libs/logger
 
 变量值:
 
-~~~ javascript
+```javascript
 {
-  INFO,
-  SUCCESS,
-  WARNING,
-  NOTICE,
-  DEBUG
+  INFO, SUCCESS, WARNING, NOTICE, DEBUG
 }
-~~~
+```
 
 ## 函数列表
 
@@ -35,8 +31,8 @@ permalink: /note/kkbot/libs/logger
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值    |
-| ------------- | ----- | ---------- | ---------- |
+| 字段         | 类型     | 说明                        | 默认值      |
+| ------------ | -------- | --------------------------- | ----------- |
 | `...message` | `String` | 可以传入多个参数,都会被输出 | `undefined` |
 
 ### 2.SUCCESS
@@ -77,5 +73,5 @@ permalink: /note/kkbot/libs/logger
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值    |
-| ------------- | ----- | ---------- | ---------- |
+| 字段 | 类型 | 说明 | 默认值 |
+| ---- | ---- | ---- | ------ |

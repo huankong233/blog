@@ -9,7 +9,7 @@ permalink: /note/pinia/learn/getters/
 
 `Getters` 自带缓存功能，不会重复调用
 
-~~~typescript
+```typescript
 export const useMainStore = defineStore('main', {
   // 用于存储数据
   state: () => {
@@ -27,7 +27,7 @@ export const useMainStore = defineStore('main', {
   // 封装业务逻辑
   actions: {}
 })
-~~~
+```
 
 其中传入的 `state` 是可选参数
 

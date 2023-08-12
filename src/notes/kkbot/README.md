@@ -9,13 +9,13 @@ permalink: /note/kkbot
 `v0.1` 之前的版本都弃用!请更新至最新版!
 :::
 
-这就是个简单的QQ机器人的框架（我说的）实现
+这就是个简单的 QQ 机器人的框架（我说的）实现
 
 - [kkbot](https://github.com/huankong233/kkbot)
-- kkbot框架
+- kkbot 框架
 - [go-cqhttp](https://github.com/Mrs4s/go-cqhttp)
-- 用于提供qq的交互功能
+- 用于提供 qq 的交互功能
 - [@tsuk1ko/cq-websocket](https://www.npmjs.com/package/@tsuk1ko/cq-websocket)
-- 用于链接go-cqhttp
+- 用于链接 go-cqhttp
 - [go-cqwebsocket](https://www.npmjs.com/package/go-cqwebsocket)
-- 用于生成cq码
+- 用于生成 cq 码

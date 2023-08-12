@@ -22,6 +22,6 @@ Tip: 误删了 `docker` 中的镜像文件导致的
 
 ## 3.问题解决方法
 
-~~~ sh
+```sh
 docker system prune -af
-~~~
+```

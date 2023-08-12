@@ -9,15 +9,15 @@ permalink: /note/kkbot/libs/eventReg
 
 ### 1.快捷注册事件处理函数
 
-函数名: `loadConfig`
+函数名: `eventReg`
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值    |
-| ------------- | ----- | ---------- | ---------- |
-| `type` | `"message"` `"notice"` `"request"` | 事件类型 | `undefined` |
-| `callback` | `Function` | 事件被触发时需要执行的函数 | `undefined` |
-| `priority` | `Number` | 调用时的顺序 | `1` |
+| 字段       | 类型                               | 说明                       | 默认值      |
+| ---------- | ---------------------------------- | -------------------------- | ----------- |
+| `type`     | `"message"` `"notice"` `"request"` | 事件类型                   | `undefined` |
+| `callback` | `Function`                         | 事件被触发时需要执行的函数 | `undefined` |
+| `priority` | `Number`                           | 调用时的顺序               | `1`         |
 
 `priority` 的值越大越先执行
 
@@ -31,25 +31,25 @@ permalink: /note/kkbot/libs/eventReg
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值    |
-| ------------- | ----- | ---------- | ---------- |
-| `context` | `Object` | 事件返回的 `context` 对象 | `undefined` |
-| `commandName` | `String` | 手动指定命令名 | `undefined` |
+| 字段          | 类型     | 说明                      | 默认值      |
+| ------------- | -------- | ------------------------- | ----------- |
+| `context`     | `Object` | 事件返回的 `context` 对象 | `undefined` |
+| `commandName` | `String` | 手动指定命令名            | `@`         |
 
 返回值(匹配成功):
 
-~~~ json
+```json
 {
   "name": "@",
   "params": []
 }
-~~~
+```
 
 返回值(匹配失败):
 
-~~~ json
+```json
 false
-~~~
+```
 
 ### 3.格式化命令
 
@@ -57,24 +57,24 @@ false
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值    |
-| ------------- | ----- | ---------- | ---------- |
+| 字段      | 类型     | 说明 | 默认值      |
+| --------- | -------- | ---- | ----------- |
 | `message` | `String` | 消息 | `undefined` |
 
 返回值(是命令):
 
-~~~ json
+```json
 {
-  "name":"name",
-  "params":["123","234"]
+  "name": "name",
+  "params": ["123", "234"]
 }
-~~~
+```
 
 返回值(不是命令):
 
-~~~json
+```json
 false
-~~~
+```
 
 ### 3.缺少参数
 
@@ -82,8 +82,8 @@ false
 
 函数参数：
 
-| 字段          | 类型  | 说明       | 默认值    |
-| ------------- | ----- | ---------- | ---------- |
-| `context` | `Object` | 事件返回的 `context` 对象 | `undefined` |
-| `params` | `Array` | 参数的数组 | `undefined` |
-| `paramsLength` | `Number` | 需要的参数长度 | `undefined` |
+| 字段           | 类型     | 说明                      | 默认值      |
+| -------------- | -------- | ------------------------- | ----------- |
+| `context`      | `Object` | 事件返回的 `context` 对象 | `undefined` |
+| `params`       | `Array`  | 参数的数组                | `undefined` |
+| `paramsLength` | `Number` | 需要的参数长度            | `undefined` |
