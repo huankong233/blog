@@ -51,3 +51,15 @@ action:
 | `toEmoji`  | `Boolean` | 是否转换为 emoji | `true`      |
 
 此方法可能不是一看就能用明白,详细请查看 [`go-cqhttp` 的文档](https://docs.go-cqhttp.org/cqcode/#合并转发)
+
+### 4.消息反转义为 emoji
+
+函数名: `parseToEmoji`
+
+函数参数：
+
+| 字段      | 类型     | 说明 | 默认值      |
+| --------- | -------- | ---- | ----------- |
+| `message` | `String` | 消息 | `undefined` |
+
+默认是不处理对象的,如果需要处理对象的话,需要在对需要反转义的 `emoji` 处手动调用次方法

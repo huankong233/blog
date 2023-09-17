@@ -76,7 +76,7 @@ false
 false
 ```
 
-### 3.缺少参数
+### 4.缺少参数
 
 函数名: `missingParams`
 
@@ -85,5 +85,4 @@ false
 | 字段           | 类型     | 说明                      | 默认值      |
 | -------------- | -------- | ------------------------- | ----------- |
 | `context`      | `Object` | 事件返回的 `context` 对象 | `undefined` |
-| `params`       | `Array`  | 参数的数组                | `undefined` |
 | `paramsLength` | `Number` | 需要的参数长度            | `undefined` |

@@ -9,7 +9,7 @@ export default definePlumeNotesItemConfig({
     {
       text: '使用',
       dir: 'use',
-      items: ['安装', '插件', '配置', '支持库']
+      items: ['安装', '插件', '支持库']
     },
     {
       text: '编写',
