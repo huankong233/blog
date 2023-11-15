@@ -42,6 +42,12 @@ export default [
         link: '/note/rust',
         icon: 'logos:rust',
         activeMatch: '/note/rust'
+      },
+      {
+        text: '数据结构和算法',
+        link: '/note/algorithm',
+        icon: 'bx:math',
+        activeMatch: '/note/algorithm'
       }
     ]
   }
