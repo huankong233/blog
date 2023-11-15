@@ -13,7 +13,6 @@ Sitemap: https://blog.huankong.top/sitemap.xml
 `
 
 export default defineUserConfig({
-  pagePatterns: ['!**/~*.md'],
   port: 8081,
   lang: 'zh-CN',
   locales: {
