@@ -12,8 +12,13 @@ export default definePlumeNotesItemConfig({
       items: ['常见数据结构和算法']
     },
     {
+      text: '数据结构',
+      dir: '2.数据结构',
+      items: ['数组', '栈', '队列结构', '优先级队列']
+    },
+    {
       text: '排序算法',
-      dir: '2.排序算法',
+      dir: '3.排序算法',
       items: ['选择排序', '插入排序']
     }
   ]

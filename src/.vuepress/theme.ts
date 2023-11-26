@@ -40,6 +40,9 @@ export default plumeTheme({
       category: 'Announcements',
       categoryId: 'DIC_kwDOI84cvc4CUo2w',
       mapping: 'title'
+    },
+    frontmatter: {
+      exclude: ['!.vuepress/', '!node_modules/', '!.~*.{md,MD}']
     }
   }
 })

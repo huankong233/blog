@@ -23,8 +23,8 @@ export default defineUserConfig({
       description: '幸运的人一生都被童年治愈，不幸的人一生都在治愈童年。'
     }
   },
-  dest: 'docs',
-  public: path.resolve(__dirname, '../public'),
+  dest: path.resolve(__dirname, '../../docs'),
+  public: path.resolve(__dirname, '../../public'),
   temp: path.resolve(__dirname, '.temp'),
   cache: path.resolve(__dirname, '.cache'),
   head: [
