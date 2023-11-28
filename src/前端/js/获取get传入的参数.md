@@ -10,12 +10,24 @@ tags:
 
 ## 实现方法
 
+::: tip 2023/11/27 更新
+优先使用 `原生支持` 的方法
+:::
+
 主要是基于 `window.location.search` 变量
 返回内容 `'?from=1&to=3&date=2022-12-06&class=2&passengers=2'`
 所以需要截掉`?`
 可以使用`window.location.search.substring(1)`来实现
 
-## 获取指定参数方法
+### 原生实现
+[MDN文档](https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams)
+~~~ js
+const urlParams = new URLSearchParams(location.search)
+// 需要获取指定的参数就只需要 ↓
+urlParams.get('id')
+~~~
+
+### 获取指定参数方法
 
 ```js
 function getQueryVariable(variable) {
@@ -29,7 +41,7 @@ function getQueryVariable(variable) {
 }
 ```
 
-## 获取所有参数
+### 获取所有参数
 
 ```js
 function getAllQueryVariable() {
