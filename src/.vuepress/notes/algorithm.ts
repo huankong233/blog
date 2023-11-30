@@ -14,7 +14,7 @@ export default definePlumeNotesItemConfig({
     {
       text: '数据结构',
       dir: '2.数据结构',
-      items: ['数组', '栈', '队列结构', '优先级队列', '链表']
+      items: ['数组', '栈', '队列结构', '优先级队列', '单向链表', '双向链表']
     },
     {
       text: '排序算法',
