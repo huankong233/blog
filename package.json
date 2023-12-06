@@ -6,7 +6,7 @@
   "type": "module",
   "packageManager": "pnpm@8.11.0",
   "scripts": {
-    "dev": "nodemon -x pnpm run serve",
+    "dev": "pnpm run serve",
     "serve": "vuepress dev src --clean-cache --clean-temp",
     "build": "vuepress build src --clean-cache --clean-temp",
     "preview": "anywhere -s -h localhost -d docs"
