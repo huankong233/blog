@@ -8,6 +8,50 @@ article: false
 
 ## 编写的开源项目
 
+### 94list-laravel
+
+![stars](https://img.shields.io/github/stars/huankong233/94list-laravel?style=social)
+
+仓库地址: [94list-laravel](https://github.com/huankong233/94list-laravel)
+
+**说明：**
+
+一个简单的 `baidupan` `解析` 实现
+
+使用 `laravel` 编写
+
+---
+
+### balogo-ts
+
+![stars](https://img.shields.io/github/stars/huankong233/balogo-ts?style=social)
+
+仓库地址: [balogo-ts](https://github.com/huankong233/balogo-ts)
+
+**说明：**
+
+一个简单的 `BlueArchive` `Logo` 实现
+
+使用 `typescript` 编写
+
+---
+
+### kkbot-ts
+
+![stars](https://img.shields.io/github/stars/huankong233/kkbot-ts?style=social)
+
+仓库地址: [kkbot-ts](https://github.com/huankong233/kkbot-ts)
+
+**说明：**
+
+一个简单的 `QQBot` 实现框架
+
+支持添加插件等实用功能
+
+使用 `typescript` 编写
+
+---
+
 ### kkbot
 
 ![stars](https://img.shields.io/github/stars/huankong233/kkbot?style=social)
@@ -16,9 +60,11 @@ article: false
 
 **说明：**
 
-一个简单的 QQBot 实现框架
+一个简单的 `QQBot` 实现框架
 
 支持添加插件等实用功能
+
+停止开发
 
 ---
 
@@ -76,6 +122,18 @@ article: false
 
 ---
 
+### parseExcel
+
+![stars](https://img.shields.io/github/stars/huankong233/parseExcel?style=social)
+
+仓库地址: [parseExcel](https://github.com/huankong233/parseExcel)
+
+**说明：**
+
+脚本中 `parseExcel` 的 `vue` 版
+
+---
+
 ### LiteLoaderQQNT-HK-Theme
 
 ![stars](https://img.shields.io/github/stars/huankong233/LiteLoaderQQNT-HK-Theme?style=social)
@@ -98,14 +156,3 @@ article: false
 
 用于独角数码添加对加密货币交易平台 [NOWPayments](https://nowpayments.io/) 支持的插件
 
----
-
-### dujiaoka-theme-huankong
-
-![stars](https://img.shields.io/github/stars/huankong233/dujiaoka-theme-huankong?style=social)
-
-仓库地址: [dujiaoka-theme-huankong](https://github.com/huankong233/dujiaoka-theme-huankong)
-
-**说明：**
-
-一个简易的 [dujiaoka](https://github.com/assimon/dujiaoka) 主题
