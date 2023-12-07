@@ -1,5 +1,6 @@
 import { definePlumeNotesConfig } from '@vuepress-plume/vuepress-theme-plume'
-import kkbot from './kkbot'
+import kkbotJs from './kkbot-js'
+import kkbotTs from './kkbot-ts'
 import pinia from './pinia'
 import rust from './rust'
 import algorithm from './algorithm'
@@ -7,5 +8,5 @@ import algorithm from './algorithm'
 export default definePlumeNotesConfig({
   dir: 'note',
   link: '/note',
-  notes: [kkbot, pinia, rust, algorithm]
+  notes: [kkbotJs, kkbotTs, pinia, rust, algorithm]
 })

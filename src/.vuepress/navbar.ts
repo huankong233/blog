@@ -20,10 +20,16 @@ export default [
     icon: 'mdi:idea',
     items: [
       {
-        text: 'kkbot',
+        text: 'kkbot-js',
         icon: 'fluent:bot-24-regular',
-        link: '/note/kkbot',
-        activeMatch: '/note/kkbot'
+        link: '/note/kkbot-js',
+        activeMatch: '/note/kkbot-js'
+      },
+      {
+        text: 'kkbot-ts',
+        icon: 'fluent:bot-24-regular',
+        link: '/note/kkbot-ts',
+        activeMatch: '/note/kkbot-ts'
       }
     ]
   },
