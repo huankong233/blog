@@ -138,16 +138,3 @@ class LinkedList {
     return result.join(' -> ')
   }
 }
-
-const list = new LinkedList()
-// list.append(1)
-// list.append(2)
-// list.append('123')
-// list.append('abc')
-// list.insert(1, 0)
-// console.log(list.toString())
-// console.log(list.indexOf('123'))
-// console.log(list.update(1, '1234'))
-// console.log(list.toString())
-console.log(list.removeAt(1))
-console.log(list.toString())

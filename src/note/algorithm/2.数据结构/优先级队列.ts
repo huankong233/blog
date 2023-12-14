@@ -47,9 +47,3 @@ class proiorityQueue {
     return JSON.stringify(this.#value)
   }
 }
-
-const pq = new proiorityQueue()
-pq.enqueue('a', 1)
-pq.enqueue('abc', 122)
-pq.enqueue('acc', 10)
-console.log(pq.toString())

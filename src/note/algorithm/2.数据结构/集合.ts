@@ -81,11 +81,3 @@ class Set {
     return true
   }
 }
-
-const set = new Set()
-set.add(123)
-const set2 = new Set()
-set2.add(12322)
-set2.add(12323)
-set2.add(123)
-console.log(set2.subSet(set))

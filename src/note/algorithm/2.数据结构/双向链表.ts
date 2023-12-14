@@ -3,7 +3,7 @@
  */
 const isNegativeZero = (num: number) => num === 0 && 1 / num < 0
 
-class Node {
+export class Node {
   #value: any
   #next: Node | null
   #prev: Node | null
@@ -42,7 +42,7 @@ class Node {
   }
 }
 
-class DoublyLinkedList {
+export class DoublyLinkedList {
   #head: Node = null
   #tail: Node = null
   #length = 0
@@ -150,6 +150,17 @@ class DoublyLinkedList {
     return -1
   }
 
+  indexOfName(name: any) {
+    let current = this.#head
+
+    for (let i = 0; i < this.#length; i++) {
+      if (current.getValue()[0] === name) return i
+      current = current.getNext()
+    }
+
+    return -1
+  }
+
   update(index: number, value: any) {
     const current = this.#getNode(index)
     current.setValue(value)
@@ -190,7 +201,7 @@ class DoublyLinkedList {
 
     this.#length--
 
-    return value
+    return true
   }
 
   isEmpty() {
@@ -213,19 +224,3 @@ class DoublyLinkedList {
     return result.join(` ${direction} `)
   }
 }
-
-const list = new DoublyLinkedList()
-list.append(1)
-list.append(10)
-list.append(6)
-list.append(5)
-list.append(7)
-list.append(4)
-list.insert(2, 0)
-console.log(list.toString('->'))
-console.log(list.toString('<-'))
-console.log(list.removeAt(list.size() - 1))
-console.log(list.toString('->'))
-console.log(list.toString('<-'))
-console.log(list.get(0))
-console.log(list.get(-0))

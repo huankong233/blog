@@ -43,6 +43,3 @@ function passGame(nameList: string[], num = 5) {
 
   return queue
 }
-
-const queue = passGame(['Lily', 'Luck', 'TOM', 'LiLei', 'WangWu'], 3)
-console.log(queue.toString())
