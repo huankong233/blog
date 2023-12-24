@@ -23,7 +23,9 @@ export default definePlumeNotesItemConfig({
         '双向链表',
         '集合',
         '字典',
-        '哈希表'
+        '哈希表',
+        '树',
+        '二叉树'
       ]
     },
     {

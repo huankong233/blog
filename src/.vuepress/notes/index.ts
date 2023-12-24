@@ -4,9 +4,10 @@ import kkbotTs from './kkbot-ts'
 import pinia from './pinia'
 import rust from './rust'
 import algorithm from './algorithm'
+import c from './c'
 
 export default definePlumeNotesConfig({
   dir: 'note',
   link: '/note',
-  notes: [kkbotJs, kkbotTs, pinia, rust, algorithm]
+  notes: [kkbotJs, kkbotTs, pinia, rust, algorithm, c]
 })

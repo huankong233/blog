@@ -50,9 +50,15 @@ export default [
         activeMatch: '/note/rust'
       },
       {
+        text: 'c',
+        link: '/note/c',
+        icon: 'logos:c',
+        activeMatch: '/note/c'
+      },
+      {
         text: '数据结构和算法',
         link: '/note/algorithm',
-        icon: 'bx:math',
+        icon: 'arcticons:algorithms',
         activeMatch: '/note/algorithm'
       }
     ]
