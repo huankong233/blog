@@ -3,6 +3,9 @@ title: 批量删除图片EXIF信息
 author: huan_kong
 createTime: 2023/07/13 17:01:49
 permalink: /article/oykh4xy0/
+tags: 
+  - 电脑
+  - linux
 ---
 
 ## 安装
