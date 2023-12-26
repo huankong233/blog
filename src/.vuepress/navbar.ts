@@ -1,4 +1,4 @@
-import { NavItem } from '@vuepress-plume/vuepress-theme-plume'
+import type { NavItem } from 'vuepress-theme-plume'
 
 export default [
   { text: '首页', icon: 'material-symbols:home', link: '/' },

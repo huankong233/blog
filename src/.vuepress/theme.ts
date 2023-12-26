@@ -1,6 +1,6 @@
-import { plumeTheme } from '@vuepress-plume/vuepress-theme-plume'
-import navbar from './navbar'
+import { plumeTheme } from 'vuepress-theme-plume'
 import notes from './notes'
+import navbar from './navbar'
 
 export default plumeTheme({
   logo: 'https://img.huankong.top/i/2022/11/29/6385ef8c7a675.ico',
@@ -18,17 +18,73 @@ export default plumeTheme({
     copyright:
       'Proudly written with <a href="https://github.com/vuepress/vuepress-next">VuePress Next</a> and <a href="https://github.com/pengzhanbo/vuepress-theme-plume">vuepress-theme-plume theme</a>.<br>Copyright © 2020-present <a href="https://huankong.top">huan_kong</a>'
   },
+  outlineLabel: '内容大纲',
+  returnToTopLabel: '返回顶部',
+  contributors: false,
+  editLink: true,
+  editLinkText: '在 GitHub 上编辑此页',
+  lastUpdatedText: '上次更新',
+  docsDir: 'src',
   themePlugins: {
-    shiki: {
-      theme: 'one-dark-pro'
+    externalLinkIcon: false,
+    shikiji: {
+      theme: { light: 'vitesse-light', dark: 'vitesse-dark' }
     },
     markdownEnhance: {
       katex: true
     },
-    search: {
+    // search: {
+    //   locales: {
+    //     '/': {
+    //       placeholder: '搜索'
+    //     }
+    //   }
+    // },
+    docsearch: {
+      appId: 'U198Y5GBFG',
+      apiKey: 'ba76b60a3135b6bf81cec20978b2df31',
+      indexName: 'huankong',
       locales: {
         '/': {
-          placeholder: '搜索'
+          placeholder: '搜索文档',
+          translations: {
+            button: {
+              buttonText: '搜索文档',
+              buttonAriaLabel: '搜索文档'
+            },
+            modal: {
+              searchBox: {
+                resetButtonTitle: '清除查询条件',
+                resetButtonAriaLabel: '清除查询条件',
+                cancelButtonText: '取消',
+                cancelButtonAriaLabel: '取消'
+              },
+              startScreen: {
+                recentSearchesTitle: '搜索历史',
+                noRecentSearchesText: '没有搜索历史',
+                saveRecentSearchButtonTitle: '保存至搜索历史',
+                removeRecentSearchButtonTitle: '从搜索历史中移除',
+                favoriteSearchesTitle: '收藏',
+                removeFavoriteSearchButtonTitle: '从收藏中移除'
+              },
+              errorScreen: {
+                titleText: '无法获取结果',
+                helpText: '你可能需要检查你的网络连接'
+              },
+              footer: {
+                selectText: '选择',
+                navigateText: '切换',
+                closeText: '关闭',
+                searchByText: '搜索提供者'
+              },
+              noResultsScreen: {
+                noResultsText: '无法找到相关结果',
+                suggestedQueryText: '你可以尝试查询',
+                reportMissingResultsText: '你认为该查询应该有结果？',
+                reportMissingResultsLinkText: '点击反馈'
+              }
+            }
+          }
         }
       }
     },
@@ -39,7 +95,9 @@ export default plumeTheme({
       repoId: 'R_kgDOI84cvQ',
       category: 'Announcements',
       categoryId: 'DIC_kwDOI84cvc4CUo2w',
-      mapping: 'title'
+      mapping: 'title',
+      reactionsEnabled: true,
+      inputPosition: 'top'
     },
     frontmatter: {
       include: ['**/*.{md,MD}'],

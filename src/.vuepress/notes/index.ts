@@ -1,4 +1,4 @@
-import { definePlumeNotesConfig } from '@vuepress-plume/vuepress-theme-plume'
+import { definePlumeNotesConfig } from 'vuepress-theme-plume'
 import kkbotJs from './kkbot-js'
 import kkbotTs from './kkbot-ts'
 import pinia from './pinia'
