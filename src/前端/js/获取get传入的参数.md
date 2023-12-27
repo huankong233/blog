@@ -16,8 +16,8 @@ tags:
 
 主要是基于 `window.location.search` 变量
 返回内容 `'?from=1&to=3&date=2022-12-06&class=2&passengers=2'`
-所以需要截掉`?`
-可以使用`window.location.search.substring(1)`来实现
+所以需要截掉 `?`
+可以使用 `window.location.search.substring(1)` 来实现
 
 ### 原生实现
 [MDN文档](https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams)

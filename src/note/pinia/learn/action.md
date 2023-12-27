@@ -5,7 +5,7 @@ createTime: 2023/07/02 09:10:08
 permalink: /note/pinia/learn/action/
 ---
 
-## 4.使用 `action`
+## 使用 `action`
 
 ```typescript
 // store.ts

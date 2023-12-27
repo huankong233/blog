@@ -14,7 +14,7 @@ article: false
 
 仓库地址: [94list-laravel](https://github.com/huankong233/94list-laravel)
 
-**说明：**
+**说明: **
 
 一个简单的 `baidupan` `解析` 实现
 
@@ -28,7 +28,7 @@ article: false
 
 仓库地址: [balogo-ts](https://github.com/huankong233/balogo-ts)
 
-**说明：**
+**说明: **
 
 一个简单的 `BlueArchive` `Logo` 实现
 
@@ -42,7 +42,7 @@ article: false
 
 仓库地址: [kkbot-ts](https://github.com/huankong233/kkbot-ts)
 
-**说明：**
+**说明: **
 
 一个简单的 `QQBot` 实现框架
 
@@ -58,7 +58,7 @@ article: false
 
 仓库地址: [kkbot](https://github.com/huankong233/kkbot)
 
-**说明：**
+**说明: **
 
 一个简单的 `QQBot` 实现框架
 
@@ -76,11 +76,11 @@ article: false
 
 仓库地址: [ImageSearcher-ts](https://github.com/huankong233/ImageSearcher-ts) [ImageSearcher](https://github.com/huankong233/ImageSearcher)
 
-**说明：**
+**说明: **
 
 用于提供给 `kkbot` 中的搜图功能
 
-新版已用 `ts` 重写，原 `js` 版本已弃用
+新版已用 `ts` 重写, 原 `js` 版本已弃用
 
 ---
 
@@ -90,7 +90,7 @@ article: false
 
 仓库地址: [lanzou_url](https://github.com/huankong233/lanzou_url)
 
-**说明：**
+**说明: **
 
 一个使用 `php` 编写的解析程序
 
@@ -104,7 +104,7 @@ article: false
 
 仓库地址: [ChatSydney-FastAPI](https://github.com/huankong233/ChatSydney-FastAPI)
 
-**说明：**
+**说明: **
 
 一个快捷的 `ChatSydney` 的 `Api` 实现
 
@@ -116,7 +116,7 @@ article: false
 
 仓库地址: [scripts](https://github.com/huankong233/scripts)
 
-**说明：**
+**说明: **
 
 整合了一些我平时会用的脚本
 
@@ -128,7 +128,7 @@ article: false
 
 仓库地址: [parseExcel](https://github.com/huankong233/parseExcel)
 
-**说明：**
+**说明: **
 
 脚本中 `parseExcel` 的 `vue` 版
 
@@ -140,7 +140,7 @@ article: false
 
 仓库地址: [LiteLoaderQQNT-HK-Theme](https://github.com/huankong233/LiteLoaderQQNT-HK-Theme)
 
-**说明：**
+**说明: **
 
 一个简易的 [LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT) 主题
 
@@ -152,7 +152,7 @@ article: false
 
 仓库地址: [NOWPayments](https://github.com/huankong233/NOWPayments)
 
-**说明：**
+**说明: **
 
 用于独角数码添加对加密货币交易平台 [NOWPayments](https://nowpayments.io/) 支持的插件
 

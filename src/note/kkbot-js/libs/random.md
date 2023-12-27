@@ -11,7 +11,7 @@ permalink: /note/kkbot-js/libs/random
 
 函数名: `getRangeCode`
 
-函数参数：
+函数参数: 
 
 | 字段  | 类型     | 说明                 | 默认值 |
 | ----- | -------- | -------------------- | ------ |
@@ -21,7 +21,7 @@ permalink: /note/kkbot-js/libs/random
 
 函数名: `randomInt`
 
-函数参数：
+函数参数: 
 
 | 字段  | 类型     | 说明       | 默认值 |
 | ----- | -------- | ---------- | ------ |
@@ -32,7 +32,7 @@ permalink: /note/kkbot-js/libs/random
 
 函数名: `randomFloat`
 
-函数参数：
+函数参数: 
 
 | 字段  | 类型     | 说明       | 默认值 |
 | ----- | -------- | ---------- | ------ |

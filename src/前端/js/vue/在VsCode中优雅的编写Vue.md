@@ -17,17 +17,17 @@ tags:
 
 然后再安装 `Aya Vue3 extension Pack` 插件包
 
-## 二、配置 settings.json 信息
+## 二、配置 `settings.json` 信息
 
-File->Preference->Settings
+`File->Preference->Settings`
 
 ![1669807448318.png](https://img.huankong.top/i/2022/11/30/63873d59e324b.png)
-现在看到的是界面配置模式，点击右上角的大括号（如下图），可以打开 settings.json 文件。
+现在看到的是界面配置模式, 点击右上角的大括号 ( 如下图 ), 可以打开 `settings.json` 文件。
 
 ![1669807475068.png](https://img.huankong.top/i/2022/11/30/63873d748d015.png)
-粘贴以下代码（可以自行修改），保存即可
+粘贴以下代码 ( 可以自行修改 ) , 保存即可
 
-代码：
+代码: 
 
 ```json
 {
@@ -78,11 +78,11 @@ File->Preference->Settings
     "prettier": {
       "singleQuote": true,
       "semi": false, // 使用分号, 默认true
-      "useTabs": false, // 使用tab缩进，默认false
+      "useTabs": false, // 使用tab缩进, 默认false
       "tabWidth": 2, // tab缩进大小,默认为4或2
-      "arrowParens": "avoid", // 箭头函数参数括号 默认avoid。avoid 能省略括号的时候就省略 例如x => x，always 总是有括号
-      "bracketSpacing": true, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
-      "printWidth": 100, // 一行的字符数，如果超过会进行换行，默认为80
+      "arrowParens": "avoid", // 箭头函数参数括号 默认avoid。avoid 能省略括号的时候就省略 例如x => x, always 总是有括号
+      "bracketSpacing": true, // 在对象, 数组括号与文字之间加空格 "{ foo: bar }"
+      "printWidth": 100, // 一行的字符数, 如果超过会进行换行, 默认为80
       "trailingComma": "none", // 去掉末尾的逗号
       "insertSpaceBeforeFunctionParenthesis": false
     }
@@ -107,7 +107,7 @@ File->Preference->Settings
   "explorer.confirmDelete": false,
   // liveServer隐藏详情
   "liveServer.settings.donotShowInfoMsg": true,
-  // 在没有从上一会话中恢复出信息的情况下，在启动时不打开编辑器。
+  // 在没有从上一会话中恢复出信息的情况下, 在启动时不打开编辑器。
   "workbench.startupEditor": "none",
   // 信任所有文件
   "security.workspace.trust.untrustedFiles": "open",

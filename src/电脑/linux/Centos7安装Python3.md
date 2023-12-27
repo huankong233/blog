@@ -8,17 +8,15 @@ tags:
   - linux
 ---
 
-大大降低了我对 `centos` 的好感度,转头就投奔了 `debian`
-
-<!-- more -->
-
 ## 1.安装 python 依赖
 
 ```sh
 yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel
 ```
 
-## 2.下载源码包(3.9.9 为版本，可以自行修改，[版本列表](https://www.python.org/ftp/python))
+## 2.下载源码包
+
+`3.9.9` 为版本, 可以自行修改 [版本列表](https://www.python.org/ftp/python)
 
 ```sh
 wget https://www.python.org/ftp/python/3.9.9/Python-3.9.9.tgz

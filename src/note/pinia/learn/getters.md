@@ -5,9 +5,9 @@ createTime: 2023/07/02 09:10:22
 permalink: /note/pinia/learn/getters/
 ---
 
-## 4.如何使用 `Getters`
+## 如何使用 `Getters`
 
-`Getters` 自带缓存功能，不会重复调用
+`Getters` 自带缓存功能, 不会重复调用
 
 ```typescript
 export const useMainStore = defineStore('main', {
@@ -31,4 +31,4 @@ export const useMainStore = defineStore('main', {
 
 其中传入的 `state` 是可选参数
 
-虽然可以用 `this` 替换，但是会影响 `ts` 的类型判断，需要手动指定数据类型，不推荐使用
+虽然可以用 `this` 替换, 但是会影响 `ts` 的类型判断, 需要手动指定数据类型, 不推荐使用

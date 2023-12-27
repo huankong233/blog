@@ -1,11 +1,11 @@
 {
   "name": "blog",
-  "version": "1.0.0",
-  "description": "blog",
-  "private": true,
   "type": "module",
+  "version": "1.0.0",
+  "private": true,
   "packageManager": "pnpm@8.12.1",
-  "author": "huan_kong",
+  "description": "",
+  "author": "huankong",
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev src --clean-cache --clean-temp",
@@ -13,7 +13,6 @@
     "preview": "anywhere -s -h localhost -d docs"
   },
   "dependencies": {
-    "vuepress-theme-plume": "1.0.0-rc.5",
     "@vuepress/client": "2.0.0-rc.0",
     "@vuepress/plugin-google-analytics": "2.0.0-rc.0",
     "@vuepress/plugin-pwa": "2.0.0-rc.0",
@@ -21,10 +20,11 @@
     "anywhere": "^1.6.0",
     "katex": "^0.16.9",
     "vue": "^3.3.13",
-    "vuepress": "2.0.0-rc.0"
+    "vuepress": "2.0.0-rc.0",
+    "vuepress-theme-plume": "1.0.0-rc.5"
   },
   "devDependencies": {
-    "@types/node": "^18.17.0",
+    "@types/node": "^20.10.5",
     "typescript": "^5.3.3"
   },
   "pnpm": {

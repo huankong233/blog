@@ -11,7 +11,7 @@ permalink: /note/kkbot-js/libs/getDirName
 
 函数名: `getDirName`
 
-函数参数：
+函数参数: 
 
 | 字段            | 类型     | 说明                             | 默认值      |
 | --------------- | -------- | -------------------------------- | ----------- |
@@ -21,7 +21,7 @@ permalink: /note/kkbot-js/libs/getDirName
 
 函数名: `getBaseDir`
 
-函数参数：
+函数参数: 
 
 | 字段 | 类型 | 说明 | 默认值 |
 | ---- | ---- | ---- | ------ |

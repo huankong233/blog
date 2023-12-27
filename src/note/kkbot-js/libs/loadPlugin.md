@@ -11,7 +11,7 @@ permalink: /note/kkbot-js/libs/loadPlugin
 
 函数名: `loadPlugin`
 
-函数参数：
+函数参数: 
 
 | 字段         | 类型   | 说明         | 默认值      |
 | ------------ | ------ | ------------ | ----------- |
@@ -22,7 +22,7 @@ permalink: /note/kkbot-js/libs/loadPlugin
 
 函数名: `loadPlugins`
 
-函数参数：
+函数参数: 
 
 | 字段        | 类型     | 说明         | 默认值      |
 | ----------- | -------- | ------------ | ----------- |
@@ -33,7 +33,7 @@ permalink: /note/kkbot-js/libs/loadPlugin
 
 函数名: `loadPluginDir`
 
-函数参数：
+函数参数: 
 
 | 字段        | 类型     | 说明       | 默认值      |
 | ----------- | -------- | ---------- | ----------- |

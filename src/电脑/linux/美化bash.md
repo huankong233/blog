@@ -8,7 +8,7 @@ tags:
   - linux
 ---
 
-## 1.安装 zsh
+## 1.安装 `zsh`
 
 ```bash
 sudo pacman -S zsh
@@ -20,7 +20,7 @@ sudo pacman -S zsh
 chsh -s /bin/zsh
 ```
 
-## 3.安装 oh-my-zsh
+## 3.安装 `oh-my-zsh`
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -28,15 +28,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ## 4.字体问题
 
-在一些情况下，我们的终端现在会出现一些奇怪的`?`或者不认识的字符
-这可能是因为字符集或字体不兼容导致的，我们可以这样来修复
+在一些情况下, 我们的终端现在会出现一些奇怪的 `?` 或者不认识的字符
+这可能是因为字符集或字体不兼容导致的, 我们可以这样来修复
 
 ### 1.字符编码
 
 我们首先需要确定我们的字符编码没有出现问题
 
-运行`locale`，检查他的输出，通常应该如下显示，如果有所不同，请务必修改一下，
-确保没有问题，如果后面没问题可以再改掉，关于如何修改请自行搜索
+运行 `locale` , 检查他的输出, 通常应该如下显示, 如果有所不同, 请务必修改一下, 
+确保没有问题, 如果后面没问题可以再改掉, 关于如何修改请自行搜索
 
 ```bash
 $ locale
@@ -59,9 +59,9 @@ LC_ALL=
 
 ### 2.字体
 
-一般情况下我们都没有所需的对应字体，我们需要手动来进行安装
+一般情况下我们都没有所需的对应字体, 我们需要手动来进行安装
 
-#### 1.安装`powerline`字体
+#### 1.安装 `powerline` 字体
 
 ```bash
 # clone
@@ -74,7 +74,7 @@ cd ..
 rm -rf fonts
 ```
 
-#### 2.安装`Nerd Font`字体
+#### 2.安装 `Nerd Font` 字体
 
 ```bash
 nano ~/.zshrc
@@ -83,21 +83,21 @@ cd ~/.local/share/fonts
 curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
 ```
 
-#### 3.给 ssh 端安装
+#### 3.给 `ssh` 端安装
 
-如果你是远程连接的服务器，请给本地电脑也安装一下字体，然后在虚拟终端中选中所用的字体
+如果你是远程连接的服务器, 请给本地电脑也安装一下字体, 然后在虚拟终端中选中所用的字体
 [安装教程](https://github.com/romkatv/powerlevel10k#manual-font-installation)
 
 #### 4.重启终端
 
-安装完成后尝试`exec zsh`，看看乱码有没有消失，
+安装完成后尝试 `exec zsh` ,看看乱码有没有消失, 
 如果没有消失重启试试看
 
 ## 5.颜色问题
 
-在一些情况下我们可能需要手动配置终端的颜色设置，如果不设置就会丢失一部分好看的样式
+在一些情况下我们可能需要手动配置终端的颜色设置, 如果不设置就会丢失一部分好看的样式
 
-我们可以把这段代码插入到`~/.zshrc`文件的末尾
+我们可以把这段代码插入到 `~/.zshrc` 文件的末尾
 
 ```bash
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
@@ -107,19 +107,18 @@ else
 fi
 ```
 
-保存完成后，然后重新`source .zshrc`一下
+保存完成后, 然后重新 `source .zshrc` 一下
 
-## 5.安装 powerlevel10k
+## 5.安装 `powerlevel10k`
 
 ```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 
-安装完成后运行`source .zshrc`即可进入配置模式
+安装完成后运行 `source .zshrc` 即可进入配置模式
 
-如果需要重新配置`powerlevel10k`
-运行`p10k configure`即可重新进入配置向导
+如果需要重新配置 `powerlevel10k` 运行 `p10k configure` 即可重新进入配置向导
 
 ## 6.安装插件
 

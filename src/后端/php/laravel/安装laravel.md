@@ -11,35 +11,35 @@ tags:
 
 ## 安装
 
-官方推荐使用[docker 安装](#_1-2docker)
+官方推荐使用[docker 安装](#使用composer)
 
-我推荐使用[composer 安装](#_1-1composer)
+我推荐使用[composer 安装](#使用docker)
 
-### Composer
+## 使用Composer
 
-#### 安装 Composer
+### 安装Composer
 
-`Windows`推荐使用[安装器](https://dl.huankong.top/OneDrive/常用软件备份/常用工具/Composer-Setup.exe)
+`Windows` 推荐使用 [安装器](https://dl.huankong.top/OneDrive/常用软件备份/常用工具/Composer-Setup.exe) 
 
-`Linux/Mac`需要按照[官方](https://pkg.phpcomposer.com/#how-to-install-composer)的安装方法安装
+`Linux/Mac` 需要按照 [官方](https://pkg.phpcomposer.com/#how-to-install-composer) 的安装方法安装
 
-#### 安装 Laravel
+### 安装Laravel
 
-通过 Composer 安装 Laravel 安装器：
+通过 `Composer` 安装 `Laravel` 安装器: 
 
 ```bash
 composer global require "laravel/installer"
 ```
 
-安装完成后，通过简单的  `laravel new`  命令即可在当前目录下创建一个新的 Laravel 应用。
+安装完成后, 通过简单的 `laravel new` 命令即可在当前目录下创建一个新的 `Laravel` 应用。
 
-例如，`laravel new blog`  将会创建一个名为  `blog`  的新应用，且包含所有  Laravel 依赖。
+例如, `laravel new blog` 将会创建一个名为 `blog` 的新应用, 且包含所有 `Laravel` 依赖。
 
-### Docker
+## 使用Docker
 
 ::: tip
-需要[安装`wsl2`环境](https://zhuanlan.zhihu.com/p/386590591)
-并且安装完成 docker 环境
+需要[安装wsl2环境](https://zhuanlan.zhihu.com/p/386590591)
+并且安装完成 `docker` 环境
 :::
 
 终端运行

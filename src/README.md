@@ -7,7 +7,7 @@ bannerMask:
 hero: 
   name: huan_kong
   tagline: Front End Developer
-  text: 早该疯疯了
+  text: 幸福的人用童年治愈一生，不幸的人用一生治愈童年。
   actions: 
     - 
       text: 我的博客

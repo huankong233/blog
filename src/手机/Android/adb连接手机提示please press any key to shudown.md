@@ -9,10 +9,14 @@ tags:
 ---
 
 ![1669790988977.jpg](https://img.huankong.top/i/2022/11/30/6386fd0f492bc.jpg)
-安卓手机打开 fb，链接电脑，跳到 please press any key to shutdown
+
+安卓手机进入 `fastboot`, 链接电脑, 跳出 `please press any key to shutdown`
+
 这个时候咱们不用慌
-在电脑上创建一个 bat 文件
-内容为：
+
+在电脑上创建一个 `bat` 文件
+
+内容为: 
 
 ```batch
 @echo off
@@ -22,4 +26,4 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbflags\18D1D00D01
 pause
 ```
 
-并使用管理员模式运行，重新链接手机即可~
+并使用管理员模式运行, 重新链接手机即可~
