@@ -82,7 +82,7 @@ Conda activate 环境名
 
 ![1669809014781.png](https://img.huankong.top/i/2022/11/30/638743784806f.png)
 
-选择属性, 找到高级设置（windowns 版本不同位置不同）
+选择属性, 找到高级设置 ( windowns 版本不同位置不同 ) 
 
 ![1669809033483.png](https://img.huankong.top/i/2022/11/30/6387438bd5e0f.png)
 ![1669809047182.png](https://img.huankong.top/i/2022/11/30/63874397eb711.png)
@@ -145,7 +145,7 @@ pip install webrtcvad-wheels
 
 进入 `synthesizer` 文件夹, 创建名称为 `saved_models` 的文件夹。
 
-下载模型文件（文件来自[B 站视频](https://www.bilibili.com/video/BV1DL4y1q7VL)）
+下载模型文件 ( 文件来自[B 站视频](https://www.bilibili.com/video/BV1DL4y1q7VL) ) 
 
 [下载链接](https://x5cxfh7xs6.feishu.cn/file/boxcnk9Fzkx2yV6lqkPTZVikFif)
 

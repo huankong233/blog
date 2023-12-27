@@ -11,13 +11,13 @@ tags:
   - ide
 ---
 
-## 一、安装插件
+## 1.安装插件
 
 ![1669807355203.png](https://img.huankong.top/i/2022/11/30/63873cfc639dc.png)
 
 然后再安装 `Aya Vue3 extension Pack` 插件包
 
-## 二、配置 `settings.json` 信息
+## 2.配置 `settings.json` 信息
 
 `File->Preference->Settings`
 
@@ -35,7 +35,7 @@ tags:
   "editor.detectIndentation": false,
   // 重新设定tabsize
   "editor.tabSize": 2,
-  // 每次保存的时候自动格式化；
+  // 每次保存的时候自动格式化
   "editor.formatOnSave": true,
   // 每次保存的时候将代码按eslint格式进行修复
   "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
