@@ -8,7 +8,6 @@ tags:
   - js
   - vue
   - vscode
-  - ide
 ---
 
 ## 1.安装插件
