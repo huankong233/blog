@@ -58,7 +58,7 @@ Conda activate 环境名
 
 你如果选择了 `CUDA` , 那你就有必要进行一下 `CUDA` 的安装了
 
-[视频教程](https://www.bilibili.com/video/BV1q54y1y7Mf) [文字教程](/article/0fl508ok/)
+[视频教程](https://www.bilibili.com/video/BV1q54y1y7Mf) [文字教程](./安装CUDA.md)
 
 ![1669808892356.png](https://img.huankong.top/i/2022/11/30/638742fdec0aa.png)
 

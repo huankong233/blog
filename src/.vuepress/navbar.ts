@@ -33,48 +33,50 @@ export default [
   {
     text: '技术文档',
     icon: 'mdi:idea',
+    activeMatch: '/note/(kkbot-js|kkbot-ts)/*',
     items: [
       {
         text: 'kkbot-js',
         icon: 'fluent:bot-24-regular',
         link: '/note/kkbot-js',
-        activeMatch: '/note/kkbot-js'
+        activeMatch: '/note/kkbot-js/*'
       },
       {
         text: 'kkbot-ts',
         icon: 'fluent:bot-24-regular',
         link: '/note/kkbot-ts',
-        activeMatch: '/note/kkbot-ts'
+        activeMatch: '/note/kkbot-ts/*'
       }
     ]
   },
   {
     text: '笔记',
     icon: 'icon-park-solid:bookshelf',
+    activeMatch: '/note/(pinia|rust|c|algorithm)/*',
     items: [
       {
         text: 'pinia',
         link: '/note/pinia',
         icon: 'logos:pinia',
-        activeMatch: '/note/pinia'
+        activeMatch: '/note/pinia/*'
       },
       {
         text: 'rust',
         link: '/note/rust',
         icon: 'logos:rust',
-        activeMatch: '/note/rust'
+        activeMatch: '/note/rust/*'
       },
       {
         text: 'c',
         link: '/note/c',
         icon: 'logos:c',
-        activeMatch: '/note/c'
+        activeMatch: '/note/c/*'
       },
       {
         text: '数据结构和算法',
         link: '/note/algorithm',
         icon: 'arcticons:algorithms',
-        activeMatch: '/note/algorithm'
+        activeMatch: '/note/algorithm/*'
       }
     ]
   }

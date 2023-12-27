@@ -7,7 +7,7 @@ permalink: /note/kkbot-js
 
 ::: tip
 `v0.1` 之前的版本都弃用!请更新至最新版!
-请查看 [`kkbot-ts`](./kkbot-ts)
+请查看 [`kkbot-ts`](../kkbot-ts/README.md)
 :::
 
 这就是个简单的 QQ 机器人的框架 ( 我说的 ) 实现

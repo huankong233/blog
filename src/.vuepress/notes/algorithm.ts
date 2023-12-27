@@ -25,7 +25,8 @@ export default definePlumeNotesItemConfig({
         '字典',
         '哈希表',
         '树',
-        '二叉树'
+        '二叉树',
+        '二叉搜索树'
       ]
     },
     {
