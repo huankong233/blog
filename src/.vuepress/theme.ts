@@ -15,8 +15,7 @@ export default plumeTheme({
   navbar,
   notes,
   footer: {
-    copyright:
-      'Proudly written with <a href="https://github.com/vuepress/vuepress-next">VuePress Next</a> and <a href="https://github.com/pengzhanbo/vuepress-theme-plume">vuepress-theme-plume theme</a>.<br>Copyright © 2020-present <a href="https://huankong.top">huan_kong</a>'
+    copyright: 'Copyright © 2020-present <a href="https://huankong.top">huan_kong</a>'
   },
   outlineLabel: '内容大纲',
   returnToTopLabel: '返回顶部',

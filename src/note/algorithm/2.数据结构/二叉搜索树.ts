@@ -35,11 +35,7 @@ class BinarySearchTreeNode {
 }
 
 class BinarySearchTree {
-  #root: BinarySearchTreeNode
-
-  constructor() {
-    this.#root = null
-  }
+  #root: BinarySearchTreeNode = null
 
   insert(key: number) {
     const newNode = new BinarySearchTreeNode(key)
@@ -68,45 +64,42 @@ class BinarySearchTree {
   }
 
   // 先序遍历
-  prevOrderTraversal() {
-    const result = []
-    this.#prevOrderTraversalNode(this.#root, result)
-    return result
+  preOrderTraversal(handler: (node: BinarySearchTreeNode) => any) {
+    this.#preOrderTraversalNode(this.#root, handler)
   }
 
-  #prevOrderTraversalNode(node: BinarySearchTreeNode, result: number[]) {
+  #preOrderTraversalNode(node: BinarySearchTreeNode, handler: (node: BinarySearchTreeNode) => any) {
     if (node === null) return
-    result.push(node.getKey())
-    this.#prevOrderTraversalNode(node.getLeft(), result)
-    this.#prevOrderTraversalNode(node.getRight(), result)
+    handler(node)
+    this.#preOrderTraversalNode(node.getLeft(), handler)
+    this.#preOrderTraversalNode(node.getRight(), handler)
   }
 
   // 中序遍历
-  inOrderTraversal() {
-    const result = []
-    this.#inOrderTraversalNode(this.#root, result)
-    return result
+  inOrderTraversal(handler: (node: BinarySearchTreeNode) => any) {
+    this.#inOrderTraversalNode(this.#root, handler)
   }
 
-  #inOrderTraversalNode(node: BinarySearchTreeNode, result: number[]) {
+  #inOrderTraversalNode(node: BinarySearchTreeNode, handler: (node: BinarySearchTreeNode) => any) {
     if (node === null) return
-    this.#inOrderTraversalNode(node.getLeft(), result)
-    result.push(node.getKey())
-    this.#inOrderTraversalNode(node.getRight(), result)
+    this.#inOrderTraversalNode(node.getLeft(), handler)
+    handler(node)
+    this.#inOrderTraversalNode(node.getRight(), handler)
   }
 
   // 后序遍历
-  postOrderTraversal() {
-    const result = []
-    this.#postOrderTraversalNode(this.#root, result)
-    return result
+  postOrderTraversal(handler: (node: BinarySearchTreeNode) => any) {
+    this.#postOrderTraversalNode(this.#root, handler)
   }
 
-  #postOrderTraversalNode(node: BinarySearchTreeNode, result: number[]) {
+  #postOrderTraversalNode(
+    node: BinarySearchTreeNode,
+    handler: (node: BinarySearchTreeNode) => any
+  ) {
     if (node === null) return
-    this.#postOrderTraversalNode(node.getLeft(), result)
-    this.#postOrderTraversalNode(node.getRight(), result)
-    result.push(node.getKey())
+    this.#postOrderTraversalNode(node.getLeft(), handler)
+    this.#postOrderTraversalNode(node.getRight(), handler)
+    handler(node)
   }
 
   min() {
@@ -183,8 +176,8 @@ class BinarySearchTree {
       if (current === null) return false
     }
 
-    // 如果没有字节点
     if (current.getLeft() === null && current.getRight() === null) {
+      // 如果没有子节点
       if (currentKey === rootKey) {
         this.#root = null
       } else if (isLeftChild) {
@@ -193,6 +186,7 @@ class BinarySearchTree {
         parent.setRight(null)
       }
     } else if (current.getLeft() === null) {
+      // 如果没有左子节点
       if (current.getKey() === rootKey) {
         this.#root = current.getRight()
       } else if (isLeftChild) {
@@ -201,6 +195,7 @@ class BinarySearchTree {
         parent.setRight(current.getRight())
       }
     } else if (current.getRight() === null) {
+      // 如果没有右子节点
       if (current.getKey() === rootKey) {
         this.#root = current.getLeft()
       } else if (isLeftChild) {
@@ -209,6 +204,7 @@ class BinarySearchTree {
         parent.setRight(current.getLeft())
       }
     } else {
+      // 如果有右还有右子节点
       let successor = this.getSuccessor(current)
 
       if (currentKey === rootKey) {
@@ -224,10 +220,10 @@ class BinarySearchTree {
     return true
   }
 
-  getSuccessor(node: BinarySearchTreeNode) {
-    let successor = node
-    let current = node.getRight()
-    let successorParent = node
+  getSuccessor(delNode: BinarySearchTreeNode) {
+    let successorParent = delNode
+    let successor = delNode.getRight()
+    let current = delNode.getRight()
 
     while (current !== null) {
       successorParent = successor
@@ -235,9 +231,9 @@ class BinarySearchTree {
       current = current.getLeft()
     }
 
-    if (successor !== node.getRight()) {
+    if (successor !== delNode.getRight()) {
       successorParent.setLeft(successor.getRight())
-      successor.setRight(node.getRight())
+      successor.setRight(delNode.getRight())
     }
     return successor
   }
@@ -260,6 +256,16 @@ bst.insert(18)
 bst.insert(25)
 bst.insert(6)
 
-console.log(bst.prevOrderTraversal())
-console.log(bst.inOrderTraversal())
+bst.preOrderTraversal(node => {
+  console.log(node.getKey())
+})
+
+console.log('')
+
+bst.inOrderTraversal(node => {
+  console.log(node.getKey())
+})
+
+console.log('')
+
 console.log(bst.max())

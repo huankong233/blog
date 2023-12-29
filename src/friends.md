@@ -1,6 +1,8 @@
 ---
 friends: true
 title: 友情链接
+author: huan_kong
+createTime: 2023/12/26 13:46:30
 description: 不分先后顺序哦,申请可以github联系哦
 permalink: /friends/
 list: 
