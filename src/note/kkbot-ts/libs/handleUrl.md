@@ -13,9 +13,9 @@ permalink: /note/kkbot-ts/libs/handleUrl
 
 变量值:
 
-``` typescript
+~~~ typescript
 ['danbooru.donmai.us', 'konachan.com', 'fanbox.cc', 'pixiv.net']
-```
+~~~
 
 ## 函数列表
 
@@ -23,7 +23,7 @@ permalink: /note/kkbot-ts/libs/handleUrl
 
 函数名: `confuseURL`
 
-函数参数: 
+函数参数:
 
 | 字段    | 类型      | 说明           | 默认值      |
 | ------- | --------- | -------------- | ----------- |
@@ -34,7 +34,7 @@ permalink: /note/kkbot-ts/libs/handleUrl
 
 函数名: `pixivShorten`
 
-函数参数: 
+函数参数:
 
 | 字段  | 类型     | 说明                      | 默认值      |
 | ----- | -------- | ------------------------- | ----------- |
@@ -44,7 +44,7 @@ permalink: /note/kkbot-ts/libs/handleUrl
 
 函数名: `getUniversalImgURL`
 
-函数参数: 
+函数参数:
 
 | 字段  | 类型     | 说明       | 默认值 |
 | ----- | -------- | ---------- | ------ |

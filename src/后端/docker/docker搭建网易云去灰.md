@@ -12,7 +12,7 @@ tags:
 
 执行下方`dockerfile`
 
-```dockerfile
+~~~dockerfile
 version: "3"
 
 services:
@@ -28,7 +28,7 @@ services:
         - LOG_LEVEL=debug
         - ENABLE_FLAC=true
         - ENABLE_LOCAL_VIP=true
-```
+~~~
 
 ## 2.使用代理
 

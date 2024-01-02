@@ -9,7 +9,7 @@ permalink: /note/rust/learn/Struct
 
 类似 `ts` 里的接口
 
-```rust
+~~~rust
 struct User {
     username: String,
     email: String,
@@ -25,41 +25,41 @@ fn main() {
         active: true,
     };
 }
-```
+~~~
 
 一样也默认是不可变 如果可变那么所有的字段都是可变的
 
-```rust
+~~~rust
 let mut user1 = User {
     username: String::from("username"),
     email: String::from("email"),
     sign_in_account: 10,
     active: true,
 };
-```
+~~~
 
 ## struct 更新
 
-```rust
+~~~rust
 let user2 = User {
     email: String::from("email2"),
     username: String::from("username2"),
     ..user1
 };
-```
+~~~
 
 ## Tuple struct
 
-```rust
+~~~rust
 struct Color(i32, i32, i32);
 struct Point(i32, i32, i32);
 let black = Color(0, 0, 0);
 let origin = Point(0, 0, 0);
-```
+~~~
 
 ## 打印 struct
 
-```rust
+~~~rust
 // 重点需要加上这个derive
 #[derive(Debug)]
 struct Rect {
@@ -76,13 +76,13 @@ fn main() {
     // 不加 # 就是打印在一行 加上后会自动换行
     println!("{:#?}", rect);
 }
-```
+~~~
 
 ## 为 struct 定义方法
 
 一个 `struct` 可以有多个 `impl`
 
-```rust
+~~~rust
 struct Rect {
     width: u32,
     height: u32,
@@ -93,11 +93,11 @@ impl Rect {
         return self.width * self.height;
     }
 }
-```
+~~~
 
 也可以传入多个参数 在后面接收即可
 
-```rust
+~~~rust
 impl Rect {
     fn can_hold(&self, other: &Rect) -> bool {
         self.width >= other.width && self.height >= other.height
@@ -123,11 +123,11 @@ fn main() {
     println!("{}", rect1.can_hold(&rect2));
     println!("{}", rect1.can_hold(&rect3));
 }
-```
+~~~
 
 ## 定义 struct 关联函数
 
-```rust
+~~~rust
 impl Rect {
     fn square(size: u32) -> Rect {
         Rect {
@@ -140,4 +140,4 @@ impl Rect {
 fn main() {
     let square = Rect::square(30);
 }
-```
+~~~

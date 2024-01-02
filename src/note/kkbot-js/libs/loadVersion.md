@@ -11,7 +11,7 @@ permalink: /note/kkbot-js/libs/loadVersion
 
 函数名: `getVersion`
 
-函数参数: 
+函数参数:
 
 | 字段 | 类型 | 说明 | 默认值 |
 | ---- | ---- | ---- | ------ |

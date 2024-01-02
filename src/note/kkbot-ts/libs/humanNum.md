@@ -11,9 +11,8 @@ permalink: /note/kkbot-ts/libs/humanNum
 
 函数名: `humanNum`
 
-函数参数: 
+函数参数:
 
 | 字段  | 类型     | 说明 | 默认值      |
 | ----- | -------- | ---- | ----------- |
 | `num` | `number` | 数字 | `undefined` |
-

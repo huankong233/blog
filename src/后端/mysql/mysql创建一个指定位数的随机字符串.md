@@ -8,7 +8,7 @@ tags:
   - mysql
 ---
 
-```sql
+~~~sql
 DROP FUNCTION IF EXISTS rand_string;
 DELIMITER $$
 CREATE FUNCTION rand_string(n INT)
@@ -24,12 +24,12 @@ BEGIN
     RETURN return_str;
 END $$
 DELIMITER;
-```
+~~~
 
 如果遇到报错, 在命令前执行
 
-```sql
+~~~sql
 set global log_bin_trust_function_creators=TRUE;
-```
+~~~
 
 如果提示权限不足, 请使用 `root` 账户执行!

@@ -11,9 +11,8 @@ permalink: /note/kkbot-ts/libs/getDirName
 
 函数名: `getDir`
 
-函数参数: 
+函数参数:
 
 | 字段            | 类型         | 说明                         | 默认值      |
 | --------------- | ------------ | ---------------------------- | ----------- |
 | `importMetaUrl` | `ImportMeta` | 固定传入参数为 `import.meta` | `undefined` |
-

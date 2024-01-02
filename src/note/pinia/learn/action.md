@@ -7,7 +7,7 @@ permalink: /note/pinia/learn/action/
 
 ## 使用 `action`
 
-```typescript
+~~~typescript
 // store.ts
 export const useMainStore = defineStore('main', {
   // 用于存储数据
@@ -32,4 +32,4 @@ export const useMainStore = defineStore('main', {
 function changeCount(number: number) {
   mainStroe.changeArr(number)
 }
-```
+~~~

@@ -10,5 +10,3 @@ permalink: /note/kkbot-ts/libs/loadVersion
 ### 1.加载框架信息
 
 函数名: `getPackage`
-
-

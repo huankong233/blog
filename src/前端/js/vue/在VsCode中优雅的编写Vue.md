@@ -26,9 +26,9 @@ tags:
 ![1669807475068.png](https://img.huankong.top/i/2022/11/30/63873d748d015.png)
 粘贴以下代码 ( 可以自行修改 ) , 保存即可
 
-代码: 
+代码:
 
-```json
+~~~json
 {
   // 关闭自动设置tabsize
   "editor.detectIndentation": false,
@@ -123,6 +123,6 @@ tags:
   },
   "editor.fontSize": 15
 }
-```
+~~~
 
 以后只要代码被保存就会自动格式化代码了,鼠标失焦也会自动保存。

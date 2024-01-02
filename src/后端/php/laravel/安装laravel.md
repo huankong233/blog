@@ -19,17 +19,17 @@ tags:
 
 ### 安装Composer
 
-`Windows` 推荐使用 [安装器](https://dl.huankong.top/OneDrive/常用软件备份/常用工具/Composer-Setup.exe) 
+`Windows` 推荐使用 [安装器](https://dl.huankong.top/OneDrive/常用软件备份/常用工具/Composer-Setup.exe)
 
 `Linux/Mac` 需要按照 [官方](https://pkg.phpcomposer.com/#how-to-install-composer) 的安装方法安装
 
 ### 安装Laravel
 
-通过 `Composer` 安装 `Laravel` 安装器: 
+通过 `Composer` 安装 `Laravel` 安装器:
 
-```bash
+~~~bash
 composer global require "laravel/installer"
-```
+~~~
 
 安装完成后, 通过简单的 `laravel new` 命令即可在当前目录下创建一个新的 `Laravel` 应用。
 
@@ -44,6 +44,6 @@ composer global require "laravel/installer"
 
 终端运行
 
-```bash
+~~~bash
 curl -s https://laravel.build/example-app | bash
-```
+~~~

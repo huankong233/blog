@@ -42,15 +42,15 @@ Tip: 安装完成后在 `cmd` 里无法直接启动, 你可以在开始菜单里
 
 ### 2.2创建环境
 
-```batch
+~~~batch
 conda create-n 环境名
-```
+~~~
 
 ### 2.3激活环境
 
-```batch
+~~~batch
 Conda activate 环境名
-```
+~~~
 
 ## 3.安装 `PyTorch`
 
@@ -66,7 +66,7 @@ Conda activate 环境名
 
 ![1669808919646.png](https://img.huankong.top/i/2022/11/30/63874318651c0.png)
 
-安装完成: 
+安装完成:
 
 ![1669808939656.png](https://img.huankong.top/i/2022/11/30/6387432c5d5e3.png)
 
@@ -82,7 +82,7 @@ Conda activate 环境名
 
 ![1669809014781.png](https://img.huankong.top/i/2022/11/30/638743784806f.png)
 
-选择属性, 找到高级设置 ( windowns 版本不同位置不同 ) 
+选择属性, 找到高级设置 ( windowns 版本不同位置不同 )
 
 ![1669809033483.png](https://img.huankong.top/i/2022/11/30/6387438bd5e0f.png)
 ![1669809047182.png](https://img.huankong.top/i/2022/11/30/63874397eb711.png)
@@ -111,19 +111,19 @@ Conda activate 环境名
 
 ### 5.1克隆仓库
 
-```batch
+~~~batch
 git clone https://github.com/babysor/MockingBird
-```
+~~~
 
 ### 5.2补全支持库
 
-```batch
+~~~batch
 pip install -r requirements.txt
-```
+~~~
 
 等待跑码完成。
 
-### 5.3如果报错 
+### 5.3如果报错
 
 ![1669809240232.png](https://img.huankong.top/i/2022/11/30/63874458f2cd6.png)
 
@@ -133,9 +133,9 @@ pip install -r requirements.txt
 
 ### 5.4安装 webrtcvad
 
-```batch
+~~~batch
 pip install webrtcvad-wheels
-```
+~~~
 
 ![1669809301698.png](https://img.huankong.top/i/2022/11/30/6387449679680.png)
 
@@ -145,7 +145,7 @@ pip install webrtcvad-wheels
 
 进入 `synthesizer` 文件夹, 创建名称为 `saved_models` 的文件夹。
 
-下载模型文件 ( 文件来自[B 站视频](https://www.bilibili.com/video/BV1DL4y1q7VL) ) 
+下载模型文件 ( 文件来自[B 站视频](https://www.bilibili.com/video/BV1DL4y1q7VL) )
 
 [下载链接](https://x5cxfh7xs6.feishu.cn/file/boxcnk9Fzkx2yV6lqkPTZVikFif)
 
@@ -153,8 +153,8 @@ pip install webrtcvad-wheels
 
 运行命令
 
-```batch
+~~~batch
 python demo_toolbox.py -d .\samples
-```
+~~~
 
-耐心等待后显示了界面, 说明一切顺利！
+耐心等待后显示了界面, 说明一切顺利!

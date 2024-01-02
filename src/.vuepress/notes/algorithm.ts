@@ -33,7 +33,7 @@ export default definePlumeNotesItemConfig({
     {
       text: '排序算法',
       dir: '3.排序算法',
-      items: ['选择排序', '插入排序']
+      items: []
     }
   ]
 })

@@ -10,17 +10,17 @@ tags:
 
 ## 安装
 
-```bash
+~~~bash
 sudo pacman -S perl-image-exiftool
-```
+~~~
 
 ## 使用
 
 ### 命令
 
-```bash
+~~~bash
 exiftool -all="" -overwrite_original -r .
-```
+~~~
 
 加上 `-progress` 即可显示处理进度
 
@@ -28,9 +28,9 @@ exiftool -all="" -overwrite_original -r .
 
 可以用下面这个命令删除
 
-```bash
+~~~bash
 find . -type f -name "*_original" -delete
-```
+~~~
 
 ### 解析
 
