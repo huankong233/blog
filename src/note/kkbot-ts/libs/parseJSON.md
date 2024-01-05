@@ -9,7 +9,7 @@ permalink: /note/kkbot-ts/libs/parseJSON
 
 ### 1.解析CQ:JSON信息
 
-函数名: `randomFloat`
+函数名: `parseJSON`
 
 函数参数:
 
