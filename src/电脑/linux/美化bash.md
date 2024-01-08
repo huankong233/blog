@@ -101,9 +101,9 @@ curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.
 
 ~~~bash
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
-    export TERM='xterm-256color'
+    export COLORTERM='xterm-256color'
 else
-    export TERM='xterm-color'
+    export COLORTERM='xterm-color'
 fi
 ~~~
 
