@@ -15,7 +15,7 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BUILD_SCRIPT: npm install pnpm -g && pnpm install && pnpm run build
           BUILD_DIR: docs
-          TARGET_LINK: https://github.com/huankong233/blog-page
+          TARGET_LINK: https://huankong233:${{ secrets.ACCESS_TOKEN }}@github.com/huankong233/blog-page
           TARGET_REPO: huankong233/blog-page
           TARGET_BRANCH: master
           COMMIT_MESSAGE: 自动打包完成
