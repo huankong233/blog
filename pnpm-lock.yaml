@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@vuepress/markdown@2.0.0-rc.2':
+    hash: uzxkoimenen7e6irmntgvqblam
+    path: patches/@vuepress__markdown@2.0.0-rc.2.patch
+
 dependencies:
   '@vuepress/bundler-vite':
     specifier: 2.0.0-rc.2
@@ -1639,7 +1644,7 @@ packages:
     resolution: {integrity: sha512-C/bHG0y+v5oeCrfaesy2yFa0dyCah05g1w7vArZk8ABsVECjZKAC5/ev39UFQm2dCdNzsj2E3KgLIxYWqpcKeg==}
     dependencies:
       '@vuepress/client': 2.0.0-rc.2(typescript@5.3.3)
-      '@vuepress/markdown': 2.0.0-rc.2
+      '@vuepress/markdown': 2.0.0-rc.2(patch_hash=uzxkoimenen7e6irmntgvqblam)
       '@vuepress/shared': 2.0.0-rc.2
       '@vuepress/utils': 2.0.0-rc.2
       vue: 3.4.16(typescript@5.3.3)
@@ -1664,7 +1669,7 @@ packages:
       - typescript
     dev: false
 
-  /@vuepress/markdown@2.0.0-rc.2:
+  /@vuepress/markdown@2.0.0-rc.2(patch_hash=uzxkoimenen7e6irmntgvqblam):
     resolution: {integrity: sha512-5/RmJnap+MGKxDhSO+Mv6zB8PoPHhhBujnNKKO3PnyfPrj0LyL0AuTm8m3Ea271wMp9956WINjw8jlpn+Z1sBg==}
     dependencies:
       '@mdit-vue/plugin-component': 2.0.0
@@ -1686,6 +1691,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
+    patched: true
 
   /@vuepress/plugin-active-header-links@2.0.0-rc.7(typescript@5.3.3)(vuepress@2.0.0-rc.2):
     resolution: {integrity: sha512-aSfVP7fb1XxpMjfOZ27FfC2YZ3C7tE4QAoQnH88NeSu4/Vsit7J49Yxl179qSLtEMMMrr6t4oShB7eP8M3JmDA==}
@@ -5249,7 +5255,7 @@ packages:
       '@vuepress/cli': 2.0.0-rc.2(typescript@5.3.3)
       '@vuepress/client': 2.0.0-rc.2(typescript@5.3.3)
       '@vuepress/core': 2.0.0-rc.2(typescript@5.3.3)
-      '@vuepress/markdown': 2.0.0-rc.2
+      '@vuepress/markdown': 2.0.0-rc.2(patch_hash=uzxkoimenen7e6irmntgvqblam)
       '@vuepress/shared': 2.0.0-rc.2
       '@vuepress/utils': 2.0.0-rc.2
       vue: 3.4.16(typescript@5.3.3)
