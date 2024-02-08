@@ -1,17 +1,13 @@
-import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
-import { fs, getDirname, path } from '@vuepress/utils'
+import { getDirname, path } from 'vuepress/utils'
 import { defineUserConfig } from 'vuepress'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import { viteBundler } from '@vuepress/bundler-vite'
 
 // import { pwaPlugin } from '@vuepress/plugin-pwa'
 import theme from './theme'
 
 const __dirname = getDirname(import.meta.url)
-
-const robotsContent = `
-User-agent: *
-Allow: /
-Sitemap: https://blog.huankong.top/sitemap.xml
-`
+const resolve = (...dirs: string[]) => path.resolve(__dirname, ...dirs)
 
 export default defineUserConfig({
   pagePatterns: ['**/*.md', '!.vuepress', '!node_modules', '!**/.~*.md'],
@@ -63,7 +59,6 @@ export default defineUserConfig({
         color: '#5bbad5'
       }
     ],
-    // ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
     [
       'meta',
       {
@@ -78,13 +73,7 @@ export default defineUserConfig({
   shouldPrefetch: false,
   plugins: [
     googleAnalyticsPlugin({ id: 'G-4C0FRDPERW' })
-    // pwaPlugin({ skipWaiting: true, })
   ],
-  onGenerated: app => {
-    const filepath = app.dir.dest('robots.txt')
-    setTimeout(() => {
-      fs.writeFileSync(filepath, robotsContent, 'utf-8')
-    }, 500)
-  },
-  theme: theme
+  bundler: viteBundler(),
+  theme
 })
