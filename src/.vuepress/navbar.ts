@@ -75,9 +75,14 @@ export default [
       {
         text: '数据结构和算法',
         link: '/note/algorithm/',
-        // icon: 'arcticons:algorithms',
         icon: 'flat-color-icons:tree-structure',
         activeMatch: '/note/algorithm/*'
+      },
+      {
+        text: 'Kotlin',
+        link: '/note/kotlin/',
+        icon: 'devicon:kotlin',
+        activeMatch: '/note/kotlin/*'
       }
     ]
   }

@@ -2,11 +2,11 @@
 title: C语言
 author: huan_kong
 createTime: 2023/12/22 09:42:50
-permalink: /note/C/
+permalink: /note/c/
 ---
 
 ::: tip
-C语言 学习中
+施工中...(Hello World水平)
 :::
 
 ## 视频地址

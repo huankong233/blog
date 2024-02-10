@@ -2,7 +2,7 @@
 title: kkbot 文档
 author: huan_kong
 createTime: 2023/06/30 03:18:04
-permalink: /note/kkbot-js
+permalink: /note/kkbot-js/
 ---
 
 ::: tip

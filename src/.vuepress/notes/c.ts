@@ -4,5 +4,5 @@ export default definePlumeNotesItemConfig({
   text: 'c',
   dir: 'c',
   link: '/c',
-  sidebar: ['']
+  sidebar: 'auto'
 })
