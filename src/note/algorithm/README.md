@@ -5,10 +5,6 @@ createTime: 2023/11/14 08::55
 permalink: /note/algorithms/
 ---
 
-::: tip
-施工中...(红黑树)
-:::
-
 ## 视频地址
 
 [JavaScript(ES6)数据结构和算法](https://www.bilibili.com/video/BV1a5411t7vZ)

@@ -52,7 +52,7 @@ export default [
   {
     text: '笔记',
     icon: 'icon-park-solid:bookshelf',
-    activeMatch: '/note/(pinia|rust|c|algorithm)/*',
+    activeMatch: '/note/(pinia|rust|c|algorithm|java|kotlin)/*',
     items: [
       {
         text: 'pinia',
@@ -77,6 +77,12 @@ export default [
         link: '/note/algorithm/',
         icon: 'flat-color-icons:tree-structure',
         activeMatch: '/note/algorithm/*'
+      },
+      {
+        text: 'Java',
+        link: '/note/java/',
+        icon: 'logos:java',
+        activeMatch: '/note/java/*'
       },
       {
         text: 'Kotlin',
