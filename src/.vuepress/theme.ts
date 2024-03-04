@@ -37,7 +37,7 @@ export default plumeTheme({
     docsearch: {
       appId: 'U198Y5GBFG',
       apiKey: 'ba76b60a3135b6bf81cec20978b2df31',
-      indexName: 'huankong',
+      indexName: 'huankong'
     },
     comment: {
       provider: 'Giscus',
@@ -53,6 +53,9 @@ export default plumeTheme({
     frontmatter: {
       include: ['**/*.{md,MD}'],
       exclude: ['.vuepress/**/*', 'node_modules', '**/.~*.{md,MD}']
+    },
+    blogData: {
+      exclude: ['docs/']
     }
   }
 })

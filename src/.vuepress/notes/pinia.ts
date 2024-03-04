@@ -3,6 +3,6 @@ import { definePlumeNotesItemConfig } from 'vuepress-theme-plume'
 export default definePlumeNotesItemConfig({
   text: 'pinia',
   dir: 'pinia',
-  link: '/pinia',
+  link: '/notes/pinia/',
   sidebar: 'auto'
 })

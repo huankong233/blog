@@ -20,7 +20,7 @@ export default defineUserConfig({
       description: '幸运的人一生都被童年治愈，不幸的人一生都在治愈童年。'
     }
   },
-  dest: path.resolve(__dirname, '../../docs'),
+  dest: path.resolve(__dirname, '../../dist'),
   public: path.resolve(__dirname, '../../public'),
   temp: path.resolve(__dirname, '.temp'),
   cache: path.resolve(__dirname, '.cache'),
@@ -71,9 +71,7 @@ export default defineUserConfig({
     ['meta', { name: 'theme-color', content: '#ffffff' }]
   ],
   shouldPrefetch: false,
-  plugins: [
-    googleAnalyticsPlugin({ id: 'G-4C0FRDPERW' })
-  ],
+  plugins: [googleAnalyticsPlugin({ id: 'G-4C0FRDPERW' })],
   bundler: viteBundler(),
   theme
 })

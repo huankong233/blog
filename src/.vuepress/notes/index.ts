@@ -9,7 +9,7 @@ import java from './java'
 import kotlin from './kotlin'
 
 export default definePlumeNotesConfig({
-  dir: 'note',
-  link: '/note',
+  dir: 'notes',
+  link: '/',
   notes: [kkbotJs, kkbotTs, pinia, rust, algorithm, c, java, kotlin]
 })

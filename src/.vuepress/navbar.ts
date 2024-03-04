@@ -33,62 +33,62 @@ export default [
   {
     text: '技术文档',
     icon: 'mdi:idea',
-    activeMatch: '/note/(kkbot-js|kkbot-ts)/*',
+    activeMatch: '/notes/(kkbot-js|kkbot-ts)/*',
     items: [
       {
         text: 'kkbot-js',
         icon: 'lucide:bot',
-        link: '/note/kkbot-js/',
-        activeMatch: '/note/kkbot-js/*'
+        link: '/docs/kkbot-js/',
+        activeMatch: '/docs/kkbot-js/*'
       },
       {
         text: 'kkbot-ts',
         icon: 'lucide:bot',
-        link: '/note/kkbot-ts/',
-        activeMatch: '/note/kkbot-ts/*'
+        link: '/docs/kkbot-ts/',
+        activeMatch: '/docs/kkbot-ts/*'
       }
     ]
   },
   {
     text: '笔记',
     icon: 'icon-park-solid:bookshelf',
-    activeMatch: '/note/(pinia|rust|c|algorithm|java|kotlin)/*',
+    activeMatch: '/notes/(pinia|rust|c|algorithm|java|kotlin)/*',
     items: [
       {
         text: 'pinia',
-        link: '/note/pinia/',
+        link: '/notes/pinia/',
         icon: 'logos:pinia',
-        activeMatch: '/note/pinia/*'
+        activeMatch: '/notes/pinia/*'
       },
       {
         text: 'rust',
-        link: '/note/rust/',
+        link: '/notes/rust/',
         icon: 'logos:rust',
-        activeMatch: '/note/rust/*'
+        activeMatch: '/notes/rust/*'
       },
       {
         text: 'c',
-        link: '/note/c/',
+        link: '/notes/c/',
         icon: 'logos:c',
-        activeMatch: '/note/c/*'
+        activeMatch: '/notes/c/*'
       },
       {
         text: '数据结构和算法',
-        link: '/note/algorithm/',
+        link: '/notes/algorithm/',
         icon: 'flat-color-icons:tree-structure',
-        activeMatch: '/note/algorithm/*'
+        activeMatch: '/notes/algorithm/*'
       },
       {
         text: 'Java',
-        link: '/note/java/',
+        link: '/notes/java/',
         icon: 'logos:java',
-        activeMatch: '/note/java/*'
+        activeMatch: '/notes/java/*'
       },
       {
         text: 'Kotlin',
-        link: '/note/kotlin/',
+        link: '/notes/kotlin/',
         icon: 'devicon:kotlin',
-        activeMatch: '/note/kotlin/*'
+        activeMatch: '/notes/kotlin/*'
       }
     ]
   }
