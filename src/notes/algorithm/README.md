@@ -2,7 +2,7 @@
 title: 数据结构和算法
 author: huan_kong
 createTime: 2023/11/14 08::55
-permalink: /notes/algorithms/
+permalink: /notes/algorithm/
 ---
 
 ## 视频地址
