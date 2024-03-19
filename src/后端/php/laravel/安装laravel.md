@@ -19,7 +19,7 @@ tags:
 
 ### 安装Composer
 
-`Windows` 推荐使用 [安装器](https://dl.huankong.top/OneDrive/常用软件备份/常用工具/Composer-Setup.exe)
+`Windows` 推荐使用 [安装器](https://getcomposer.org/Composer-Setup.exe)
 
 `Linux/Mac` 需要按照 [官方](https://pkg.phpcomposer.com/#how-to-install-composer) 的安装方法安装
 

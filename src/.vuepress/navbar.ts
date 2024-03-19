@@ -67,7 +67,7 @@ export default [
         activeMatch: '/notes/rust/*'
       },
       {
-        text: 'c',
+        text: 'C',
         link: '/notes/c/',
         icon: 'logos:c',
         activeMatch: '/notes/c/*'

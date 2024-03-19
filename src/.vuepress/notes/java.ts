@@ -4,5 +4,5 @@ export default definePlumeNotesItemConfig({
   text: 'java',
   dir: 'java',
   link: '/notes/java/',
-  sidebar: 'auto'
+  sidebar: ['', { dir: '学习', items: [] }]
 })

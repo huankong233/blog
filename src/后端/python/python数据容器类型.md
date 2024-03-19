@@ -62,7 +62,7 @@ print(list1)
 
 倒排列表中的元素:  `list.reverse()`
 
-同时遍历两个或更多的序列, 可以使用 `zip()` 组合: 
+同时遍历两个或更多的序列, 可以使用 `zip()` 组合:
 
 ~~~python
 questions = ['name', 'quest', 'favorite color']
