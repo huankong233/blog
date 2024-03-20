@@ -8,8 +8,9 @@ export default plumeTheme({
   hostname: 'https://blog.huankong.top/',
   avatar: {
     name: 'huan_kong',
-    url: 'https://img.huankong.top/i/2022/11/29/6385f13b5bb93.png',
-    description: '世间的美好总是不期而遇'
+    url: 'https://img.huankong.top/i/2024/03/20/65fa4e318ce15.png',
+    description: '世间的美好总是不期而遇',
+    circle: true
   },
   social: [{ icon: 'github', link: 'https://github.com/huankong233' }],
   navbar,
@@ -26,7 +27,6 @@ export default plumeTheme({
   docsDir: 'src',
   plugins: {
     externalLinkIcon: false,
-
     // search: {
     //   locales: {
     //     '/': {
@@ -53,9 +53,6 @@ export default plumeTheme({
     frontmatter: {
       include: ['**/*.{md,MD}'],
       exclude: ['.vuepress/**/*', 'node_modules', '**/.~*.{md,MD}']
-    },
-    blogData: {
-      exclude: ['docs/']
     }
   }
 })

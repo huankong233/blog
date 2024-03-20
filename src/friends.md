@@ -28,7 +28,8 @@ list:
     desc: 悟已往之不谏，知来者之可追。
   - 
     name: lijiakaijun
-    link: https://blog.lijiakaijun.cyou/
+    # link: https://blog.lijiakaijun.cyou/
+    link: https://github.com/lijiakaijun
     avatar: https://github.com/lijiakaijun.png
     desc: 跟随梦想的脚步，感受生命的温度。
 ---

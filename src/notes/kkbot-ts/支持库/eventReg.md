@@ -31,10 +31,10 @@ permalink: /docs/kkbot-ts/支持库/eventReg/
 
 函数参数:
 
-| 字段          | 类型                            | 说明                      | 默认值      |
-| ------------- | ------------------------------- | ------------------------- | ----------- |
-| `context`     | `CQEvent<'message'>['context']` | 事件返回的 `context` 对象 | `undefined` |
-| `commandName` | `string`                        | 手动指定命令名            | `@`         |
+| 字段          | 类型                      | 说明                      | 默认值      |
+| ------------- | ------------------------- | ------------------------- | ----------- |
+| `context`     | `SocketHandle['message']` | 事件返回的 `context` 对象 | `undefined` |
+| `commandName` | `string`                  | 手动指定命令名            | `@`         |
 
 返回值(匹配成功):
 
@@ -71,7 +71,7 @@ false
 
 | 字段           | 类型                              | 说明                      | 默认值      |
 | -------------- | --------------------------------- | ------------------------- | ----------- |
-| `context`      | `CQEvent<'message'>['context']`   | 事件返回的 `context` 对象 | `undefined` |
+| `context`      | `SocketHandle['message']`         | 事件返回的 `context` 对象 | `undefined` |
 | `command`      | [`commandFormat`](#commandformat) | 命令对象                  | `undefined` |
 | `paramsLength` | `number`                          | 需要的参数长度            | `undefined` |
 
@@ -80,19 +80,19 @@ false
 ## messageCallback
 
 ~~~ typescript
-type messageCallback = (event: CQEvent<'message'>,command: commandFormat | false) => Promise<undefined | any | 'quit'>
+type messageCallback = (event: SocketHandle['message'],command: commandFormat | false) => Promise<undefined | any | 'quit'>
 ~~~
 
 ## noticeCallback
 
 ~~~typescript
-type noticeCallback = (event: CQEvent<'notice'>) => Promise<undefined | any | 'quit'>
+type noticeCallback = (event: SocketHandle['notice']) => Promise<undefined | any | 'quit'>
 ~~~
 
 ## requestCallback
 
 ~~~typescript
-type requestCallback = (event: CQEvent<'request'>) => Promise<undefined | any | 'quit'>
+type requestCallback = (event: SocketHandle['request']) => Promise<undefined | any | 'quit'>
 ~~~
 
 ## commandFormat

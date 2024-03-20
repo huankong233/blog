@@ -22,6 +22,20 @@ article: false
 
 ---
 
+### node-open-shamrock
+
+![stars](https://img.shields.io/github/stars/huankong233/node-open-shamrock?style=social)
+![version](https://img.shields.io/npm/v/node-open-shamrock?style=flat-square)
+![download](https://img.shields.io/npm/dt/node-open-shamrock?style=flat-square)
+
+仓库地址: [node-open-shamrock](https://github.com/huankong233/node-open-shamrock)
+
+**说明:**
+
+对接 `openShamrock` 的 `SDK`
+
+---
+
 ### balogo-ts
 
 ![stars](https://img.shields.io/github/stars/huankong233/balogo-ts?style=social)
