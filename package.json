@@ -13,17 +13,17 @@
     "preview": "anywhere -s -h localhost -d docs"
   },
   "dependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.8",
+    "@vuepress/bundler-vite": "2.0.0-rc.9",
     "@vuepress/plugin-google-analytics": "2.0.0-rc.15",
     "anywhere": "^1.6.0",
     "vue": "^3.4.21",
-    "vuepress": "2.0.0-rc.8",
+    "vuepress": "2.0.0-rc.9",
     "vuepress-theme-plume": "1.0.0-rc.45"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
     "tsconfig-vuepress": "^4.5.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.3"
   },
   "pnpm": {
     "peerDependencyRules": {
@@ -32,7 +32,7 @@
       ]
     },
     "patchedDependencies": {
-      "@vuepress/markdown@2.0.0-rc.8": "patches/@vuepress__markdown@2.0.0-rc.8.patch"
+      "@vuepress/markdown@2.0.0-rc.9": "patches/@vuepress__markdown@2.0.0-rc.9.patch"
     }
   }
 }
