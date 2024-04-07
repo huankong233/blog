@@ -3,7 +3,7 @@ title: 美化bash
 author: huan_kong
 createTime: 2023/07/02 00:16:26
 permalink: /article/6i7blsct/
-tags: 
+tags:
   - 电脑
   - linux
 ---

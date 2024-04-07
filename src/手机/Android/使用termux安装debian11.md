@@ -3,7 +3,7 @@ title: 使用termux安装debian11
 author: huan_kong
 createTime: 2022/12/05 12:32:46
 permalink: /article/ujl9o8co/
-tags: 
+tags:
   - 手机
   - Android
 ---

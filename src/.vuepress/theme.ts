@@ -53,6 +53,7 @@ export default plumeTheme({
     frontmatter: {
       include: ['**/*.{md,MD}'],
       exclude: ['.vuepress/**/*', 'node_modules', '**/.~*.{md,MD}']
-    }
+    },
+    markdownPower: { bilibili: true }
   }
 })

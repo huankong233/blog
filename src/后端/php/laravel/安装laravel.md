@@ -3,7 +3,7 @@ title: 安装laravel
 author: huan_kong
 createTime: 2021/09/10 12:19:15
 permalink: /article/kgctwqjp/
-tags: 
+tags:
   - 后端
   - php
   - laravel
@@ -24,6 +24,10 @@ tags:
 `Linux/Mac` 需要按照 [官方](https://pkg.phpcomposer.com/#how-to-install-composer) 的安装方法安装
 
 ### 安装Laravel
+
+::: warning
+必须先安装一个 [7zip](https://7-zip.org/) 才能正常安装!!!!
+:::
 
 通过 `Composer` 安装 `Laravel` 安装器:
 
