@@ -7,9 +7,10 @@ import algorithm from './algorithm'
 import c from './c'
 import java from './java'
 import kotlin from './kotlin'
+import jsListLaravel from './94list-laravel'
 
 export default definePlumeNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [kkbotJs, kkbotTs, pinia, rust, algorithm, c, java, kotlin]
+  notes: [kkbotJs, kkbotTs, pinia, rust, algorithm, c, java, kotlin, jsListLaravel]
 })

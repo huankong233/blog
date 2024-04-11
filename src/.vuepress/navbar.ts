@@ -46,6 +46,12 @@ export default [
         icon: 'lucide:bot',
         link: '/docs/kkbot-ts/',
         activeMatch: '/docs/kkbot-ts/*'
+      },
+      {
+        text: '94list-laravel',
+        icon: 'ion:folder-open',
+        link: '/docs/94list-laravel/',
+        activeMatch: '/docs/94list-laravel/*'
       }
     ]
   },

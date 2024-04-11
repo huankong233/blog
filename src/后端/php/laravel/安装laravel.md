@@ -39,6 +39,16 @@ composer global require "laravel/installer"
 
 例如, `laravel new blog` 将会创建一个名为 `blog` 的新应用, 且包含所有 `Laravel` 依赖。
 
+### 安装指定版本
+
+`test` 是应用名
+
+`9.x` 是版本号
+
+~~~bash
+composer create-project laravel/laravel test 9.x
+~~~
+
 ## 使用Docker
 
 ::: tip
