@@ -11,9 +11,9 @@ tags:
 
 ## 安装
 
-官方推荐使用[docker 安装](#使用composer)
+官方推荐使用[docker 安装](#使用docker)
 
-我推荐使用[composer 安装](#使用docker)
+我推荐使用[composer 安装](#使用composer)
 
 ## 使用Composer
 
