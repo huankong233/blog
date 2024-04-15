@@ -9,21 +9,13 @@ tags:
   - laravel
 ---
 
-## 安装
-
-官方推荐使用[docker 安装](#使用docker)
-
-我推荐使用[composer 安装](#使用composer)
-
-## 使用Composer
-
-### 安装Composer
+## 安装Composer
 
 `Windows` 推荐使用 [安装器](https://getcomposer.org/Composer-Setup.exe)
 
 `Linux/Mac` 需要按照 [官方](https://pkg.phpcomposer.com/#how-to-install-composer) 的安装方法安装
 
-### 安装Laravel
+## 安装Laravel
 
 ::: warning
 必须先安装一个 [7zip](https://7-zip.org/) 才能正常安装!!!!
@@ -39,7 +31,7 @@ composer global require "laravel/installer"
 
 例如, `laravel new blog` 将会创建一个名为 `blog` 的新应用, 且包含所有 `Laravel` 依赖。
 
-### 安装指定版本
+## 安装指定版本
 
 `test` 是应用名
 
@@ -47,17 +39,4 @@ composer global require "laravel/installer"
 
 ~~~bash
 composer create-project laravel/laravel test 9.x
-~~~
-
-## 使用Docker
-
-::: tip
-需要[安装wsl2环境](https://zhuanlan.zhihu.com/p/386590591)
-并且安装完成 `docker` 环境
-:::
-
-终端运行
-
-~~~bash
-curl -s https://laravel.build/example-app | bash
 ~~~
