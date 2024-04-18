@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: vuepress-deploy
-        uses: jenkey2011/hk-vuepress-deploy@master
+        uses: huankong233/hk-vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BUILD_SCRIPT: npm install pnpm -g && pnpm install && pnpm run build
