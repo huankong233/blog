@@ -4,5 +4,5 @@ export default definePlumeNotesItemConfig({
   text: 'rust',
   dir: 'rust',
   link: '/notes/rust/',
-  sidebar: ['', { dir: '学习', items: [] }]
+  sidebar: [{ dir: '学习', collapsed: false, items: [] }]
 })

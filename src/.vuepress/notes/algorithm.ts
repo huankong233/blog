@@ -5,13 +5,14 @@ export default definePlumeNotesItemConfig({
   dir: 'algorithm',
   link: '/notes/algorithm/',
   sidebar: [
-    '',
     {
       dir: '介绍',
+      collapsed: false,
       items: ['常见数据结构和算法']
     },
     {
       dir: '数据结构',
+      collapsed: false,
       items: [
         '数组',
         '栈',
@@ -25,7 +26,8 @@ export default definePlumeNotesItemConfig({
         '树',
         '二叉树',
         '二叉搜索树',
-        '红黑树'
+        '红黑树',
+        '图'
       ]
     }
   ]

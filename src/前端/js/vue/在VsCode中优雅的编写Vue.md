@@ -27,22 +27,22 @@ tags:
 `File->Preference->Settings`
 
 ![1669807448318.png](https://img.huankong.top/i/2022/11/30/63873d59e324b.png)
-现在看到的是界面配置模式, 点击右上角的大括号 ( 如下图 ), 可以打开 `settings.json` 文件。
+现在看到的是界面配置模式, 点击右上角的大括号 ( 如下图 ), 可以打开 `settings.json` 文件.
 
 ![1669807475068.png](https://img.huankong.top/i/2022/11/30/63873d748d015.png)
 粘贴以下代码 ( 可以自行修改 ) , 保存即可
 
 代码:
 
-~~~json
+```json
 {
   // 控制是否启用平滑插入动画
   "editor.cursorSmoothCaretAnimation": "on",
   // 搜索控件添加额外的空白
   "editor.find.addExtraSpaceOnTop": false,
-  // 控制编辑器是否应呈现垂直字形边距。字形边距最常用于调试。
+  // 控制编辑器是否应呈现垂直字形边距. 字形边距最常用于调试.
   "editor.glyphMargin": true,
-  // 控制是否在编辑器中自动显示内联建议。
+  // 控制是否在编辑器中自动显示内联建议.
   "editor.inlineSuggest.enabled": true,
   // 关闭自动设置tabsize
   "editor.detectIndentation": false,
@@ -80,8 +80,8 @@ tags:
   "stylusSupremacy.insertNewLineAroundBlocks": false,
 
   "vue.updateImportsOnFileMove.enabled": true,
-  "vue.server.hybridMode": true,
+  "vue.server.hybridMode": true
 }
-~~~
+```
 
-以后只要代码被保存就会自动格式化代码了,鼠标失焦也会自动保存。
+以后只要代码被保存就会自动格式化代码了,鼠标失焦也会自动保存.

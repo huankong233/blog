@@ -42,15 +42,15 @@ Tip: 安装完成后在 `cmd` 里无法直接启动, 你可以在开始菜单里
 
 ### 2.2创建环境
 
-~~~batch
+```batch
 conda create-n 环境名
-~~~
+```
 
 ### 2.3激活环境
 
-~~~batch
+```batch
 Conda activate 环境名
-~~~
+```
 
 ## 3.安装 `PyTorch`
 
@@ -98,7 +98,7 @@ Conda activate 环境名
 
 ![1669809129593.png](https://img.huankong.top/i/2022/11/30/638743ea65dcc.png)
 
-然后全部关闭即可。
+然后全部关闭即可.
 
 ### 4.2测试是否配置正确
 
@@ -111,17 +111,17 @@ Conda activate 环境名
 
 ### 5.1克隆仓库
 
-~~~batch
+```batch
 git clone https://github.com/babysor/MockingBird
-~~~
+```
 
 ### 5.2补全支持库
 
-~~~batch
+```batch
 pip install -r requirements.txt
-~~~
+```
 
-等待跑码完成。
+等待跑码完成.
 
 ### 5.3如果报错
 
@@ -133,17 +133,17 @@ pip install -r requirements.txt
 
 ### 5.4安装 webrtcvad
 
-~~~batch
+```batch
 pip install webrtcvad-wheels
-~~~
+```
 
 ![1669809301698.png](https://img.huankong.top/i/2022/11/30/6387449679680.png)
 
-确保不出现报错。
+确保不出现报错.
 
 ## 13.新建文件夹
 
-进入 `synthesizer` 文件夹, 创建名称为 `saved_models` 的文件夹。
+进入 `synthesizer` 文件夹, 创建名称为 `saved_models` 的文件夹.
 
 下载模型文件 ( 文件来自[B 站视频](https://www.bilibili.com/video/BV1DL4y1q7VL) )
 
@@ -153,8 +153,8 @@ pip install webrtcvad-wheels
 
 运行命令
 
-~~~batch
+```batch
 python demo_toolbox.py -d .\samples
-~~~
+```
 
 耐心等待后显示了界面, 说明一切顺利!

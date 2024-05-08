@@ -1,7 +1,7 @@
-import { getDirname, path } from 'vuepress/utils'
-import { defineUserConfig } from 'vuepress'
-import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import { defineUserConfig } from 'vuepress'
+import { getDirname, path } from 'vuepress/utils'
 
 // import { pwaPlugin } from '@vuepress/plugin-pwa'
 import theme from './theme'

@@ -4,5 +4,5 @@ export default definePlumeNotesItemConfig({
   text: 'kotlin',
   dir: 'kotlin',
   link: '/notes/kotlin/',
-  sidebar: ['', { dir: '学习', items: ['定义变量', '数据类型'] }]
+  sidebar: [{ dir: '学习', collapsed: false, items: ['定义变量', '数据类型'] }]
 })

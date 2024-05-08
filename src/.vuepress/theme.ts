@@ -1,6 +1,6 @@
 import { plumeTheme } from 'vuepress-theme-plume'
-import notes from './notes'
 import navbar from './navbar'
+import notes from './notes'
 
 export default plumeTheme({
   logo: 'https://img.huankong.top/i/2022/11/29/6385ef8c7a675.ico',

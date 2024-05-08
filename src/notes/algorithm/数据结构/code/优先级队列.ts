@@ -1,49 +1,51 @@
-class element {
-  value: any
-  priority: number
-  constructor(value: any, priority: number) {
-    this.value = value
-    this.priority = priority
+namespace 优先级队列 {
+  class element {
+    value: any
+    priority: number
+    constructor(value: any, priority: number) {
+      this.value = value
+      this.priority = priority
+    }
   }
-}
 
-class proiorityQueue {
-  #value: element[] = []
+  class proiorityQueue {
+    #value: element[] = []
 
-  enqueue(value: any, priority: number) {
-    const newElement = new element(value, priority)
+    enqueue(value: any, priority: number) {
+      const newElement = new element(value, priority)
 
-    if (this.#value.length !== 0) {
-      for (let i = 0; i < this.#value.length; i++) {
-        if (this.#value[i].priority > newElement.priority) {
-          this.#value.splice(i, 0, newElement)
-          return newElement
+      if (this.#value.length !== 0) {
+        for (let i = 0; i < this.#value.length; i++) {
+          if (this.#value[i].priority > newElement.priority) {
+            this.#value.splice(i, 0, newElement)
+            return newElement
+          }
         }
       }
+
+      this.#value.push(newElement)
+
+      return newElement
     }
 
-    this.#value.push(newElement)
+    dequeue() {
+      return this.#value.shift()
+    }
 
-    return newElement
-  }
+    front() {
+      return this.#value[0]
+    }
 
-  dequeue() {
-    return this.#value.shift()
-  }
+    isEmpty() {
+      return this.#value.length === 0
+    }
 
-  front() {
-    return this.#value[0]
-  }
+    size() {
+      return this.#value.length
+    }
 
-  isEmpty() {
-    return this.#value.length === 0
-  }
-
-  size() {
-    return this.#value.length
-  }
-
-  toString() {
-    return JSON.stringify(this.#value)
+    toString() {
+      return JSON.stringify(this.#value)
+    }
   }
 }

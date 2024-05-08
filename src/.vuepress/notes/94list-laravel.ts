@@ -5,13 +5,14 @@ export default definePlumeNotesItemConfig({
   dir: '94list-laravel',
   link: '/docs/94list-laravel/',
   sidebar: [
-    '',
     {
       dir: '使用',
+      collapsed: false,
       items: ['如何安装']
     },
     {
       dir: '接口定义',
+      collapsed: false,
       items: ['用户', '管理员']
     }
   ]
