@@ -9,6 +9,7 @@ export default definePlumeNotesItemConfig({
     { dir: '开发', collapsed: false, items: ['插件', '配置', '支持库'] },
     {
       dir: '支持库',
+      collapsed: false,
       items: [
         'Api',
         'array',
