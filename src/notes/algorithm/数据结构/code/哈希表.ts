@@ -353,13 +353,4 @@ namespace 哈希表 {
       return this.#count === 0
     }
   }
-
-  const hashTable = new HashTable()
-  hashTable.put('name', 'huankong')
-  hashTable.put('age', 114514)
-  hashTable.put('height', 1919810)
-  hashTable.put('age', 20)
-  console.log(hashTable.get('name'))
-  console.log(hashTable.remove('age'))
-  console.log(hashTable.get('age'))
 }

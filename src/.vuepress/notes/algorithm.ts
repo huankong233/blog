@@ -16,7 +16,7 @@ export default definePlumeNotesItemConfig({
       items: [
         '数组',
         '栈',
-        '队列结构',
+        '队列',
         '优先级队列',
         '单向链表',
         '双向链表',

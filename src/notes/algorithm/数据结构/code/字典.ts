@@ -1,5 +1,5 @@
 namespace 字典 {
-  class Map {
+  class Dictionay {
     #values: { [key: string]: any } = {}
 
     has(key: string) {
