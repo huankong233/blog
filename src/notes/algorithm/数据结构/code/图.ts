@@ -64,6 +64,12 @@ namespace 图 {
     }
   }
 
+  interface color {
+    [key: string]: 'white' | 'gray' | 'black'
+  }
+
+  type func = (value: string) => void
+
   class Graph {
     // 顶点
     #vertexes: string[] = []
@@ -89,20 +95,20 @@ namespace 图 {
         .join('\n')
     }
 
-    initColor(): { [key: string]: { color: 'white' | 'gray' | 'black' } } {
+    initColor(): color {
       /**
        * @description 白色: 没有被访问过
        * @description 灰色: 被访问过, 但没有完成探索
        * @description 黑色: 被访问过, 并且探索完成
        */
       return this.#vertexes.reduce((previousValue, currentValue) => {
-        previousValue[currentValue] = { color: 'white' }
+        previousValue[currentValue] = 'white'
         return previousValue
       }, {})
     }
 
-    // 广度优先算法
-    BFS(initVertexes: string, func: (value: string) => void) {
+    // 广度优先搜索算法
+    BFS(initVertexes: string, func: func) {
       const queue = new Queue<string>()
       const color = this.initColor()
 
@@ -115,44 +121,82 @@ namespace 图 {
         const edges = this.#edges.get(currentVertex) as string[]
 
         // 设置为灰色
-        color[initVertexes].color = 'gray'
+        color[initVertexes] = 'gray'
 
         // 遍历所有边, 添加到队列中
         edges.forEach((edge) => {
           // 如果是白色, 则设置为灰色, 并添加到队列中
           // 如果是灰色, 则跳过, 因为已经被访问过了
-          if (color[edge].color === 'white') {
-            color[edge].color = 'gray'
+          if (color[edge] === 'white') {
+            color[edge] = 'gray'
             queue.enqueue(edge)
           }
         })
 
         func(currentVertex)
 
-        color[initVertexes].color = 'black'
+        color[initVertexes] = 'black'
       }
     }
 
-    // 深度优先算法
-    DFS() {}
+    // 深度优先搜索算法(队列方法)
+    DFSQueue(initVertexes: string, func: func) {
+      const queue = new Queue<string>()
+      const color = this.initColor()
+
+      queue.enqueue(initVertexes)
+      while (!queue.isEmpty()) {
+        // 取出顶点
+        const currentVertex = queue.dequeue() as string
+
+        // 获取相连的其余顶点
+        const edges = this.#edges.get(currentVertex) as string[]
+
+        // 设置为灰色
+        color[initVertexes] = 'gray'
+
+        // 遍历所有边, 添加到队列中
+        edges.forEach((edge) => {
+          // 如果是白色, 则设置为灰色, 并添加到队列中
+          if (color[edge] === 'white') {
+            color[edge] = 'gray'
+            queue.enqueue(edge)
+          }
+        })
+
+        func(currentVertex)
+
+        color[initVertexes] = 'black'
+      }
+    }
+
+    // 深度优先搜索算法(递归方法)
+    DFS(initVertexes: string, func: func) {
+      const color = this.initColor()
+      this.DFSVisit(initVertexes, color, func)
+    }
+
+    DFSVisit(vertexes: string, color: color, func: func) {
+      color[vertexes] = 'gray'
+
+      // 获取相连的其余顶点
+      const edges = this.#edges.get(vertexes) as string[]
+
+      // 设置为灰色
+      color[vertexes] = 'gray'
+
+      func(vertexes)
+
+      // 遍历所有边
+      edges.forEach((edge) => {
+        // 如果是白色, 则设置为灰色, 并开始递归调用
+        if (color[edge] === 'white') {
+          color[edge] = 'gray'
+          this.DFSVisit(edge, color, func)
+        }
+      })
+
+      color[vertexes] = 'black'
+    }
   }
-
-  const graph = new Graph()
-  const vertex = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
-
-  vertex.forEach((vertex) => graph.addVertex(vertex))
-  graph.addEdge('A', 'B')
-  graph.addEdge('A', 'C')
-  graph.addEdge('A', 'D')
-  graph.addEdge('C', 'D')
-  graph.addEdge('C', 'G')
-  graph.addEdge('D', 'G')
-  graph.addEdge('D', 'H')
-  graph.addEdge('B', 'E')
-  graph.addEdge('B', 'F')
-  graph.addEdge('E', 'I')
-
-  graph.BFS('A', function (value) {
-    console.log(value)
-  })
 }
