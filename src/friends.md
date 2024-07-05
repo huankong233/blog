@@ -31,4 +31,9 @@ list:
     link: https://github.com/lijiakaijun
     avatar: https://github.com/lijiakaijun.png
     desc: 跟随梦想的脚步，感受生命的温度。
+  -
+    name: 雨洛
+    link: http://blog.rain.ink/
+    avatar: https://blog.rain.ink/wp-content/uploads/2024/07/1720074659-r-e1720095388541.jpg
+    desc: Everything that kills me makes me feel alive.
 ---
