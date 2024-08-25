@@ -1,6 +1,6 @@
-import type { NavItem } from 'vuepress-theme-plume'
+import { defineNavbarConfig } from 'vuepress-theme-plume'
 
-export default [
+export default defineNavbarConfig([
   {
     text: '首页',
     icon: 'material-symbols:home',
@@ -48,10 +48,10 @@ export default [
         activeMatch: '/docs/kkbot-ts/*'
       },
       {
-        text: '94list-laravel',
-        icon: 'ion:folder-open',
-        link: '/docs/94list-laravel/',
-        activeMatch: '/docs/94list-laravel/*'
+        text: 'node-napcat-ts',
+        icon: 'https://avatars.githubusercontent.com/u/165024194?s=48&v=4',
+        link: '/docs/node-napcat-ts/',
+        activeMatch: '/docs/node-napcat-ts/*'
       }
     ]
   },
@@ -98,4 +98,4 @@ export default [
       }
     ]
   }
-] as NavItem[]
+])

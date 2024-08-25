@@ -1,6 +1,6 @@
 import { plumeTheme } from 'vuepress-theme-plume'
 import navbar from './navbar'
-import notes from './notes'
+import notes from './notes.js'
 
 export default plumeTheme({
   logo: 'https://img.huankong.top/i/2022/11/29/6385ef8c7a675.ico',
@@ -26,14 +26,9 @@ export default plumeTheme({
   lastUpdatedText: '上次更新',
   docsDir: 'src',
   plugins: {
-    externalLinkIcon: false,
-    // search: {
-    //   locales: {
-    //     '/': {
-    //       placeholder: '搜索'
-    //     }
-    //   }
-    // },
+    markdownEnhance: { demo: true },
+    markdownPower: { caniuse: true, jsfiddle: true, bilibili: true },
+
     docsearch: {
       appId: 'U198Y5GBFG',
       apiKey: 'ba76b60a3135b6bf81cec20978b2df31',
@@ -53,7 +48,6 @@ export default plumeTheme({
     frontmatter: {
       include: ['**/*.{md,MD}'],
       exclude: ['.vuepress/**/*', 'node_modules', '**/.~*.{md,MD}']
-    },
-    markdownPower: { bilibili: true }
+    }
   }
 })

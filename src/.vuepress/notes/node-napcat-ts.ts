@@ -1,8 +1,8 @@
 import { defineNoteConfig } from 'vuepress-theme-plume'
 
 export default defineNoteConfig({
-  text: 'algorithm',
-  dir: 'algorithm',
-  link: '/notes/algorithm/',
+  text: 'node-napcat-ts',
+  dir: 'node-napcat-ts',
+  link: '/docs/node-napcat-ts',
   sidebar: 'auto'
 })

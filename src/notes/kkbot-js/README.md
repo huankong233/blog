@@ -6,7 +6,7 @@ permalink: /docs/kkbot-js/
 ---
 
 ::: tip
-`v0.1` 之前的版本都弃用!请更新至最新版!
+`js` 版本已停止维护!
 请查看 [`kkbot-ts`](../kkbot-ts/README.md)
 :::
 

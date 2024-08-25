@@ -1,8 +1,8 @@
-import { definePlumeNotesItemConfig } from 'vuepress-theme-plume'
+import { defineNoteConfig } from 'vuepress-theme-plume'
 
-export default definePlumeNotesItemConfig({
+export default defineNoteConfig({
   text: 'java',
   dir: 'java',
   link: '/notes/java/',
-  sidebar: [{ dir: '学习', collapsed: false, items: [] }]
+  sidebar: 'auto'
 })

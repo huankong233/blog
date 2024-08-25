@@ -1,17 +1,13 @@
 ---
-title: kkbot-ts 文档
+title: node-napcat-ts
 author: huan_kong
-createTime: 2023/12/07 18:37:04
-permalink: /docs/kkbot-ts/
+createTime: 2024/08/25 10:14:49
+permalink: /docs/node-napcat-ts/
 ---
-
-:::tip
-重构中~
-:::
 
 ## 介绍
 
-这就是个简单的 `QQ` 机器人的框架实现
+针对 `napcat` 开发的 `SDK`
 
 ## 关联项目
 

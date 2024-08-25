@@ -7,21 +7,26 @@
   "author": "huankong",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev src --clean-cache --clean-temp",
-    "build": "vuepress build src --clean-cache --clean-temp"
+    "dev": "vuepress dev src",
+    "build": "vuepress build src --clean-cache --clean-temp",
+    "preview": "http-server docs -d 0",
+    "lint:fix": "prettier . --write"
   },
   "dependencies": {
+    "@iconify/json": "^2.2.234",
     "@vuepress/bundler-vite": "2.0.0-rc.14",
+    "@vuepress/plugin-baidu-analytics": "2.0.0-rc.40",
     "@vuepress/plugin-google-analytics": "2.0.0-rc.37",
-    "vue": "^3.4.31",
+    "vue": "^3.4.37",
     "vuepress": "2.0.0-rc.14",
-    "vuepress-theme-plume": "1.0.0-rc.73"
+    "vuepress-theme-plume": "1.0.0-rc.88"
   },
   "devDependencies": {
-    "@pengzhanbo/prettier-config": "^1.11.2",
+    "@pengzhanbo/prettier-config": "^1.12.0",
     "@types/express": "^4.17.21",
-    "prettier": "^3.3.2",
+    "http-server": "^14.1.1",
+    "prettier": "^3.3.3",
     "tsconfig-vuepress": "^4.5.0",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.4"
   }
 }

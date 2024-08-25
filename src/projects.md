@@ -8,6 +8,20 @@ article: false
 
 ## 编写的开源项目
 
+### node-napcat-ts
+
+![stars](https://img.shields.io/github/stars/huankong233/node-napcat-ts?style=social)
+![version](https://img.shields.io/npm/v/node-napcat-ts?style=flat-square)
+![download](https://img.shields.io/npm/dt/node-napcat-ts?style=flat-square)
+
+仓库地址: [node-napcat-ts](https://github.com/huankong233/node-napcat-ts)
+
+**说明:**
+
+对接 `napcat` 的 `SDK`
+
+---
+
 ### 94list-laravel
 
 ![stars](https://img.shields.io/github/stars/huankong233/94list-laravel?style=social)
@@ -16,9 +30,7 @@ article: false
 
 **说明:**
 
-一个简单的 `baidupan` `解析` 实现
-
-使用 `laravel` 编写
+百度网盘解析工具
 
 ---
 
@@ -44,9 +56,7 @@ article: false
 
 **说明:**
 
-一个简单的 `BlueArchive` `Logo` 实现
-
-使用 `typescript` 编写
+`BlueArchiveLogo` 生成器
 
 ---
 
@@ -58,27 +68,9 @@ article: false
 
 **说明:**
 
-一个简单的 `QQBot` 实现框架
+一个简单的 `QQBot` 框架
 
-支持添加插件等实用功能
-
-使用 `typescript` 编写
-
----
-
-### kkbot
-
-![stars](https://img.shields.io/github/stars/huankong233/kkbot?style=social)
-
-仓库地址: [kkbot](https://github.com/huankong233/kkbot)
-
-**说明:**
-
-一个简单的 `QQBot` 实现框架
-
-支持添加插件等实用功能
-
-停止开发
+新版已用 `ts` 重写, 原 `js` 版本已弃用
 
 ---
 
@@ -119,6 +111,8 @@ article: false
 仓库地址: [ChatSydney-FastAPI](https://github.com/huankong233/ChatSydney-FastAPI)
 
 **说明:**
+
+已停止开发
 
 一个快捷的 `ChatSydney` 的 `Api` 实现
 

@@ -1,8 +1,8 @@
-import { definePlumeNotesItemConfig } from 'vuepress-theme-plume'
+import { defineNoteConfig } from 'vuepress-theme-plume'
 
-export default definePlumeNotesItemConfig({
+export default defineNoteConfig({
   text: 'kotlin',
   dir: 'kotlin',
   link: '/notes/kotlin/',
-  sidebar: [{ dir: '学习', collapsed: false, items: ['定义变量', '数据类型'] }]
+  sidebar: 'auto'
 })
