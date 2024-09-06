@@ -36,4 +36,9 @@ list:
     link: http://blog.rain.ink/
     avatar: https://blog.rain.ink/wp-content/uploads/2024/07/1720074659-r-e1720095388541.jpg
     desc: Everything that kills me makes me feel alive.
+  -
+    name: MliKiowa
+    link: https://nanaeo.cn/
+    avatar: https://github.com/MliKiowa.png
+    desc: 金陵城上西楼，倚清秋。
 ---
