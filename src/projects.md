@@ -44,6 +44,8 @@ article: false
 
 **说明:**
 
+已弃用
+
 对接 `openShamrock` 的 `SDK`
 
 ---
@@ -60,11 +62,11 @@ article: false
 
 ---
 
-### kkbot-ts
+### Minato
 
-![stars](https://img.shields.io/github/stars/huankong233/kkbot-ts?style=social)
+![stars](https://img.shields.io/github/stars/huankong233/Minato?style=social)
 
-仓库地址: [kkbot-ts](https://github.com/huankong233/kkbot-ts)
+仓库地址: [Minato](https://github.com/huankong233/Minato)
 
 **说明:**
 

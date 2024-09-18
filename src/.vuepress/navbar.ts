@@ -15,87 +15,53 @@ export default defineNavbarConfig([
   {
     text: '友情链接',
     icon: 'fa-solid:user-friends',
-    link: '/friends/',
-    activeMatch: '/friends/'
+    link: '/friends/'
   },
   {
     text: '开源项目',
     icon: 'ri:open-source-fill',
-    link: '/projects/',
-    activeMatch: '/projects/'
-  },
-  {
-    text: '关于我',
-    icon: 'mdi:about',
-    link: '/about/',
-    activeMatch: '/about/'
-  },
-  {
-    text: '技术文档',
-    icon: 'mdi:idea',
-    activeMatch: '/notes/(kkbot-js|kkbot-ts)/*',
-    items: [
-      {
-        text: 'kkbot-js',
-        icon: 'lucide:bot',
-        link: '/docs/kkbot-js/',
-        activeMatch: '/docs/kkbot-js/*'
-      },
-      {
-        text: 'kkbot-ts',
-        icon: 'lucide:bot',
-        link: '/docs/kkbot-ts/',
-        activeMatch: '/docs/kkbot-ts/*'
-      },
-      {
-        text: 'node-napcat-ts',
-        icon: 'https://avatars.githubusercontent.com/u/165024194?s=48&v=4',
-        link: '/docs/node-napcat-ts/',
-        activeMatch: '/docs/node-napcat-ts/*'
-      }
-    ]
+    link: '/projects/'
   },
   {
     text: '笔记',
     icon: 'icon-park-solid:bookshelf',
-    activeMatch: '/notes/(pinia|rust|c|algorithm|java|kotlin)/*',
+    activeMatch: '/notes',
     items: [
       {
         text: 'pinia',
         link: '/notes/pinia/',
-        icon: 'logos:pinia',
-        activeMatch: '/notes/pinia/*'
+        icon: 'logos:pinia'
       },
       {
         text: 'rust',
         link: '/notes/rust/',
-        icon: 'logos:rust',
-        activeMatch: '/notes/rust/*'
+        icon: 'logos:rust'
       },
       {
-        text: 'C',
+        text: 'c',
         link: '/notes/c/',
-        icon: 'logos:c',
-        activeMatch: '/notes/c/*'
+        icon: 'logos:c'
       },
       {
-        text: '数据结构和算法',
+        text: 'algorithm',
         link: '/notes/algorithm/',
-        icon: 'flat-color-icons:tree-structure',
-        activeMatch: '/notes/algorithm/*'
+        icon: 'flat-color-icons:tree-structure'
       },
       {
         text: 'Java',
         link: '/notes/java/',
-        icon: 'logos:java',
-        activeMatch: '/notes/java/*'
+        icon: 'logos:java'
       },
       {
         text: 'Kotlin',
         link: '/notes/kotlin/',
-        icon: 'devicon:kotlin',
-        activeMatch: '/notes/kotlin/*'
+        icon: 'devicon:kotlin'
       }
     ]
+  },
+  {
+    text: '关于我',
+    icon: 'mdi:about',
+    link: '/about/'
   }
 ])

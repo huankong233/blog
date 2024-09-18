@@ -11,7 +11,7 @@ hero:
   actions:
     -
       text: 我的博客
-      link: /blog
+      link: /blog/
       theme: brand
     -
       text: Github

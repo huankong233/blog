@@ -7,9 +7,4 @@ permalink: /docs/node-napcat-ts/
 
 ## 介绍
 
-针对 `napcat` 开发的 `SDK`
-
-## 关联项目
-
-- [napcat](https://github.com/NapNeko/NapCatQQ)
-- [node-napcat-ts](https://www.npmjs.com/package/node-napcat-ts)
+文档已迁移到 [node-napcat-ts.huankong.top](https://node-napcat-ts.huankong.top)
