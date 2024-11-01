@@ -13,20 +13,22 @@
     "lint:fix": "prettier . --write"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.250",
-    "@vuepress/bundler-vite": "2.0.0-rc.15",
-    "@vuepress/plugin-baidu-analytics": "2.0.0-rc.42",
-    "@vuepress/plugin-google-analytics": "2.0.0-rc.42",
-    "vue": "^3.5.6",
-    "vuepress": "2.0.0-rc.15",
-    "vuepress-theme-plume": "1.0.0-rc.100"
+    "@iconify/json": "^2.2.264",
+    "@vuepress/bundler-vite": "2.0.0-rc.18",
+    "@vuepress/plugin-baidu-analytics": "2.0.0-rc.54",
+    "@vuepress/plugin-google-analytics": "2.0.0-rc.54",
+    "katex": "^0.16.11",
+    "sass-embedded": "^1.80.4",
+    "vue": "^3.5.12",
+    "vuepress": "2.0.0-rc.18",
+    "vuepress-theme-plume": "1.0.0-rc.113"
   },
   "devDependencies": {
-    "@pengzhanbo/prettier-config": "^1.16.0",
-    "@types/express": "^4.17.21",
+    "@pengzhanbo/prettier-config": "^1.18.2",
+    "@types/express": "^5.0.0",
     "http-server": "^14.1.1",
     "prettier": "^3.3.3",
-    "tsconfig-vuepress": "^5.2.0",
-    "typescript": "^5.6.2"
+    "tsconfig-vuepress": "^5.2.1",
+    "typescript": "^5.6.3"
   }
 }
