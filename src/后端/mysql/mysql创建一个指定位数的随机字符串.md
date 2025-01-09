@@ -8,7 +8,7 @@ tags:
   - mysql
 ---
 
-``` sql
+```sql
 DROP FUNCTION IF EXISTS rand_string;
 DELIMITER $$
 CREATE FUNCTION rand_string(n INT)
@@ -28,7 +28,7 @@ DELIMITER;
 
 如果遇到报错, 在命令前执行
 
-``` sql
+```sql
 set global log_bin_trust_function_creators=TRUE;
 ```
 

@@ -94,7 +94,7 @@ zhuangtongfa.material-theme
 
 代码:
 
-``` json
+```json
 {
   // 控制是否启用平滑插入动画
   "editor.cursorSmoothCaretAnimation": "on",
@@ -205,15 +205,7 @@ zhuangtongfa.material-theme
   "template-string-converter.enabled": true,
   "template-string-converter.quoteType": "both",
   "template-string-converter.autoRemoveTemplateString": true,
-  "template-string-converter.validLanguages": [
-    "svelte",
-    "typescript",
-    "javascript",
-    "typescriptreact",
-    "javascriptreact",
-    "html",
-    "vue"
-  ],
+  "template-string-converter.validLanguages": ["svelte", "typescript", "javascript", "typescriptreact", "javascriptreact", "html", "vue"],
 
   // liveServer 配置
   "liveServer.settings.donotShowInfoMsg": true,

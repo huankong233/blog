@@ -14,50 +14,50 @@ tags:
 
 ## 2.配置 `Termux`
 
-### 2.1切换到清华源
+### 2.1 切换到清华源
 
-``` bash
+```bash
 sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list
 ```
 
-### 2.2安装 `ssh`
+### 2.2 安装 `ssh`
 
-``` bash
+```bash
 pkg install openssh
 ```
 
-### 2.3设置 `Termux` 密码
+### 2.3 设置 `Termux` 密码
 
-``` bash
+```bash
 passwd
 ```
 
-### 2.4开启 `ssh` 服务
+### 2.4 开启 `ssh` 服务
 
-``` bash
+```bash
 sshd
 ```
 
-### 2.5可能会遇到的问题
+### 2.5 可能会遇到的问题
 
 ![1670237638239.png](https://img.huankong.top/i/2022/12/05/638dcdc853e06.png)
 
-#### 2.5.1需要更新一下软件包
+#### 2.5.1 需要更新一下软件包
 
-``` bash
+```bash
 pkg update
 ```
 
-#### 2.5.2重新生成 key
+#### 2.5.2 重新生成 key
 
-``` bash
+```bash
 ssh-keygen -A
 ```
 
 ![1670237761153.png](https://img.huankong.top/i/2022/12/05/638dce438326b.png)
 然后再尝试使用`sshd`启动服务
 
-### 2.6连接 `ssh`
+### 2.6 连接 `ssh`
 
 使用常见的 `ssh` 连接工具 `xshell` 等
 连接时 `ip` 就是手机的 `ip`
@@ -69,13 +69,13 @@ ssh-keygen -A
 
 ### 3.1 安装 `proot-distro`
 
-``` bash
+```bash
 pkg install proot-distro
 ```
 
 ### 3.2 常用指令
 
-``` bash
+```bash
 # 查看帮助
 proot-distro help
 
@@ -89,7 +89,7 @@ proot-distro list
 
 中间可能需要连接到国际互联网
 
-``` bash
+```bash
 proot-distro install debian
 ```
 
@@ -100,7 +100,7 @@ proot-distro install debian
 
 运行
 
-``` bash
+```bash
 proot-distro login debian
 ```
 
@@ -113,13 +113,13 @@ proot-distro login debian
 `Debian` 的软件源配置文件是 `/etc/apt/sources.list`进行修改
 默认自带的文本编辑器是 `nano`, 居然连 `vi` 都没有(小声)
 
-``` bash
+```bash
 vi /etc/apt/sources.list
 ```
 
 添加上下面这几段(推荐把自带源注释掉, 在前面加上#即可)
 
-``` bash
+```bash
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
@@ -128,7 +128,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main 
 
 修改完成后记得刷新一下
 
-``` bash
+```bash
 apt update
 ```
 
@@ -136,13 +136,13 @@ apt update
 
 #### 4.2.1 安装 `locales`
 
-``` bash
+```bash
 apt-get install locales
 ```
 
 #### 4.2.2 修改语言
 
-``` bash
+```bash
 dpkg-reconfigure locales
 ```
 
@@ -155,7 +155,7 @@ dpkg-reconfigure locales
 
 ### 4.3 修改时区
 
-``` bash
+```bash
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 

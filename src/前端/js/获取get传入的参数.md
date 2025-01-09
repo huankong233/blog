@@ -21,9 +21,9 @@ tags:
 
 ### 原生实现
 
-[MDN文档](https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams)
+[MDN 文档](https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams)
 
-``` js
+```js
 const urlParams = new URLSearchParams(location.search)
 // 需要获取指定的参数就只需要 ↓
 urlParams.get('id')
@@ -31,7 +31,7 @@ urlParams.get('id')
 
 ### 获取指定参数方法
 
-``` js
+```js
 function getQueryVariable(variable) {
   let query = window.location.search.substring(1)
   let vars = query.split('&')
@@ -45,12 +45,12 @@ function getQueryVariable(variable) {
 
 ### 获取所有参数
 
-``` js
+```js
 function getAllQueryVariable() {
   let query = window.location.search.substring(1)
   let vars = query.split('&')
   let temp = {}
-  vars.forEach(item => {
+  vars.forEach((item) => {
     let pair = item.split('=')
     temp[pair[0]] = pair[1]
   })

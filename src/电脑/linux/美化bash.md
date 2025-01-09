@@ -10,13 +10,13 @@ tags:
 
 ## 1.安装 `zsh`
 
-``` bash
+```bash
 sudo pacman -S zsh
 ```
 
 ## 2.切换终端
 
-``` bash
+```bash
 chsh -s /bin/zsh
 ```
 
@@ -34,7 +34,7 @@ chsh -s /bin/zsh
 
 确保没有问题, 如果后面没问题可以再改掉, 关于如何修改请自行搜索
 
-``` bash
+```bash
 $ locale
 LANG=en_US.utf8
 LANGUAGE=
@@ -65,7 +65,7 @@ LC_ALL=
 
 我们可以把这段代码插入到 `~/.zshrc` 文件的末尾
 
-``` bash
+```bash
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
     export COLORTERM='xterm-256color'
 else
@@ -77,7 +77,7 @@ fi
 
 ## 5.安装 `powerlevel10k`
 
-``` bash
+```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 echo 'source ~/.powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
@@ -90,21 +90,21 @@ echo 'source ~/.powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 
 ### 1.语法高亮
 
-``` bash
+```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
 echo source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh >> ~/.zshrc
 ```
 
 ### 2.命令补全
 
-``` bash
+```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 echo source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh >> ~/.zshrc
 ```
 
 ### 3.路径补全
 
-``` bash
+```bash
 git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completions
 echo fpath=(~/.zsh/zsh-completions/src $fpath) >> ~/.zshrc
 ```
@@ -113,7 +113,7 @@ echo fpath=(~/.zsh/zsh-completions/src $fpath) >> ~/.zshrc
 
 在 `~/.zshrc` 结尾添加
 
-``` bash
+```bash
 # bind ctrl + left
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
@@ -123,7 +123,7 @@ bindkey "^[[1;5D" backward-word
 
 在 `~/.zshrc` 结尾添加
 
-``` bash
+```bash
 # history
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000000

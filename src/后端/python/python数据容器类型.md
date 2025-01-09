@@ -39,7 +39,7 @@ tags:
 
 从列表的指定位置移除元素 并且返回索引元素
 
-``` python
+```python
 list1 = ['Google', 'JD', 'Taobo']
 print(list1.pop(1))
 print(list1)
@@ -64,7 +64,7 @@ print(list1)
 
 同时遍历两个或更多的序列, 可以使用 `zip()` 组合:
 
-``` python
+```python
 questions = ['name', 'quest', 'favorite color']
 answers = ['lancelot', 'the holy grail', 'blue']
 
@@ -79,7 +79,7 @@ for (q, a) in zip(questions, answers):
 
 反向遍历一个列表
 
-``` python
+```python
 for i in reversed(range(1, 10, 2)):
     print(i)
 
@@ -95,7 +95,7 @@ for i in reversed(range(1, 10, 2)):
 
 可以直接改变循环时传入的值
 
-``` python
+```python
 a_range = ["1","2","3"]
 # 让循环时的值转变类型
 a_list = [int(x) for x in a_range]
@@ -104,7 +104,7 @@ print(a_list)
 # 返回结果: [1, 2, 3]
 ```
 
-``` python
+```python
 a_range = range(10)
 # 让循环时的值变成x*x
 a_list = [x * x for x in a_range]
@@ -119,7 +119,7 @@ print(a_list)
 
 ### 获取元素
 
-``` python
+```python
 t = (12345, 54321, 'hello!')
 print(t[0])
 
@@ -128,7 +128,7 @@ print(t[0])
 
 ### 获取整个元组
 
-``` python
+```python
 print(t)
 
 # 返回结果: (12345, 54321, 'hello!')
@@ -144,7 +144,7 @@ print(t)
 
 ### 创建集合
 
-``` python
+```python
 basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
 print(basket)
 # 返回结果: {'orange', 'banana', 'pear', 'apple'}
@@ -152,7 +152,7 @@ print(basket)
 
 ### 检测成员
 
-``` python
+```python
 print('orange' in basket)
 # 返回结果: True
 ```
@@ -163,7 +163,7 @@ print('orange' in basket)
 
 ### 添加字典元素
 
-``` python
+```python
 tel = {'jack': 4098, 'sape': 4139}
 tel['guido'] = 4127
 print(tel)
@@ -172,14 +172,14 @@ print(tel)
 
 ### 通过键获取值
 
-``` python
+```python
 print(tel['jack'])
 # 返回结果: 4098
 ```
 
 ### 删除字典的一部分
 
-``` python
+```python
 del tel['sape']
 tel['irv'] = 4127
 print(tel)
@@ -190,49 +190,49 @@ print(tel)
 
 #### 这里有两种, 一种是用 `list` 函数
 
-``` python
+```python
 print(list(tel.keys()))
 # 返回结果: ['irv', 'guido', 'jack']
 ```
 
 #### 一种是直接用中括号框起来
 
-``` python
+```python
 print([tel.keys()])
 # 返回结果: [dict_keys(['jack', 'sape'])]
 ```
 
 ### 判断存在
 
-``` python
+```python
 print('guido' in tel)
 # 返回结果: True
 ```
 
 ### 根据元组列表来构建字典
 
-``` python
+```python
 print(dict([('sape', 4139), ('guido', 4127), ('jack', 4098)]))
 # 返回结果: {'sape': 4139, 'jack': 4098, 'guido': 4127}
 ```
 
 如果关键字只是简单的字符串, 使用关键字参数指定键值对有时候更方便
 
-``` python
+```python
 print(dict(sape=4139, guido=4127, jack=4098))
 # 返回结果: {'sape': 4139, 'jack': 4098, 'guido': 4127}
 ```
 
 ### 列表推导式指定特定的键值对
 
-``` python
+```python
 print({x: x**2 for x in (2, 4, 6)})
 # 返回结果: {2: 4, 4: 16, 6: 36}
 ```
 
 ### 字典中遍历
 
-``` python
+```python
 knights = {'gallahad': 'the pure', 'robin': 'the brave'}
 for k, v in knights.items():
     print(k, v)

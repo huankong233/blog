@@ -12,7 +12,7 @@ tags:
 
 执行下方`dockerfile`
 
-``` dockerfile
+```dockerfile
 version: "3"
 
 services:

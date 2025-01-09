@@ -18,6 +18,6 @@ tags:
 
 ## 3.问题解决方法
 
-``` bash
+```bash
 docker system prune -af
 ```

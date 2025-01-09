@@ -11,8 +11,8 @@ tags:
 ## Win11
 
 1. 打开注册表
-2. 找到HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Toolbar
-3. 修改Locked值为1（若无该项则新建Locked并将值改为1）
+2. 找到 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Toolbar
+3. 修改 Locked 值为 1（若无该项则新建 Locked 并将值改为 1）
 4. 重启
 
 ## Win10

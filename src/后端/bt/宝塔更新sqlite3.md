@@ -14,7 +14,7 @@ tags:
 
 ## 1.执行命令
 
-``` bash
+```bash
 cd /tmp
 wget https://www.sqlite.org/2024/sqlite-autoconf-3460000.tar.gz
 tar zxvf /tmp/sqlite-autoconf-3460000.tar.gz
@@ -26,7 +26,7 @@ ldconfig
 sqlite3 -version
 ```
 
-## 2.重载PHP服务
+## 2.重载 PHP 服务
 
 用的哪个版本,就重启哪个版本(虽然最好是都重启一下)
 

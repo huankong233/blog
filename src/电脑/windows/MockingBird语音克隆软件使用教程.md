@@ -14,13 +14,13 @@ tags:
 
 ## 1.安装 `python`
 
-### 1.1下载安装包
+### 1.1 下载安装包
 
 [下载链接](https://python.org/downloads/windows)
 
 ![1669808410423.png](https://img.huankong.top/i/2022/11/30/6387411c20645.png)
 
-### 1.2安装
+### 1.2 安装
 
 ![1669808498456.png](https://img.huankong.top/i/2022/11/30/63874173d4144.png)
 
@@ -30,7 +30,7 @@ tags:
 
 ## 2.安装 `Anaconda`
 
-### 2.1安装教程
+### 2.1 安装教程
 
 [教程链接](https://zhuanlan.zhihu.com/p/348120084)
 
@@ -40,15 +40,15 @@ Tip: 安装完成后在 `cmd` 里无法直接启动, 你可以在开始菜单里
 
 打开即可执行 `conda` 命令
 
-### 2.2创建环境
+### 2.2 创建环境
 
-``` bat
+```bat
 conda create-n 环境名
 ```
 
-### 2.3激活环境
+### 2.3 激活环境
 
-``` bat
+```bat
 Conda activate 环境名
 ```
 
@@ -72,7 +72,7 @@ Conda activate 环境名
 
 ## 4.安装 [ffmpeg](https://www.gyan.dev/ffmpeg/builds/)
 
-### 4.1安装教程
+### 4.1 安装教程
 
 下滑找到 `release builds` 下载最新版, 解压到一个自己喜欢的路径
 
@@ -100,7 +100,7 @@ Conda activate 环境名
 
 然后全部关闭即可.
 
-### 4.2测试是否配置正确
+### 4.2 测试是否配置正确
 
 打开 cmd, 输入`ffmpeg -version`
 如果可以正常输出, 即为配置成功
@@ -109,21 +109,21 @@ Conda activate 环境名
 
 ## 5.安装 `MockingBird`
 
-### 5.1克隆仓库
+### 5.1 克隆仓库
 
-``` bat
+```bat
 git clone https://github.com/babysor/MockingBird
 ```
 
-### 5.2补全支持库
+### 5.2 补全支持库
 
-``` bat
+```bat
 pip install -r requirements.txt
 ```
 
 等待跑码完成.
 
-### 5.3如果报错
+### 5.3 如果报错
 
 ![1669809240232.png](https://img.huankong.top/i/2022/11/30/63874458f2cd6.png)
 
@@ -131,9 +131,9 @@ pip install -r requirements.txt
 
 ![1669809265352.png](https://img.huankong.top/i/2022/11/30/638744725e6e8.png)
 
-### 5.4安装 webrtcvad
+### 5.4 安装 webrtcvad
 
-``` bat
+```bat
 pip install webrtcvad-wheels
 ```
 
@@ -153,7 +153,7 @@ pip install webrtcvad-wheels
 
 运行命令
 
-``` bat
+```bat
 python demo_toolbox.py -d .\samples
 ```
 

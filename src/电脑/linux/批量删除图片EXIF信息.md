@@ -10,7 +10,7 @@ tags:
 
 ## 安装
 
-``` bash
+```bash
 sudo pacman -S perl-image-exiftool
 ```
 
@@ -18,7 +18,7 @@ sudo pacman -S perl-image-exiftool
 
 ### 命令
 
-``` bash
+```bash
 exiftool -all="" -overwrite_original -r .
 ```
 
@@ -28,7 +28,7 @@ exiftool -all="" -overwrite_original -r .
 
 可以用下面这个命令删除
 
-``` bash
+```bash
 find . -type f -name "*_original" -delete
 ```
 

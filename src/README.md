@@ -9,12 +9,10 @@ hero:
   tagline: Front End Developer
   text: 幸福的人用童年治愈一生，不幸的人用一生治愈童年。
   actions:
-    -
-      text: 我的博客
+    - text: 我的博客
       link: /blog/
       theme: brand
-    -
-      text: Github
+    - text: Github
       link: https://github.com/huankong233
       theme: alt
 ---

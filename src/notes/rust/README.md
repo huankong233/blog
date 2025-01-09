@@ -13,6 +13,8 @@ permalink: /notes/rust/
 
 [Rust 圣经](https://course.rs/)
 
+[Rust 编程零基础快速入门指南](https://www.bilibili.com/video/BV19g411g7qi/)
+
 ## 学习进度
 
 还没开始 😅

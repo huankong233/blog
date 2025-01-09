@@ -29,7 +29,7 @@ export default plumeTheme({
     shiki: {
       twoslash: true,
       lineNumbers: 10,
-      languages: ['js', 'ts', 'python', 'bash', 'bat', 'c', 'kotlin', 'json', 'vue', 'php', 'sql', 'dockerfile'],
+      languages: ['js', 'ts', 'python', 'bash', 'bat', 'c', 'kotlin', 'json', 'vue', 'php', 'sql', 'dockerfile', 'rust'],
     },
     markdownEnhance: { demo: true },
     markdownPower: { caniuse: true, jsfiddle: true, bilibili: true },

@@ -16,7 +16,7 @@ article: false
 
 现居江苏。
 
-随时爆炸，注意远离！（如图↓）
+随时爆炸，注意远离！（如图 ↓）
 
 ![68633c2dd04b3c3ebd63fe29fcb32411.jpg](https://img.huankong.top/i/2024/04/16/661e2bed0ce30.jpg)
 

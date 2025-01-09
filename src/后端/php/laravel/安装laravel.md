@@ -9,13 +9,13 @@ tags:
   - laravel
 ---
 
-## 安装Composer
+## 安装 Composer
 
 `Windows` 推荐使用 [安装器](https://getcomposer.org/Composer-Setup.exe)
 
 `Linux/Mac` 需要按照 [官方](https://pkg.phpcomposer.com/#how-to-install-composer) 的安装方法安装
 
-## 安装Laravel
+## 安装 Laravel
 
 ::: warning
 必须先安装一个 [7zip](https://7-zip.org/) 才能正常安装!!!!
@@ -23,13 +23,13 @@ tags:
 
 通过 `Composer` 安装 `Laravel` 安装器:
 
-``` bash
+```bash
 composer global require "laravel/installer"
 ```
 
-安装完成后, 通过简单的 `laravel new` 命令即可在当前目录下创建一个新的 `Laravel` 应用.
+安装完成后, 通过简单的  `laravel new`  命令即可在当前目录下创建一个新的 `Laravel` 应用.
 
-例如, `laravel new blog` 将会创建一个名为 `blog` 的新应用, 且包含所有 `Laravel` 依赖.
+例如, `laravel new blog`  将会创建一个名为  `blog`  的新应用, 且包含所有 `Laravel` 依赖.
 
 ## 安装指定版本
 
@@ -37,6 +37,6 @@ composer global require "laravel/installer"
 
 `9.x` 是版本号
 
-``` bash
+```bash
 composer create-project laravel/laravel test 9.x
 ```
