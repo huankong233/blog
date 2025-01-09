@@ -42,13 +42,13 @@ Tip: 安装完成后在 `cmd` 里无法直接启动, 你可以在开始菜单里
 
 ### 2.2创建环境
 
-```batch
+``` bat
 conda create-n 环境名
 ```
 
 ### 2.3激活环境
 
-```batch
+``` bat
 Conda activate 环境名
 ```
 
@@ -111,13 +111,13 @@ Conda activate 环境名
 
 ### 5.1克隆仓库
 
-```batch
+``` bat
 git clone https://github.com/babysor/MockingBird
 ```
 
 ### 5.2补全支持库
 
-```batch
+``` bat
 pip install -r requirements.txt
 ```
 
@@ -133,7 +133,7 @@ pip install -r requirements.txt
 
 ### 5.4安装 webrtcvad
 
-```batch
+``` bat
 pip install webrtcvad-wheels
 ```
 
@@ -153,7 +153,7 @@ pip install webrtcvad-wheels
 
 运行命令
 
-```batch
+``` bat
 python demo_toolbox.py -d .\samples
 ```
 

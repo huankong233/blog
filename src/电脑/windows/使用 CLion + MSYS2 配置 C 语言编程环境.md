@@ -13,7 +13,7 @@ permalink: /article/rfsteahj/
 
 ``` bash
 pacman -Syyu
-pacman -S mingw-w64-ucrt-x86_64-cmake  mingw-w64-ucrt-x86_64-extra-cmake-modules mingw-w64-ucrt-x86_64-make mingw-w64-ucrt-x86_64-gdb mingw-w64-ucrt-x86_64-toolchain
+pacman -S mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-extra-cmake-modules mingw-w64-ucrt-x86_64-make mingw-w64-ucrt-x86_64-gdb mingw-w64-ucrt-x86_64-toolchain
 ```
 
 ## 3.配置编辑器

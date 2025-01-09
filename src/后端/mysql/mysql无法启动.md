@@ -10,7 +10,7 @@ tags:
 
 ## 错误提示
 
-```text
+```
 Table ".\mysql\db" is marked as crashed and last (automatic?) repair failed
 ```
 

@@ -14,7 +14,7 @@ tags:
 
 ## 1.执行命令
 
-~~~ bash
+``` bash
 cd /tmp
 wget https://www.sqlite.org/2024/sqlite-autoconf-3460000.tar.gz
 tar zxvf /tmp/sqlite-autoconf-3460000.tar.gz
@@ -24,7 +24,7 @@ ln -s /usr/local/bin/sqlite3 /usr/bin/sqlite3
 echo "/usr/local/lib" > /etc/ld.so.conf.d/sqlite3.conf
 ldconfig
 sqlite3 -version
-~~~
+```
 
 ## 2.重载PHP服务
 

@@ -10,7 +10,7 @@ export default plumeTheme({
     name: 'huan_kong',
     url: 'https://img.huankong.top/i/2024/03/20/65fa4e318ce15.png',
     description: '世间的美好总是不期而遇',
-    circle: true
+    circle: true,
   },
   social: [{ icon: 'github', link: 'https://github.com/huankong233' }],
   navbar,
@@ -18,7 +18,7 @@ export default plumeTheme({
   editLink: true,
   editLinkText: '在 GitHub 上编辑此页',
   footer: {
-    copyright: 'Copyright © 2020-present <a href="https://huankong.top">huan_kong</a>'
+    copyright: 'Copyright © 2020-present <a href="https://huankong.top">huan_kong</a>',
   },
   outlineLabel: '内容大纲',
   returnToTopLabel: '返回顶部',
@@ -26,14 +26,20 @@ export default plumeTheme({
   lastUpdatedText: '上次更新',
   docsDir: 'src',
   plugins: {
+    shiki: {
+      twoslash: true,
+      lineNumbers: 10,
+      languages: ['js', 'ts', 'python', 'bash', 'bat', 'c', 'kotlin', 'json', 'vue', 'php', 'sql', 'dockerfile'],
+    },
     markdownEnhance: { demo: true },
     markdownPower: { caniuse: true, jsfiddle: true, bilibili: true },
 
     docsearch: {
       appId: 'U198Y5GBFG',
       apiKey: 'ba76b60a3135b6bf81cec20978b2df31',
-      indexName: 'huankong'
+      indexName: 'huankong',
     },
+
     comment: {
       provider: 'Giscus',
       comment: true,
@@ -43,11 +49,7 @@ export default plumeTheme({
       categoryId: 'DIC_kwDOI84cvc4CUo2w',
       mapping: 'title',
       reactionsEnabled: true,
-      inputPosition: 'top'
+      inputPosition: 'top',
     },
-    frontmatter: {
-      include: ['**/*.{md,MD}'],
-      exclude: ['.vuepress/**/*', 'node_modules', '**/.~*.{md,MD}']
-    }
-  }
+  },
 })

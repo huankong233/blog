@@ -90,9 +90,7 @@ namespace 图 {
     }
 
     toString() {
-      return this.#vertexes
-        .map((vertex) => `${vertex} => ${this.#edges.get(vertex)?.join(' ')}`)
-        .join('\n')
+      return this.#vertexes.map((vertex) => `${vertex} => ${this.#edges.get(vertex)?.join(' ')}`).join('\n')
     }
 
     initColor(): color {

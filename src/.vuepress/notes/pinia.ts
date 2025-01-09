@@ -4,5 +4,5 @@ export default defineNoteConfig({
   text: 'pinia',
   dir: 'pinia',
   link: '/notes/pinia/',
-  sidebar: 'auto'
+  sidebar: 'auto',
 })

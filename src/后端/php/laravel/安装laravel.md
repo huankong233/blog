@@ -23,7 +23,7 @@ tags:
 
 通过 `Composer` 安装 `Laravel` 安装器:
 
-```bash
+``` bash
 composer global require "laravel/installer"
 ```
 
@@ -37,6 +37,6 @@ composer global require "laravel/installer"
 
 `9.x` 是版本号
 
-```bash
+``` bash
 composer create-project laravel/laravel test 9.x
 ```

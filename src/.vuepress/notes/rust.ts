@@ -4,5 +4,5 @@ export default defineNoteConfig({
   text: 'rust',
   dir: 'rust',
   link: '/notes/rust/',
-  sidebar: 'auto'
+  sidebar: 'auto',
 })

@@ -4,5 +4,5 @@ export default defineNoteConfig({
   text: 'java',
   dir: 'java',
   link: '/notes/java/',
-  sidebar: 'auto'
+  sidebar: 'auto',
 })

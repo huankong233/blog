@@ -4,5 +4,5 @@ export default defineNoteConfig({
   text: 'c',
   dir: 'c',
   link: '/notes/c/',
-  sidebar: 'auto'
+  sidebar: 'auto',
 })

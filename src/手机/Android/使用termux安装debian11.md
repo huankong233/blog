@@ -16,25 +16,25 @@ tags:
 
 ### 2.1切换到清华源
 
-```sh
+``` bash
 sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list
 ```
 
 ### 2.2安装 `ssh`
 
-```sh
+``` bash
 pkg install openssh
 ```
 
 ### 2.3设置 `Termux` 密码
 
-```sh
+``` bash
 passwd
 ```
 
 ### 2.4开启 `ssh` 服务
 
-```sh
+``` bash
 sshd
 ```
 
@@ -44,13 +44,13 @@ sshd
 
 #### 2.5.1需要更新一下软件包
 
-```sh
+``` bash
 pkg update
 ```
 
 #### 2.5.2重新生成 key
 
-```sh
+``` bash
 ssh-keygen -A
 ```
 
@@ -69,13 +69,13 @@ ssh-keygen -A
 
 ### 3.1 安装 `proot-distro`
 
-```sh
+``` bash
 pkg install proot-distro
 ```
 
 ### 3.2 常用指令
 
-```sh
+``` bash
 # 查看帮助
 proot-distro help
 
@@ -89,7 +89,7 @@ proot-distro list
 
 中间可能需要连接到国际互联网
 
-```sh
+``` bash
 proot-distro install debian
 ```
 
@@ -100,7 +100,7 @@ proot-distro install debian
 
 运行
 
-```sh
+``` bash
 proot-distro login debian
 ```
 
@@ -113,13 +113,13 @@ proot-distro login debian
 `Debian` 的软件源配置文件是 `/etc/apt/sources.list`进行修改
 默认自带的文本编辑器是 `nano`, 居然连 `vi` 都没有(小声)
 
-```sh
+``` bash
 vi /etc/apt/sources.list
 ```
 
 添加上下面这几段(推荐把自带源注释掉, 在前面加上#即可)
 
-```sh
+``` bash
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free
@@ -128,7 +128,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main 
 
 修改完成后记得刷新一下
 
-```sh
+``` bash
 apt update
 ```
 
@@ -136,13 +136,13 @@ apt update
 
 #### 4.2.1 安装 `locales`
 
-```sh
+``` bash
 apt-get install locales
 ```
 
 #### 4.2.2 修改语言
 
-```sh
+``` bash
 dpkg-reconfigure locales
 ```
 
@@ -155,7 +155,7 @@ dpkg-reconfigure locales
 
 ### 4.3 修改时区
 
-```sh
+``` bash
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 

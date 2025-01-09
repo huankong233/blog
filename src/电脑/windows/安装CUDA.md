@@ -39,7 +39,7 @@ tags:
 
 按下 `WIN+R`, 打开 `cmd`, 输入命令 ( 注意, 必须是大写 `V` )
 
-```batch
+``` bat
 nvcc -V
 ```
 

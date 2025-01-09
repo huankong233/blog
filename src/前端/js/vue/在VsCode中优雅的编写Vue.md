@@ -14,7 +14,7 @@ tags:
 
 插件列表:
 
-``` text
+```
 amayakite.aya-vue3-extension-pack
 antfu.iconify
 bradlc.vscode-tailwindcss
@@ -94,7 +94,7 @@ zhuangtongfa.material-theme
 
 代码:
 
-```json
+``` json
 {
   // 控制是否启用平滑插入动画
   "editor.cursorSmoothCaretAnimation": "on",

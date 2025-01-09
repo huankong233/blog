@@ -6,9 +6,7 @@ permalink: /projects/
 article: false
 ---
 
-## 编写的开源项目
-
-### node-napcat-ts
+## node-napcat-ts
 
 ![stars](https://img.shields.io/github/stars/huankong233/node-napcat-ts?style=social)
 ![version](https://img.shields.io/npm/v/node-napcat-ts?style=flat-square)
@@ -20,21 +18,31 @@ article: false
 
 对接 `napcat` 的 `SDK`
 
----
+## Minato
 
-### 94list-laravel
+![stars](https://img.shields.io/github/stars/huankong233/Minato?style=social)
 
-![stars](https://img.shields.io/github/stars/huankong233/94list-laravel?style=social)
+仓库地址: [Minato](https://github.com/huankong233/Minato) [kkbot](https://github.com/huankong233/kkbot)
 
-仓库地址: [94list-laravel](https://github.com/huankong233/94list-laravel)
+**说明:**
+
+一个简单的 `QQBot` 框架
+
+原 `kkbot` 使用 `ts` 重构产物
+
+## HkList
+
+![stars](https://img.shields.io/github/stars/huankong233/HkList?style=social)
+
+仓库地址: [HkList](https://github.com/huankong233/HkList) [94list-laravel](https://github.com/huankong233/94list-laravel)
 
 **说明:**
 
 百度网盘解析工具
 
----
+原 `94list-laravel` 因名称存在疑惑性改名
 
-### node-open-shamrock
+## node-open-shamrock
 
 ![stars](https://img.shields.io/github/stars/huankong233/node-open-shamrock?style=social)
 ![version](https://img.shields.io/npm/v/node-open-shamrock?style=flat-square)
@@ -48,9 +56,7 @@ article: false
 
 对接 `openShamrock` 的 `SDK`
 
----
-
-### balogo-ts
+## balogo-ts
 
 ![stars](https://img.shields.io/github/stars/huankong233/balogo-ts?style=social)
 
@@ -60,23 +66,7 @@ article: false
 
 `BlueArchiveLogo` 生成器
 
----
-
-### Minato
-
-![stars](https://img.shields.io/github/stars/huankong233/Minato?style=social)
-
-仓库地址: [Minato](https://github.com/huankong233/Minato)
-
-**说明:**
-
-一个简单的 `QQBot` 框架
-
-新版已用 `ts` 重写, 原 `js` 版本已弃用
-
----
-
-### ImageSearcher-ts
+## ImageSearcher-ts
 
 ![stars](https://img.shields.io/github/stars/huankong233/ImageSearcher-ts?style=social)
 ![version](https://img.shields.io/npm/v/image_searcher?style=flat-square)
@@ -86,13 +76,11 @@ article: false
 
 **说明:**
 
-用于提供给 `kkbot` 中的搜图功能
+用于提供给 `kkbot/Minato` 中的搜图功能
 
 新版已用 `ts` 重写, 原 `js` 版本已弃用
 
----
-
-### lanzou_url
+## lanzou_url
 
 ![stars](https://img.shields.io/github/stars/huankong233/lanzou_url?style=social)
 
@@ -100,13 +88,11 @@ article: false
 
 **说明:**
 
-一个使用 `php` 编写的解析程序
+一个使用 `php` 编写的蓝奏网盘解析程序
 
 支持解析单文件和多文件
 
----
-
-### ChatSydney-FastAPI
+## ChatSydney-FastAPI
 
 ![stars](https://img.shields.io/github/stars/huankong233/ChatSydney-FastAPI?style=social)
 
@@ -118,9 +104,7 @@ article: false
 
 一个快捷的 `ChatSydney` 的 `Api` 实现
 
----
-
-### scripts
+## scripts
 
 ![stars](https://img.shields.io/github/stars/huankong233/scripts?style=social)
 
@@ -130,9 +114,7 @@ article: false
 
 整合了一些我平时会用的脚本
 
----
-
-### parseExcel
+## parseExcel
 
 ![stars](https://img.shields.io/github/stars/huankong233/parseExcel?style=social)
 
@@ -142,9 +124,7 @@ article: false
 
 脚本中 `parseExcel` 的 `vue` 版
 
----
-
-### LiteLoaderQQNT-HK-Theme
+## LiteLoaderQQNT-HK-Theme
 
 ![stars](https://img.shields.io/github/stars/huankong233/LiteLoaderQQNT-HK-Theme?style=social)
 
@@ -154,9 +134,7 @@ article: false
 
 一个简易的 [LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT) 主题
 
----
-
-### NOWPayments
+## NOWPayments
 
 ![stars](https://img.shields.io/github/stars/huankong233/NOWPayments?style=social)
 

@@ -10,7 +10,7 @@ tags:
 
 ## 1.安装 `Aira2`
 
-```sh
+``` bash
 wget git.io/aria2.sh
 ```
 
@@ -18,7 +18,7 @@ wget git.io/aria2.sh
 
 ### 2.1 下载程序
 
-```sh
+``` bash
 # 64位系统下载
 wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/amd64/linux/OneDriveUploader -P /usr/local/bin/
 # 32位系统下载
@@ -29,13 +29,13 @@ wget https://raw.githubusercontent.com/MoeClub/OneList/master/OneDriveUploader/a
 
 安装完成后, 运行添加运行权限
 
-```sh
+``` bash
 chmod +x /usr/local/bin/OneDriveUploader
 ```
 
 ### 2.2 获取 Token
 
-```sh
+``` bash
 # 国际版, 个人版(家庭版)
 https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=78d4dc35-7e46-42c6-9023-2d39314433a5&amp;response_type=code&amp;redirect_uri=http://localhost/onedrive-login&amp;response_mode=query&amp;scope=offline_access%20User.Read%20Files.ReadWrite.All
 
@@ -53,7 +53,7 @@ https://login.chinacloudapi.cn/common/oauth2/v2.0/authorize?client_id=dfe36e60-6
 
 提示 `Init config file: '/path/to/auth.json'` 则成功
 
-```sh
+``` bash
 # 国际版
 OneDriveUploader -a "url"
 # 个人版(家庭版)
@@ -66,7 +66,7 @@ OneDriveUploader -cn -a "url"
 
 进入目录 `/root/.aria2c` 打开文件 `clean.sh` 编辑内容为:
 
-```sh
+``` bash
 GID="$1";
 FileNum="$2";
 File="$3";
@@ -111,13 +111,13 @@ LoadFile;
 
 ## 4.dos2unix安装
 
-```sh
+``` bash
 yum -y install dos2unix
 ```
 
 安装完成后,运行
 
-```sh
+``` bash
 dos2unix clean.sh
 ```
 

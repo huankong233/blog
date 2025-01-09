@@ -24,9 +24,9 @@ tags:
 
 ## 2.引入加密类文件
 
-~~~php
+``` php
 require_once "../var/PasswordHash.php";
-~~~
+```
 
 根据自己的文件名或路径自行修改！
 
@@ -38,11 +38,11 @@ require_once "../var/PasswordHash.php";
 `typecho` 最新开发版内实例化对象用到了命名空间, 需要手动替换代码
 :::
 
-~~~php
+``` php
 $hasher = new \Utils\PasswordHash(8, true);
 $hasher = new PasswordHash(8, true);
 echo $a->HashPassword(123456);
-~~~
+```
 
 ## 4.将加密后的密文替换数据库
 

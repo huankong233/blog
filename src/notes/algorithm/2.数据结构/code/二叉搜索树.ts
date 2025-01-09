@@ -71,10 +71,7 @@ namespace 二叉搜索树 {
       this.#preOrderTraversalNode(this.#root, handler)
     }
 
-    #preOrderTraversalNode(
-      node: BinarySearchTreeNode | null,
-      handler: (node: BinarySearchTreeNode) => any
-    ) {
+    #preOrderTraversalNode(node: BinarySearchTreeNode | null, handler: (node: BinarySearchTreeNode) => any) {
       if (node === null) return
       handler(node)
       this.#preOrderTraversalNode(node.getLeft(), handler)
@@ -86,10 +83,7 @@ namespace 二叉搜索树 {
       this.#inOrderTraversalNode(this.#root, handler)
     }
 
-    #inOrderTraversalNode(
-      node: BinarySearchTreeNode | null,
-      handler: (node: BinarySearchTreeNode) => any
-    ) {
+    #inOrderTraversalNode(node: BinarySearchTreeNode | null, handler: (node: BinarySearchTreeNode) => any) {
       if (node === null) return
       this.#inOrderTraversalNode(node.getLeft(), handler)
       handler(node)
@@ -101,10 +95,7 @@ namespace 二叉搜索树 {
       this.#postOrderTraversalNode(this.#root, handler)
     }
 
-    #postOrderTraversalNode(
-      node: BinarySearchTreeNode | null,
-      handler: (node: BinarySearchTreeNode) => any
-    ) {
+    #postOrderTraversalNode(node: BinarySearchTreeNode | null, handler: (node: BinarySearchTreeNode) => any) {
       if (node === null) return
       this.#postOrderTraversalNode(node.getLeft(), handler)
       this.#postOrderTraversalNode(node.getRight(), handler)

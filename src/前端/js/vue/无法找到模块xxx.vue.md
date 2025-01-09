@@ -14,7 +14,7 @@ tags:
 
 检查你的 `script` 标签 是不是完整的, 有没有写 `lang="ts"`
 
-```vue
+``` vue
 <template></template>
 
 <script lang="ts" setup></script>

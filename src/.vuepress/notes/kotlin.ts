@@ -4,5 +4,5 @@ export default defineNoteConfig({
   text: 'kotlin',
   dir: 'kotlin',
   link: '/notes/kotlin/',
-  sidebar: 'auto'
+  sidebar: 'auto',
 })
