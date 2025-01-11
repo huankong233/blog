@@ -34,7 +34,7 @@ tags:
 
 [教程链接](https://zhuanlan.zhihu.com/p/348120084)
 
-Tip: 安装完成后在 `cmd` 里无法直接启动, 你可以在开始菜单里找到
+Tip: 安装完成后在 `cmd` 里无法直接启动，你可以在开始菜单里找到
 
 ![1669808675248.png](https://img.huankong.top/i/2022/11/30/63874224825cf.png)
 
@@ -56,7 +56,7 @@ Conda activate 环境名
 
 打开[PyTorch](https://pytorch.org/get-started/locally/)
 
-你如果选择了 `CUDA` , 那你就有必要进行一下 `CUDA` 的安装了
+你如果选择了 `CUDA` ，那你就有必要进行一下 `CUDA` 的安装了
 
 [视频教程](https://www.bilibili.com/video/BV1q54y1y7Mf) [文字教程](./安装CUDA.md)
 
@@ -74,15 +74,15 @@ Conda activate 环境名
 
 ### 4.1 安装教程
 
-下滑找到 `release builds` 下载最新版, 解压到一个自己喜欢的路径
+下滑找到 `release builds` 下载最新版，解压到一个自己喜欢的路径
 
 ![1669808995375.png](https://img.huankong.top/i/2022/11/30/6387436429501.png)
 
-进入 `bin` 目录,复制路径,右键此电脑
+进入 `bin` 目录，复制路径，右键此电脑
 
 ![1669809014781.png](https://img.huankong.top/i/2022/11/30/638743784806f.png)
 
-选择属性, 找到高级设置 ( windowns 版本不同位置不同 )
+选择属性，找到高级设置 ( windowns 版本不同位置不同 )
 
 ![1669809033483.png](https://img.huankong.top/i/2022/11/30/6387438bd5e0f.png)
 ![1669809047182.png](https://img.huankong.top/i/2022/11/30/63874397eb711.png)
@@ -92,7 +92,7 @@ Conda activate 环境名
 注意一定是系统变量不是用户变量
 :::
 
-双击打开, 点击新建
+双击打开，点击新建
 
 ![1669809114506.png](https://img.huankong.top/i/2022/11/30/638743db428ed.png)
 
@@ -102,8 +102,8 @@ Conda activate 环境名
 
 ### 4.2 测试是否配置正确
 
-打开 cmd, 输入`ffmpeg -version`
-如果可以正常输出, 即为配置成功
+打开 cmd，输入`ffmpeg -version`
+如果可以正常输出，即为配置成功
 
 ![1669809164814.png](https://img.huankong.top/i/2022/11/30/6387440d9315e.png)
 
@@ -127,7 +127,7 @@ pip install -r requirements.txt
 
 ![1669809240232.png](https://img.huankong.top/i/2022/11/30/63874458f2cd6.png)
 
-手动安装低版本后删除 `requirements.txt` 中的 `PyQt5` , 重新执行命令,就不会出现报错的问题了
+手动安装低版本后删除 `requirements.txt` 中的 `PyQt5` ，重新执行命令，就不会出现报错的问题了
 
 ![1669809265352.png](https://img.huankong.top/i/2022/11/30/638744725e6e8.png)
 
@@ -143,7 +143,7 @@ pip install webrtcvad-wheels
 
 ## 13.新建文件夹
 
-进入 `synthesizer` 文件夹, 创建名称为 `saved_models` 的文件夹.
+进入 `synthesizer` 文件夹，创建名称为 `saved_models` 的文件夹.
 
 下载模型文件 ( 文件来自[B 站视频](https://www.bilibili.com/video/BV1DL4y1q7VL) )
 
@@ -157,4 +157,4 @@ pip install webrtcvad-wheels
 python demo_toolbox.py -d .\samples
 ```
 
-耐心等待后显示了界面, 说明一切顺利!
+耐心等待后显示了界面，说明一切顺利!

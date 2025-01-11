@@ -27,9 +27,9 @@ tags:
 composer global require "laravel/installer"
 ```
 
-安装完成后, 通过简单的  `laravel new`  命令即可在当前目录下创建一个新的 `Laravel` 应用.
+安装完成后，通过简单的  `laravel new`  命令即可在当前目录下创建一个新的 `Laravel` 应用.
 
-例如, `laravel new blog`  将会创建一个名为  `blog`  的新应用, 且包含所有 `Laravel` 依赖.
+例如，`laravel new blog`  将会创建一个名为  `blog`  的新应用，且包含所有 `Laravel` 依赖.
 
 ## 安装指定版本
 

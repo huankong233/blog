@@ -35,7 +35,7 @@ require_once "../var/PasswordHash.php";
 这里的密码是 `123456`
 
 ::: warning
-`typecho` 最新开发版内实例化对象用到了命名空间, 需要手动替换代码
+`typecho` 最新开发版内实例化对象用到了命名空间，需要手动替换代码
 :::
 
 ```php

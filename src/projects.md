@@ -78,7 +78,7 @@ article: false
 
 用于提供给 `kkbot/Minato` 中的搜图功能
 
-新版已用 `ts` 重写, 原 `js` 版本已弃用
+新版已用 `ts` 重写，原 `js` 版本已弃用
 
 ## lanzou_url
 

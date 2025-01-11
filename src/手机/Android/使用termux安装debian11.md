@@ -111,13 +111,13 @@ proot-distro login debian
 ### 4.1 配置清华源
 
 `Debian` 的软件源配置文件是 `/etc/apt/sources.list`进行修改
-默认自带的文本编辑器是 `nano`, 居然连 `vi` 都没有(小声)
+默认自带的文本编辑器是 `nano`，居然连 `vi` 都没有(小声)
 
 ```bash
 vi /etc/apt/sources.list
 ```
 
-添加上下面这几段(推荐把自带源注释掉, 在前面加上#即可)
+添加上下面这几段(推荐把自带源注释掉，在前面加上#即可)
 
 ```bash
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free
@@ -147,7 +147,7 @@ dpkg-reconfigure locales
 ```
 
 选中`zh_CN.UTF-8 UTF-8`
-(用上下切换, 空格选中, 回车继续)
+(用上下切换，空格选中，回车继续)
 ![1670238695213.png](https://img.huankong.top/i/2022/12/05/638dd1ea398fb.png)
 把默认也改成`zh_CN.UTF-8 UTF-8`
 ![1670238752582.png](https://img.huankong.top/i/2022/12/05/638dd2227036f.png)
@@ -163,4 +163,4 @@ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 ## 5.收工
 
-记得给 `Termux` 后台上锁, 然后设置无限制, 防止被杀后台
+记得给 `Termux` 后台上锁，然后设置无限制，防止被杀后台

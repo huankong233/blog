@@ -16,7 +16,7 @@ yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqli
 
 ## 2.下载源码包
 
-`3.9.9` 为版本, 可以自行修改 [版本列表](https://www.python.org/ftp/python)
+`3.9.9` 为版本，可以自行修改 [版本列表](https://www.python.org/ftp/python)
 
 ```bash
 wget https://www.python.org/ftp/python/3.9.9/Python-3.9.9.tgz

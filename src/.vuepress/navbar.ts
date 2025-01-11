@@ -28,22 +28,22 @@ export default defineNavbarConfig([
     activeMatch: '/notes',
     items: [
       {
-        text: 'pinia',
+        text: 'Pinia',
         link: '/notes/pinia/',
         icon: 'logos:pinia',
       },
       {
-        text: 'rust',
+        text: 'Rust',
         link: '/notes/rust/',
         icon: 'logos:rust',
       },
       {
-        text: 'c',
+        text: 'C',
         link: '/notes/c/',
         icon: 'logos:c',
       },
       {
-        text: 'algorithm',
+        text: 'Algorithm',
         link: '/notes/algorithm/',
         icon: 'flat-color-icons:tree-structure',
       },

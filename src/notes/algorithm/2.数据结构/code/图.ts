@@ -96,8 +96,8 @@ namespace 图 {
     initColor(): color {
       /**
        * @description 白色: 没有被访问过
-       * @description 灰色: 被访问过, 但没有完成探索
-       * @description 黑色: 被访问过, 并且探索完成
+       * @description 灰色: 被访问过，但没有完成探索
+       * @description 黑色: 被访问过，并且探索完成
        */
       return this.#vertexes.reduce((previousValue, currentValue) => {
         previousValue[currentValue] = 'white'
@@ -121,10 +121,10 @@ namespace 图 {
         // 设置为灰色
         color[initVertexes] = 'gray'
 
-        // 遍历所有边, 添加到队列中
+        // 遍历所有边，添加到队列中
         edges.forEach((edge) => {
-          // 如果是白色, 则设置为灰色, 并添加到队列中
-          // 如果是灰色, 则跳过, 因为已经被访问过了
+          // 如果是白色，则设置为灰色，并添加到队列中
+          // 如果是灰色，则跳过，因为已经被访问过了
           if (color[edge] === 'white') {
             color[edge] = 'gray'
             queue.enqueue(edge)
@@ -153,9 +153,9 @@ namespace 图 {
         // 设置为灰色
         color[initVertexes] = 'gray'
 
-        // 遍历所有边, 添加到队列中
+        // 遍历所有边，添加到队列中
         edges.forEach((edge) => {
-          // 如果是白色, 则设置为灰色, 并添加到队列中
+          // 如果是白色，则设置为灰色，并添加到队列中
           if (color[edge] === 'white') {
             color[edge] = 'gray'
             queue.enqueue(edge)
@@ -187,7 +187,7 @@ namespace 图 {
 
       // 遍历所有边
       edges.forEach((edge) => {
-        // 如果是白色, 则设置为灰色, 并开始递归调用
+        // 如果是白色，则设置为灰色，并开始递归调用
         if (color[edge] === 'white') {
           color[edge] = 'gray'
           this.DFSVisit(edge, color, func)

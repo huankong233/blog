@@ -14,7 +14,7 @@ tags:
 
 插件列表:
 
-```
+```txt
 amayakite.aya-vue3-extension-pack
 antfu.iconify
 bradlc.vscode-tailwindcss
@@ -87,10 +87,10 @@ zhuangtongfa.material-theme
 `File->Preference->Settings`
 
 ![1669807448318.png](https://img.huankong.top/i/2022/11/30/63873d59e324b.png)
-现在看到的是界面配置模式, 点击右上角的大括号 ( 如下图 ), 可以打开 `settings.json` 文件.
+现在看到的是界面配置模式，点击右上角的大括号 ( 如下图 )，可以打开 `settings.json` 文件.
 
 ![1669807475068.png](https://img.huankong.top/i/2022/11/30/63873d748d015.png)
-粘贴以下代码 ( 可以自行修改 ) , 保存即可
+粘贴以下代码 ( 可以自行修改 ) ，保存即可
 
 代码:
 

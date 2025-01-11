@@ -12,7 +12,7 @@ tags:
 
 ## 解决方案
 
-检查你的 `script` 标签 是不是完整的, 有没有写 `lang="ts"`
+检查你的 `script` 标签 是不是完整的，有没有写 `lang="ts"`
 
 ```vue
 <template></template>

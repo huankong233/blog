@@ -26,10 +26,10 @@ END $$
 DELIMITER;
 ```
 
-如果遇到报错, 在命令前执行
+如果遇到报错，在命令前执行
 
 ```sql
 set global log_bin_trust_function_creators=TRUE;
 ```
 
-如果提示权限不足, 请使用 `root` 账户执行!
+如果提示权限不足，请使用 `root` 账户执行!
