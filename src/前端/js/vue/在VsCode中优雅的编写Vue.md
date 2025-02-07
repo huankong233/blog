@@ -153,9 +153,10 @@ zhuangtongfa.material-theme
   // 光标闪烁
   "terminal.integrated.cursorBlinking": true,
 
+  // 自动更新
   "git.autofetch": true,
   // 启用智能提交
-  "git.enableSmartCommit": false,
+  "git.enableSmartCommit": true,
   // 总是在父文件夹中打开Git仓库
   "git.openRepositoryInParentFolders": "always",
   // Git忽略rebase警告
