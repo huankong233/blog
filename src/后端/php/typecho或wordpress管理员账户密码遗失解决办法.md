@@ -24,7 +24,7 @@ tags:
 
 ## 2.引入加密类文件
 
-```php
+```php title="hash.php"
 require_once "../var/PasswordHash.php";
 ```
 
@@ -38,7 +38,7 @@ require_once "../var/PasswordHash.php";
 `typecho` 最新开发版内实例化对象用到了命名空间，需要手动替换代码
 :::
 
-```php
+```php title="hash.php"
 $hasher = new \Utils\PasswordHash(8, true);
 $hasher = new PasswordHash(8, true);
 echo $a->HashPassword(123456);
