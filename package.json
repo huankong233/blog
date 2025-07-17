@@ -33,7 +33,9 @@
   "pnpm": {
     "patchedDependencies": {
       "floating-vue@5.2.2": "patches/floating-vue@5.2.2.patch"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
-
