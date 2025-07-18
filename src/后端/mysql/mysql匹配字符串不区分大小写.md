@@ -1,6 +1,5 @@
 ---
 title: mysql匹配字符串不区分大小写
-author: huan_kong
 createTime: 2024/04/11 16:09:04
 permalink: /article/o28qp9j5/
 tags:

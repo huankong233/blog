@@ -1,6 +1,5 @@
 ---
 title: VMware安装GHO镜像
-author: huan_kong
 createTime: 2021/08/01 12:15:03
 permalink: /article/irv82b00/
 tags:

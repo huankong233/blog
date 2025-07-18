@@ -1,6 +1,5 @@
 ---
 title: python数据容器类型
-author: huan_kong
 createTime: 2023/03/03 12:31:00
 permalink: /article/1p4pp16p/
 tags:

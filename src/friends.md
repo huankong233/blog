@@ -1,7 +1,6 @@
 ---
 friends: true
 title: 友情链接
-author: huan_kong
 createTime: 2023/12/26 13:46:30
 description: 不分先后顺序哦，申请可以github联系哦
 permalink: /friends/
@@ -30,4 +29,9 @@ list:
     link: https://nanaeo.cn/
     avatar: https://github.com/MliKiowa.png
     desc: 金陵城上西楼，倚清秋。
+  - name: 二叉树树
+    link: https://afo.im
+    avatar: https://github.com/afoim.png
+    desc: Protect What You Love!
 ---
+

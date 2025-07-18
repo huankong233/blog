@@ -1,6 +1,5 @@
 ---
 title: 模型查询时使用filter时遇到的小问题
-author: huan_kong
 createTime: 2022/12/08 12:20:12
 permalink: /article/2jm4ulg7/
 tags:

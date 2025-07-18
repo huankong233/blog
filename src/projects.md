@@ -1,6 +1,5 @@
 ---
 title: Projects
-author: huan_kong
 createTime: 2023/07/01 04:07:11
 permalink: /projects/
 article: false

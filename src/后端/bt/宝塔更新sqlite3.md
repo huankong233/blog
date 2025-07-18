@@ -1,6 +1,5 @@
 ---
 title: 宝塔更新sqlite3
-author: huan_kong
 createTime: 2024/06/29 22:48:26
 permalink: /article/5p69qc26/
 tags:
@@ -27,4 +26,3 @@ sqlite3 -version
 用的哪个版本，就重启哪个版本(虽然最好是都重启一下)
 
 ![1719672595590.png](https://img.huankong.top/i/2024/06/29/66801f1476a99.png)
-

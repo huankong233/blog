@@ -1,6 +1,5 @@
 ---
 title: 安装laravel
-author: huan_kong
 createTime: 2021/09/10 12:19:15
 permalink: /article/kgctwqjp/
 tags:

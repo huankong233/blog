@@ -1,6 +1,5 @@
 ---
 title: mysql无法启动
-author: huan_kong
 createTime: 2023/07/25 11:05:00
 permalink: /article/tkjc7erp/
 tags:

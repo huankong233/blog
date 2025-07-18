@@ -1,6 +1,5 @@
 ---
 title: docker搭建网易云去灰
-author: huan_kong
 createTime: 2023/07/02 00:29:47
 permalink: /article/htd0wc64/
 tags:

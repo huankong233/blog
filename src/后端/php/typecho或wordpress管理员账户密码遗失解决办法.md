@@ -1,6 +1,5 @@
 ---
 title: typecho或wordpress管理员账户密码遗失解决办法
-author: huan_kong
 createTime: 2021/09/15 12:18:20
 permalink: /article/pxkkr60g/
 tags:

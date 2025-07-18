@@ -1,6 +1,5 @@
 ---
 title: 关于我
-author: huan_kong
 createTime: 2023/12/27 14:20:49
 permalink: /about/
 article: false
@@ -45,3 +44,4 @@ article: false
 
 - Github: [huankong233](https://github.com/huankong233)
 - Telegram: [huan_kong](https://t.me/huan_kong)
+

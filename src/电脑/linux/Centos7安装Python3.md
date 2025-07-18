@@ -1,6 +1,5 @@
 ---
 title: Centos7安装Python3
-author: huan_kong
 createTime: 2022/10/29 11:06:20
 permalink: /article/0llz2648/
 tags:

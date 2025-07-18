@@ -1,6 +1,5 @@
 ---
 title: 安装CUDA
-author: huan_kong
 createTime: 2022/11/30 11:04:07
 permalink: /article/0fl508ok/
 tags:

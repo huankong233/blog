@@ -1,6 +1,5 @@
 ---
 title: 在VsCode中优雅的编写Vue
-author: huan_kong
 createTime: 2022/10/30 12:13:54
 permalink: /article/ug02d6pg/
 tags:
