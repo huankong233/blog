@@ -237,7 +237,7 @@ zhuangtongfa.material-theme
   "prettier.proseWrap": "preserve",
   "prettier.htmlWhitespaceSensitivity": "css",
   "prettier.vueIndentScriptAndStyle": false,
-  "prettier.endOfLine": "crlf",
+  "prettier.endOfLine": "auto",
   "prettier.embeddedLanguageFormatting": "auto",
   "prettier.singleAttributePerLine": true,
 
