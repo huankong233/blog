@@ -28,7 +28,7 @@ export default plumeTheme({
 
   codeHighlighter: {
     twoslash: true,
-    lineNumbers: 10,
+    lineNumbers: true,
   },
 
   markdown: {
