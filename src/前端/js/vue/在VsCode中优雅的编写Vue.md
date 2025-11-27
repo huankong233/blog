@@ -9,7 +9,21 @@ tags:
   - vscode
 ---
 
-## 1.安装插件
+## 1.删除插件
+
+### Linux
+
+```bash
+code --list-extensions | xargs -n 1 code --uninstall-extension
+```
+
+### Windows
+
+```cmd
+code --list-extensions | % { code --uninstall-extension $_ }
+```
+
+## 2.安装插件
 
 插件列表:
 
@@ -45,12 +59,15 @@ github.copilot-chat
 github.vscode-github-actions
 hollowtree.vue-snippets
 jbockle.jbockle-format-files
+jripouteau.adonis-vscode-extension
 kevinrose.vsc-python-indent
 kisstkondoros.vscode-gutter-preview
 lokalise.i18n-ally
+marscode.marscode-extension
 mechatroner.rainbow-csv
 meganrogge.template-string-converter
 mikestead.dotenv
+misodee.vscode-nbt
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
 ms-ceintl.vscode-language-pack-zh-hans
@@ -65,9 +82,11 @@ ms-vscode.remote-explorer
 ms-vsliveshare.vsliveshare
 noxussj.element-plus
 oderwat.indent-rainbow
-oxc.oxc-vscode
+oven.bun-vscode
 pkief.material-icon-theme
 pranaygp.vscode-css-peek
+prisma.prisma
+qwtel.sqlite-viewer
 redhat.vscode-xml
 redhat.vscode-yaml
 ritwickdey.liveserver
@@ -80,7 +99,6 @@ tamasfe.even-better-toml
 tauri-apps.tauri-vscode
 usernamehw.errorlens
 vue.volar
-wholroyd.jinja
 william-voyek.vscode-nginx
 xabikos.javascriptsnippets
 yoavbls.pretty-ts-errors
@@ -99,7 +117,7 @@ zhuangtongfa.material-theme
 
 `Get-Content extensions.txt | ForEach-Object { code --install-extension $_ }`
 
-## 2.配置 `settings.json` 信息
+## 3.配置 `settings.json` 信息
 
 `File->Preference->Settings`
 
@@ -131,8 +149,6 @@ zhuangtongfa.material-theme
   "editor.formatOnSave": true,
   // 每次保存的时候将代码按eslint格式进行修复
   "editor.codeActionsOnSave": {
-    "source.sortImports": "always",
-    "source.organizeImports": "always",
     "source.fixAll.eslint": "always"
   },
   // 关闭缩略图
@@ -166,15 +182,25 @@ zhuangtongfa.material-theme
   "workbench.iconTheme": "material-icon-theme",
   // 编辑器颜色主题
   "workbench.colorTheme": "One Dark Pro Darker",
-  // 编辑器字体
+  // 编辑器默认界面
   "workbench.startupEditor": "none",
 
+  // 修改默认终端为 msys2
+  // "terminal.integrated.defaultProfile.windows": "MSYS2 UCRT",
+  // "terminal.integrated.profiles.windows": {
+  //   "MSYS2 UCRT": {
+  //     "path": "cmd.exe",
+  //     "args": ["/c", "C:\\msys64\\msys2_shell.cmd -defterm -here -no-start -ucrt64"]
+  //   }
+  // },
   // 终端默认颜色
   "terminal.integrated.tabs.defaultColor": "terminal.ansiBlue",
   // 终端滚动平滑
   "terminal.integrated.smoothScrolling": true,
   // 选择即复制
   "terminal.integrated.copyOnSelection": true,
+  // 终端字体
+  // "terminal.integrated.fontFamily": "'MesloLGS NF', Consolas, 'Courier New', monospace",
   // 光标样式
   "terminal.integrated.cursorStyle": "line",
   // 光标闪烁
@@ -195,9 +221,9 @@ zhuangtongfa.material-theme
 
   // js/ts导入语句结尾设置
   "javascript.preferences.importModuleSpecifierEnding": "js",
-  "javascript.suggest.paths": false,
+  "javascript.suggest.paths": true,
   "typescript.preferences.importModuleSpecifierEnding": "js",
-  "typescript.suggest.paths": false,
+  "typescript.suggest.paths": true,
   "typescript.preferences.preferTypeOnlyAutoImports": true,
   "typescript.tsserver.maxTsServerMemory": 4096,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -217,13 +243,16 @@ zhuangtongfa.material-theme
   // 信任所有文件
   "security.workspace.trust.untrustedFiles": "open",
 
+  // 代理设置
+  // "http.proxy": "http://127.0.0.1:7890",
+
   // eslint 配置
   "eslint.enable": true,
   "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "vue"],
 
   // prettier配置
   "prettier.enable": true,
-  "prettier.printWidth": 200,
+  "prettier.printWidth": 100,
   "prettier.tabWidth": 2,
   "prettier.useTabs": false,
   "prettier.semi": false,
@@ -236,16 +265,24 @@ zhuangtongfa.material-theme
   "prettier.arrowParens": "always",
   "prettier.proseWrap": "preserve",
   "prettier.htmlWhitespaceSensitivity": "css",
-  "prettier.vueIndentScriptAndStyle": false,
+  "prettier.vueIndentScriptAndStyle": true,
   "prettier.endOfLine": "auto",
   "prettier.embeddedLanguageFormatting": "auto",
-  "prettier.singleAttributePerLine": true,
+  "prettier.singleAttributePerLine": false,
 
   // 自动转换模板字符串 配置
   "template-string-converter.enabled": true,
   "template-string-converter.quoteType": "both",
   "template-string-converter.autoRemoveTemplateString": true,
-  "template-string-converter.validLanguages": ["svelte", "typescript", "javascript", "typescriptreact", "javascriptreact", "html", "vue"],
+  "template-string-converter.validLanguages": [
+    "svelte",
+    "typescript",
+    "javascript",
+    "typescriptreact",
+    "javascriptreact",
+    "html",
+    "vue"
+  ],
 
   // liveServer 配置
   "liveServer.settings.donotShowInfoMsg": true,
@@ -264,7 +301,41 @@ zhuangtongfa.material-theme
   // GitHub Copilot 配置
   "github.copilot.chat.completionContext.typescript.mode": "on",
   "editor.inlineSuggest.edits.showCollapsed": true,
-  "github.copilot.nextEditSuggestions.enabled": true
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "docker.extension.enableComposeLanguageServer": false,
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "python": false,
+    "typescript": true,
+    "html": true
+  },
+  "python.analysis.typeCheckingMode": "off",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.db": "default"
+  },
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
 }
 ```
 
