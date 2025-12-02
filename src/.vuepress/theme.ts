@@ -19,7 +19,8 @@ export default plumeTheme({
 
   editLink: true,
   footer: {
-    copyright: 'Copyright © 2020-present <a href="https://huankong.top">huan_kong</a>',
+    copyright:
+      'Copyright © 2020-present <a href="https://huankong.top">huan_kong</a><br/><a href="https://icp.gov.moe/?keyword=20250735" target="_blank">萌ICP备20250735号</a>',
   },
 
   hostname: 'https://blog.huankong.top/',
