@@ -5,8 +5,6 @@ permalink: /about/
 article: false
 ---
 
-幸福的人用童年治愈一生，不幸的人用一生治愈童年。
-
 ## 介绍
 
 我叫做 `huan_kong` 中文名 `幻空` 一般非常亲近的人会称我为 `空空`。
@@ -44,4 +42,3 @@ article: false
 
 - Github: [huankong233](https://github.com/huankong233)
 - Telegram: [huan_kong](https://t.me/huan_kong)
-

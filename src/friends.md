@@ -8,7 +8,7 @@ list:
   - name: 幻空
     link: https://blog.huankong.top
     avatar: https://github.com/huankong233.png
-    desc: 幸福的人用童年治愈一生，不幸的人用一生治愈童年。
+    desc:
   - name: 迷之区
     link: https://blog.mzqmountain.xyz
     avatar: https://github.com/mzqmountainn.png
@@ -34,4 +34,3 @@ list:
     avatar: https://github.com/afoim.png
     desc: Protect What You Love!
 ---
-
