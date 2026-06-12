@@ -22,3 +22,4 @@ Error: Electron uninstall
 安装: `npm install electron-fix -g`
 
 使用命令: `electron-fix start` 即可修复
+ 
