@@ -21,8 +21,8 @@ const { date, time } = useDate()
       <span>{{ city.name }}</span>
       <span>{{ weather.weather }}</span>
       <span>{{ weather.temperature }}°C</span>
-      <span>{{ weather.winddirection }}风</span>
-      <span>{{ weather.windpower }}级</span>
+      <span>{{ weather.winddirection }}</span>
+      <span>{{ weather.windpower }}</span>
     </p>
   </div>
 </template>

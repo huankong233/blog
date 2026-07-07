@@ -1,7 +1,6 @@
 import process from 'node:process'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
-import dotenv from 'dotenv'
 import { defineUserConfig } from 'vuepress'
 import { fs, getDirname, path, tinyglobby } from 'vuepress/utils'
 import theme from './.vuepress/theme.js'
@@ -10,10 +9,6 @@ const __dirname = getDirname(import.meta.url)
 const resolve = (...dirs: string[]) => path.resolve(__dirname, ...dirs)
 
 const isProd = process.env.NODE_ENV === 'production'
-
-if (!process.env.CI) {
-  dotenv.config({ path: '.env.local' })
-}
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -82,9 +77,6 @@ export default defineUserConfig({
   },
 
   define: {
-    __VUEPRESS_GAODE_MAP_KEY__: process.env.VUEPRESS_GAODE_MAP_KEY,
-    // debug hydration mismatch
-    // __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'true',
   },
 
   bundler: viteBundler(),

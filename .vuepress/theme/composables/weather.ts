@@ -1,13 +1,7 @@
 import { useLocalStorage } from '@vueuse/core'
 import { onMounted, ref } from 'vue'
 
-declare const __VUEPRESS_GAODE_MAP_KEY__: string
-
-const MAP_KEY = __VUEPRESS_GAODE_MAP_KEY__
-const API = `https://restapi.amap.com/v3/`
-
 interface City {
-  adcode: string
   name: string
 }
 
@@ -20,14 +14,12 @@ interface CityWeather {
 
 // 获取高德地理位置信息
 async function getCity() {
-  return await fetch(`${API}ip?key=${MAP_KEY}`).then(res => res.json())
+  return await fetch(`https://uapis.cn/api/v1/network/myip`).then(res => res.json())
 }
 
 // 获取高德地理天气信息
-async function getWeather(cityCode: string) {
-  return await fetch(
-    `${API}weather/weatherInfo?key=${MAP_KEY}&city=${cityCode}`,
-  ).then(res => res.json())
+async function getWeather(city: string) {
+  return await fetch(`https://uapis.cn/api/v1/misc/weather?city=${city}`).then(res => res.json())
 }
 
 export function useWeather() {
@@ -48,16 +40,19 @@ export function useWeather() {
     try {
       if (!city.value) {
         const res = await getCity()
-        if (res.infocode !== '10000')
-          throw new Error('获取城市信息失败')
-        city.value = { name: res.city, adcode: res.adcode }
+        const name = res?.region?.split(' ')?.at(-1)
+        if (!name) {
+          throw new Error('获取城市失败')
+        }
+
+        city.value = { name }
       }
-      const data = await getWeather(city.value.adcode)
+      const data = await getWeather(city.value.name)
       weather.value = {
-        weather: data.lives[0].weather,
-        temperature: data.lives[0].temperature,
-        winddirection: data.lives[0].winddirection,
-        windpower: data.lives[0].windpower,
+        weather: data.weather,
+        temperature: data.temperature,
+        winddirection: data.wind_direction,
+        windpower: data.wind_power,
       }
 
       cache.value = { city: city.value, weather: weather.value, updatedAt: current }

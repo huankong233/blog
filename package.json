@@ -27,7 +27,6 @@
   "devDependencies": {
     "@pengzhanbo/eslint-config-vue": "^2.7.0",
     "@types/node": "^26.1.0",
-    "dotenv": "^17.4.2",
     "eslint": "^10.6.0",
     "jiti": "^2.7.0",
     "tsconfig-vuepress": "^7.0.0",
