@@ -11,7 +11,8 @@ namespace 图 {
     }
 
     remove(key: string) {
-      if (!this.has(key)) return false
+      if (!this.has(key))
+        return false
       delete this.#values[key]
     }
 
@@ -78,19 +79,21 @@ namespace 图 {
     constructor() {}
 
     addVertex(vertex: string) {
-      if (this.#vertexes.includes(vertex)) return
+      if (this.#vertexes.includes(vertex))
+        return
       this.#vertexes.push(vertex)
       this.#edges.set(vertex, [])
     }
 
     addEdge(vertex1: string, vertex2: string) {
-      if (!this.#edges.has(vertex1) || !this.#edges.has(vertex2)) return
+      if (!this.#edges.has(vertex1) || !this.#edges.has(vertex2))
+        return
       this.#edges.get(vertex1)!.push(vertex2)
       this.#edges.get(vertex2)!.push(vertex1)
     }
 
     toString() {
-      return this.#vertexes.map((vertex) => `${vertex} => ${this.#edges.get(vertex)?.join(' ')}`).join('\n')
+      return this.#vertexes.map(vertex => `${vertex} => ${this.#edges.get(vertex)?.join(' ')}`).join('\n')
     }
 
     initColor(): color {

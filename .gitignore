@@ -2,5 +2,8 @@ node_modules
 .temp
 .cache
 .DS_Store
-/docs
+docs
 __test__
+_draft
+.idea
+.env.local

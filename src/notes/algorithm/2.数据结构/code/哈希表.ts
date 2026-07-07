@@ -53,14 +53,17 @@ namespace 哈希表 {
         if (!isNegativeZero(index) && index >= 0) {
           let current: Node | null = this.#head
           for (let i = 0; i < index; i++) {
-            if (current === null) return current
+            if (current === null)
+              return current
             current = current.getNext()
           }
           return current
-        } else {
+        }
+        else {
           let current: Node | null = this.#tail
           for (let i = 0; i > index; i--) {
-            if (current === null) return current
+            if (current === null)
+              return current
             current = current.getPrev()
           }
           return current
@@ -69,21 +72,26 @@ namespace 哈希表 {
 
       if (isNegativeZero(index)) {
         return this.#tail
-      } else if (index === 0) {
+      }
+      else if (index === 0) {
         return this.#head
-      } else if (index === this.#length - 1) {
+      }
+      else if (index === this.#length - 1) {
         return this.#tail
-      } else if (index === -1 * (this.#length - 1)) {
+      }
+      else if (index === -1 * (this.#length - 1)) {
         return this.#head
       }
 
       if (Math.abs(index) <= Math.floor(this.#length / 2)) {
         // 如果双向都小于长度的一半就直接访问
         return getNode(index)
-      } else if (Math.abs(index) < this.#length) {
+      }
+      else if (Math.abs(index) < this.#length) {
         // 小于链表长度否则就是超出范围了
         return getNode(index > 0 ? (this.#length - 1 - index) * -1 : this.#length - 1 + index)
-      } else {
+      }
+      else {
         throw new RangeError(`Index ${index} is out of bounds!`)
       }
     }
@@ -94,9 +102,11 @@ namespace 哈希表 {
       if (this.#head !== null) {
         this.#head = newNode
         this.#tail = newNode
-      } else {
+      }
+      else {
         newNode.setPrev(this.#tail)
-        if (this.#tail === null) return this.#tail
+        if (this.#tail === null)
+          return this.#tail
         this.#tail.setNext(newNode)
         this.#tail = newNode
       }
@@ -115,22 +125,29 @@ namespace 哈希表 {
         }
         this.#head = newNode
         this.#tail = newNode
-      } else {
+      }
+      else {
         if (index === 0) {
-          if (this.#head === null) return this.#head
+          if (this.#head === null)
+            return this.#head
           this.#head.setPrev(newNode)
           newNode.setNext(this.#head)
           this.#head = newNode
-        } else if (index === this.#length) {
-          if (this.#tail === null) return this.#tail
+        }
+        else if (index === this.#length) {
+          if (this.#tail === null)
+            return this.#tail
           this.#tail.setNext(newNode)
           newNode.setPrev(this.#tail)
           this.#tail = newNode
-        } else {
+        }
+        else {
           const prev = this.#getNode(index - 1)
-          if (prev === null) return prev
+          if (prev === null)
+            return prev
           const next = prev.getNext()
-          if (next === null) return next
+          if (next === null)
+            return next
           prev.setNext(newNode)
           next.setPrev(newNode)
           newNode.setNext(next)
@@ -151,8 +168,10 @@ namespace 哈希表 {
       let current: Node | null = this.#head
 
       for (let i = 0; i < this.#length; i++) {
-        if (current === null) return current
-        if (current.getValue() === value) return i
+        if (current === null)
+          return current
+        if (current.getValue() === value)
+          return i
         current = current.getNext()
       }
 
@@ -163,8 +182,10 @@ namespace 哈希表 {
       let current: Node | null = this.#head
 
       for (let i = 0; i < this.#length; i++) {
-        if (current === null) return current
-        if (current.getValue()[0] === name) return i
+        if (current === null)
+          return current
+        if (current.getValue()[0] === name)
+          return i
         current = current.getNext()
       }
 
@@ -173,15 +194,18 @@ namespace 哈希表 {
 
     update(index: number, value: any) {
       const current = this.#getNode(index)
-      if (current === null) return current
+      if (current === null)
+        return current
       current.setValue(value)
       return value
     }
 
     remove(value: any) {
-      let index = this.indexOf(value)
-      if (index === null) return index
-      if (index === -1) return false
+      const index = this.indexOf(value)
+      if (index === null)
+        return index
+      if (index === -1)
+        return false
       return this.removeAt(index)
     }
 
@@ -194,23 +218,31 @@ namespace 哈希表 {
         }
         this.#head = null
         this.#tail = null
-      } else {
+      }
+      else {
         if (index === 0) {
-          if (this.#head === null) return this.#head
+          if (this.#head === null)
+            return this.#head
           this.#head = this.#head.getNext()
-        } else if (index === this.#length - 1) {
+        }
+        else if (index === this.#length - 1) {
           const prev = this.#getNode(index - 1)
-          if (prev === null) return prev
+          if (prev === null)
+            return prev
           value = prev.getNext()?.getValue()
           prev.setNext(null)
           this.#tail = prev
-        } else {
+        }
+        else {
           const prev = this.#getNode(index - 1)
-          if (prev === null) return prev
+          if (prev === null)
+            return prev
           value = prev.getNext()?.getValue()
           const next = prev.getNext()?.getNext()
-          if (!prev) return prev
-          if (!next) return next
+          if (!prev)
+            return prev
+          if (!next)
+            return next
           prev.setNext(next)
           next.setPrev(prev)
         }
@@ -230,7 +262,7 @@ namespace 哈希表 {
     }
 
     toString(direction: '->' | '<-' = '->') {
-      let result: any[] = []
+      const result: any[] = []
       let current = direction === '->' ? this.#head : this.#tail
 
       while (current) {
@@ -280,7 +312,8 @@ namespace 哈希表 {
       const temp = Math.ceil(Math.sqrt(num))
 
       for (let i = 2; i < temp; i++) {
-        if (num % i === 0) return false
+        if (num % i === 0)
+          return false
       }
 
       return true
@@ -306,10 +339,12 @@ namespace 哈希表 {
       const index = bucket.indexOfName(key)
 
       if (index === -1 || !index) {
-        if (this.#count > this.#limit * 0.75) this.#resize(this.#getPrime(this.#limit * 2))
+        if (this.#count > this.#limit * 0.75)
+          this.#resize(this.#getPrime(this.#limit * 2))
         bucket.append([key, value])
         this.#count++
-      } else {
+      }
+      else {
         bucket.update(index, [key, value])
       }
 
@@ -319,13 +354,16 @@ namespace 哈希表 {
     get(key: string) {
       const hashCode = this.#hashFunc(key, this.#limit)
       const bucket = this.#storage[hashCode]
-      if (!bucket) return null
+      if (!bucket)
+        return null
       const size = bucket.size()
       if (size === 0) {
         return null
-      } else {
+      }
+      else {
         const index = bucket.indexOfName(key)
-        if (index === -1 || !index) return null
+        if (index === -1 || !index)
+          return null
         return bucket.get(index)[1]
       }
     }
@@ -333,13 +371,16 @@ namespace 哈希表 {
     remove(key: string) {
       const hashCode = this.#hashFunc(key, this.#limit)
       const bucket = this.#storage[hashCode]
-      if (!bucket) return false
+      if (!bucket)
+        return false
       const size = bucket.size()
       if (size === 0) {
         return false
-      } else {
+      }
+      else {
         const index = bucket.indexOfName(key)
-        if (index === -1 || !index) return null
+        if (index === -1 || !index)
+          return null
         this.#count--
         if (this.#limit > 9 && this.#count < this.#limit * 0.25) {
           this.#resize(this.#getPrime(Math.floor(this.#limit / 2)))

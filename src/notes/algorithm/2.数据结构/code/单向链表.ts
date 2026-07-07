@@ -37,7 +37,8 @@ namespace 单向链表 {
 
       let current: Node | null = this.#head
       for (let i = 0; i < index; i++) {
-        if (current === null) return current
+        if (current === null)
+          return current
         current = current.getNext()
       }
 
@@ -49,9 +50,11 @@ namespace 单向链表 {
 
       if (!this.#head) {
         this.#head = newNode
-      } else {
+      }
+      else {
         const current = this.#getNode(this.#length - 1)
-        if (current === null) return current
+        if (current === null)
+          return current
         current.setNext(newNode)
       }
 
@@ -66,9 +69,11 @@ namespace 单向链表 {
       if (index === 0) {
         newNode.setNext(this.#head)
         this.#head = newNode
-      } else {
+      }
+      else {
         const prev = this.#getNode(index - 1)
-        if (prev === null) return prev
+        if (prev === null)
+          return prev
         const next = prev.getNext()
         prev.setNext(newNode)
         newNode.setNext(next)
@@ -87,8 +92,10 @@ namespace 单向链表 {
       let current: Node | null = this.#head
 
       for (let i = 0; i < this.#length; i++) {
-        if (current === null) return current
-        if (current.getValue() === value) return i
+        if (current === null)
+          return current
+        if (current.getValue() === value)
+          return i
         current = current.getNext()
       }
 
@@ -100,8 +107,9 @@ namespace 单向链表 {
     }
 
     remove(value: any) {
-      let index = this.indexOf(value)
-      if (index === -1 || index === null) return false
+      const index = this.indexOf(value)
+      if (index === -1 || index === null)
+        return false
       return this.removeAt(index)
     }
 
@@ -109,14 +117,18 @@ namespace 单向链表 {
       if (index === 0) {
         if (this.#length >= 1) {
           const next = this.#head.getNext()
-          if (next === null) return next
+          if (next === null)
+            return next
           this.#head = next
-        } else {
+        }
+        else {
           throw new RangeError(`Index ${index} is out of bounds!`)
         }
-      } else {
+      }
+      else {
         const prev = this.#getNode(index - 1)
-        if (prev === null) return prev
+        if (prev === null)
+          return prev
         prev.setNext(prev.getNext()?.getNext())
       }
 
@@ -134,7 +146,7 @@ namespace 单向链表 {
     }
 
     toString() {
-      let result: any[] = []
+      const result: any[] = []
       let current: Node | null = this.#head
 
       while (current) {
@@ -146,4 +158,3 @@ namespace 单向链表 {
     }
   }
 }
-

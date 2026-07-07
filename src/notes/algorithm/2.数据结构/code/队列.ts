@@ -30,7 +30,7 @@ namespace 队列结构 {
   function passGame(nameList: string[], num = 5) {
     const queue = new Queue()
 
-    for (let name of nameList) {
+    for (const name of nameList) {
       queue.enqueue(name)
     }
 
@@ -45,4 +45,3 @@ namespace 队列结构 {
     return queue
   }
 }
-

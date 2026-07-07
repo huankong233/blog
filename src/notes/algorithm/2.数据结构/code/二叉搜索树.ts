@@ -43,7 +43,8 @@ namespace 二叉搜索树 {
 
       if (this.#root === null) {
         this.#root = newNode
-      } else {
+      }
+      else {
         this.#insertNode(this.#root, newNode)
       }
     }
@@ -53,14 +54,17 @@ namespace 二叉搜索树 {
         const right = node.getRight()
         if (right === null) {
           node.setRight(newNode)
-        } else {
+        }
+        else {
           this.#insertNode(right, newNode)
         }
-      } else {
+      }
+      else {
         const left = node.getLeft()
         if (left === null) {
           node.setLeft(newNode)
-        } else {
+        }
+        else {
           this.#insertNode(left, newNode)
         }
       }
@@ -72,7 +76,8 @@ namespace 二叉搜索树 {
     }
 
     #preOrderTraversalNode(node: BinarySearchTreeNode | null, handler: (node: BinarySearchTreeNode) => any) {
-      if (node === null) return
+      if (node === null)
+        return
       handler(node)
       this.#preOrderTraversalNode(node.getLeft(), handler)
       this.#preOrderTraversalNode(node.getRight(), handler)
@@ -84,7 +89,8 @@ namespace 二叉搜索树 {
     }
 
     #inOrderTraversalNode(node: BinarySearchTreeNode | null, handler: (node: BinarySearchTreeNode) => any) {
-      if (node === null) return
+      if (node === null)
+        return
       this.#inOrderTraversalNode(node.getLeft(), handler)
       handler(node)
       this.#inOrderTraversalNode(node.getRight(), handler)
@@ -96,7 +102,8 @@ namespace 二叉搜索树 {
     }
 
     #postOrderTraversalNode(node: BinarySearchTreeNode | null, handler: (node: BinarySearchTreeNode) => any) {
-      if (node === null) return
+      if (node === null)
+        return
       this.#postOrderTraversalNode(node.getLeft(), handler)
       this.#postOrderTraversalNode(node.getRight(), handler)
       handler(node)
@@ -104,7 +111,8 @@ namespace 二叉搜索树 {
 
     min() {
       let node = this.#root
-      if (node === null) return node
+      if (node === null)
+        return node
       let left = node.getLeft()
       while (left !== null) {
         node = left
@@ -115,7 +123,8 @@ namespace 二叉搜索树 {
 
     max() {
       let node = this.#root
-      if (node === null) return node
+      if (node === null)
+        return node
       let right = node.getRight()
       while (right !== null) {
         node = right
@@ -129,13 +138,16 @@ namespace 二叉搜索树 {
     }
 
     #searchNode(node: BinarySearchTreeNode | null, key: number) {
-      if (node === null) return false
+      if (node === null)
+        return false
 
       if (key < node.getKey()) {
         return this.#searchNode(node.getLeft(), key)
-      } else if (key > node.getKey()) {
+      }
+      else if (key > node.getKey()) {
         return this.#searchNode(node.getRight(), key)
-      } else {
+      }
+      else {
         return node
       }
     }
@@ -148,9 +160,11 @@ namespace 二叉搜索树 {
         nowKey = node.getKey()
         if (key < nowKey) {
           node = node.getLeft()
-        } else if (key > nowKey) {
+        }
+        else if (key > nowKey) {
           node = node.getRight()
-        } else {
+        }
+        else {
           return node
         }
       }
@@ -159,74 +173,97 @@ namespace 二叉搜索树 {
     }
 
     remove(key: number) {
-      if (this.#root === null) return this.#root
+      if (this.#root === null)
+        return this.#root
       let current: BinarySearchTreeNode | null = this.#root
       const rootKey = this.#root.getKey()
       let parent: BinarySearchTreeNode | null = null
       let isLeftChild = true
 
-      let currentKey = current.getKey()
+      const currentKey = current.getKey()
       while (currentKey !== key) {
         parent = current
         if (key < currentKey) {
           isLeftChild = true
           current = current.getLeft()
-        } else {
+        }
+        else {
           isLeftChild = false
           current = current.getRight()
         }
 
-        if (current === null) return false
+        if (current === null)
+          return false
       }
 
       if (current.getLeft() === null && current.getRight() === null) {
         // 如果没有子节点
         if (currentKey === rootKey) {
           this.#root = null
-        } else if (isLeftChild) {
-          if (parent === null) return parent
+        }
+        else if (isLeftChild) {
+          if (parent === null)
+            return parent
           parent.setLeft(null)
-        } else {
-          if (parent === null) return parent
+        }
+        else {
+          if (parent === null)
+            return parent
           parent.setRight(null)
         }
-      } else if (current.getLeft() === null) {
+      }
+      else if (current.getLeft() === null) {
         // 如果没有左子节点
         if (current.getKey() === rootKey) {
           this.#root = current.getRight()
-        } else if (isLeftChild) {
-          if (parent === null) return parent
+        }
+        else if (isLeftChild) {
+          if (parent === null)
+            return parent
           parent.setLeft(current.getRight())
-        } else {
-          if (parent === null) return parent
+        }
+        else {
+          if (parent === null)
+            return parent
           parent.setRight(current.getRight())
         }
-      } else if (current.getRight() === null) {
+      }
+      else if (current.getRight() === null) {
         // 如果没有右子节点
         if (current.getKey() === rootKey) {
           this.#root = current.getLeft()
-        } else if (isLeftChild) {
-          if (parent === null) return parent
+        }
+        else if (isLeftChild) {
+          if (parent === null)
+            return parent
           parent.setLeft(current.getLeft())
-        } else {
-          if (parent === null) return parent
+        }
+        else {
+          if (parent === null)
+            return parent
           parent.setRight(current.getLeft())
         }
-      } else {
+      }
+      else {
         // 如果有右还有右子节点
-        let successor = this.getSuccessor(current)
+        const successor = this.getSuccessor(current)
 
         if (currentKey === rootKey) {
           this.#root = successor
-        } else if (isLeftChild) {
-          if (parent === null) return parent
+        }
+        else if (isLeftChild) {
+          if (parent === null)
+            return parent
           parent.setLeft(successor)
-        } else {
-          if (parent === null) return parent
+        }
+        else {
+          if (parent === null)
+            return parent
           parent.setRight(successor)
         }
 
-        if (successor === null) return successor
+        if (successor === null)
+          return successor
 
         successor.setLeft(current.getLeft())
       }
@@ -245,7 +282,8 @@ namespace 二叉搜索树 {
       }
 
       if (successor !== delNode.getRight()) {
-        if (successorParent === null || successor === null) return successor
+        if (successorParent === null || successor === null)
+          return successor
         successorParent.setLeft(successor.getRight())
         successor.setRight(delNode.getRight())
       }

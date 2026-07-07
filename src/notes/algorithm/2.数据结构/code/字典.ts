@@ -11,7 +11,8 @@ namespace 字典 {
     }
 
     remove(key: string) {
-      if (!this.has(key)) return false
+      if (!this.has(key))
+        return false
       delete this.#values[key]
     }
 

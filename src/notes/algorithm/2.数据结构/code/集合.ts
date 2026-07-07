@@ -3,12 +3,14 @@ namespace 集合 {
     #values: { [key: string]: any } = {}
 
     add(value: any) {
-      if (this.has(value)) return false
+      if (this.has(value))
+        return false
       return (this.#values[value] = value)
     }
 
     remove(value: any) {
-      if (!this.has(value)) return false
+      if (!this.has(value))
+        return false
       return delete this.#values[value]
     }
 
@@ -50,7 +52,8 @@ namespace 集合 {
       const intersectionSet = new Set()
 
       for (const value of otherSet.values()) {
-        if (this.has(value)) intersectionSet.add(value)
+        if (this.has(value))
+          intersectionSet.add(value)
       }
 
       return intersectionSet
@@ -60,7 +63,8 @@ namespace 集合 {
       const differenceSet = new Set()
 
       for (const value of otherSet.values()) {
-        if (!this.has(value)) differenceSet.add(value)
+        if (!this.has(value))
+          differenceSet.add(value)
       }
 
       return differenceSet
@@ -76,7 +80,8 @@ namespace 集合 {
 
       // 方案1
       for (const value of otherSet.values()) {
-        if (!this.has(value)) return false
+        if (!this.has(value))
+          return false
       }
 
       return true

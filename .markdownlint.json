@@ -1,7 +1,30 @@
 {
-  "MD013": false,
-  "MD024": {
-    "siblings_only": true
+  "default": true,
+  "heading-style": {
+    "style": "atx"
   },
-  "MD051": false
+  "ul-style": {
+    "style": "dash"
+  },
+  "ol-prefix": false,
+  "no-duplicate-heading": false,
+  "first-line-h1": false,
+  "first-line-heading": false,
+  "no-blanks-blockquote": false,
+  "no-bare-urls": false,
+  "line-length": {
+    "line_length": 140,
+    "tables": false,
+    "code_blocks": false
+  },
+  "no-inline-html": false,
+  "hr-style": {
+    "style": "---"
+  },
+  "fenced-code-language": false,
+  "code-block-style": false,
+  "emphasis-style": false,
+  "no-hard-tabs": {
+    "code_blocks": false
+  }
 }

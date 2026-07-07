@@ -5,18 +5,23 @@ namespace 栈 {
     push(val: any) {
       return this.#value.push(val)
     }
+
     pop() {
       return this.#value.pop()
     }
+
     peek() {
       return this.#value[this.#value.length - 1]
     }
+
     isEmpty() {
       return this.#value.length === 0
     }
+
     size() {
       return this.#value.length
     }
+
     toString() {
       return this.#value.toString()
     }
