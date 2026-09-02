@@ -315,6 +315,69 @@ dump($var); // 打印变量但不终止程序
 
 [创建迁移](./网站设计.md#迁移)
 
+### 构造器
+
+#### 获取所有数据
+
+```php
+$users = User::query()->get();
+```
+
+#### 查询条件
+
+```php
+// 查询年龄大于18岁的用户
+$users = User::query()->where('age', '>', 18)->get();
+
+// 查询年龄大于18岁且名字是John的用户
+$users = User::query()->where('age', '>', 18)->where('name', '=', 'John')->get();
+// 简化写法
+$users = User::query()->where([
+  "age" => 18,
+  "name" => "John"
+])->get();
+
+// 也支持高级数组写法
+$users = User::query()->where([
+  ["age", ">", 18],
+  ["name", "=", "John"]
+])->get();
+
+// 查询年龄大于18岁或名字包含John的用户
+$users = User::query()->where('age', '>', 18)->orWhere('name', 'like', '%John%')->get();
+
+// 查询id在1,2,3之间的用户
+$users = User::query()->whereIn('id', [1, 2, 3])->get();
+``` 
+
+#### 获取条目数量
+
+```php
+$count = User::query()->where('age', '>', 18)->count();
+```
+
+#### 更新数据
+
+```php
+User::query()->where('id', 1)->update(['name' => 'New Name']);
+```
+
+#### 删除数据
+
+```php
+User::query()->where('id', 1)->delete();
+```
+
+#### 新建数据
+
+```php
+User::query()->create([
+    'name' => 'John Doe',
+    'email' => 'john.doe@example.com',
+    'password' => bcrypt('password'),
+]);
+```
+
 ### 高级用法
 
 [关联查询](../后端/php/laravel/数据库关联查询.md)
