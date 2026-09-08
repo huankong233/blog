@@ -103,7 +103,7 @@ export default defineUserConfig({
       `
 User-agent: *
 Allow: /
-Sitemap: https://huankong.top/sitemap.xml
+Sitemap: https://blog.huankong.top/sitemap.xml
 `,
     )
   },
