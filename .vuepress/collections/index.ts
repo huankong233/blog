@@ -4,6 +4,7 @@ import c from './c.js'
 import java from './java.js'
 import kotlin from './kotlin.js'
 import pinia from './pinia.js'
+import react from './react.js'
 import rust from './rust.js'
 
 export default defineCollections([
@@ -14,4 +15,5 @@ export default defineCollections([
   kotlin,
   pinia,
   rust,
+  react,
 ])

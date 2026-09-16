@@ -57,6 +57,11 @@ export default defineNavbarConfig([
         link: '/notes/kotlin/',
         icon: 'devicon:kotlin',
       },
+      {
+        text: 'React',
+        link: '/notes/react/',
+        icon: 'logos:react',
+      },
     ],
   },
   {
