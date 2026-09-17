@@ -62,6 +62,11 @@ export default defineNavbarConfig([
         link: '/notes/react/',
         icon: 'logos:react',
       },
+      {
+        text: 'Angular',
+        link: '/notes/angular/',
+        icon: 'logos:angular-icon',
+      },
     ],
   },
   {

@@ -60,14 +60,14 @@ Route::get('user/{id}', function ($id) {
 
 在控制器里也是一样的
 
-::: code-tabs#config
+::: code-tabs
 @tab /route/api.php
 ```php
 Route::get('user/{id}', [UserController::class, 'show']);
 ```
 :::
 
-::: code-tabs#config
+::: code-tabs
 @tab /app/Http/Controllers/UserController.php
 ```php
 class UserController extends Controller
@@ -112,7 +112,7 @@ Route::middleware(['first', 'second'])->group(function () {
 
 一般在路由中使用中间件需要先在 `/bootstrap/app.php` 中注册
 
-::: code-tabs#config
+::: code-tabs
 @tab /bootstrap/app.php
 ``` php
 use Illuminate\Foundation\Application;

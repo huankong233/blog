@@ -1,5 +1,6 @@
 import { defineCollections } from 'vuepress-theme-plume'
 import algorithm from './algorithm.js'
+import angular from './angular.js'
 import c from './c.js'
 import java from './java.js'
 import kotlin from './kotlin.js'
@@ -16,4 +17,5 @@ export default defineCollections([
   pinia,
   rust,
   react,
+  angular,
 ])
