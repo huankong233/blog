@@ -7,6 +7,7 @@ import kotlin from './kotlin.js'
 import pinia from './pinia.js'
 import react from './react.js'
 import rust from './rust.js'
+import svelte from './svelte.js'
 
 export default defineCollections([
   { type: 'post', title: '博客', dir: '/blog', linkPrefix: '/article/' },
@@ -18,4 +19,5 @@ export default defineCollections([
   rust,
   react,
   angular,
+  svelte,
 ])

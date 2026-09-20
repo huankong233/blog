@@ -67,6 +67,11 @@ export default defineNavbarConfig([
         link: '/notes/angular/',
         icon: 'logos:angular-icon',
       },
+      {
+        text: 'Svelte',
+        link: '/notes/svelte/',
+        icon: 'logos:svelte-icon',
+      },
     ],
   },
   {
