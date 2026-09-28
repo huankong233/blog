@@ -1,232 +1,144 @@
 ---
 title: Projects
-createTime: 2023/02/15 04:07:11
+createTime: 2023/07/01 04:07:11
 permalink: /projects/
 article: false
 ---
 
-## 开源项目
+## node-napcat-ts
 
-### vite-plugin-mock-dev-server
+![stars](https://img.shields.io/github/stars/huankong233/node-napcat-ts?style=social)
+![version](https://img.shields.io/npm/v/node-napcat-ts?style=flat-square)
+![download](https://img.shields.io/npm/dt/node-napcat-ts?style=flat-square)
 
-<NpmBadgeGroup repo="pengzhanbo/vite-plugin-mock-dev-server">
-  <NpmBadge type="stars" />
-  <NpmBadge type="version" label="npm" />
-  <NpmBadge type="dm" />
-  <NpmBadge type="dt" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
+仓库地址: [node-napcat-ts](https://github.com/huankong233/node-napcat-ts)
 
-**说明：**
+**说明:**
 
-`vite-plugin-mock-dev-server` 专注于在 `Vite` 开发环境下 提供 Mock 服务。
-通过 vite 内置的 `http` 和 `http-proxy` 服务，以 `middleware` 的方式，对 `server.proxy` 配置的代理路径
-进行二次拦截，命中规则后，返回配置的 `mock data` 。
+对接 `napcat` 的 `SDK`
 
-你可以在 mock配置文件中使用`node` 任意第三方模块。 这表示，你可以使用如 `mockjs` / `faker-js` 等库帮助生成 `mock data`。
+## Minato
 
-插件支持响应多种数据类型包括 `text/json/Buffer/ReadStream`等，还支持设置 headers、cookies。
+![stars](https://img.shields.io/github/stars/huankong233/Minato?style=social)
 
-插件还支持模拟 `WebSocket`，可以轻松的实现在本地开发环境调试 `WebSocket` 服务。
+仓库地址: [Minato](https://github.com/huankong233/Minato) [kkbot](https://github.com/huankong233/kkbot)
 
-[查看 **vite-plugin-mock-dev-server** 使用文档](https://vite-plugin-mock-dev-server.netlify.app/){.read-more}
+**说明:**
 
----
+一个简单的 `QQBot` 框架
 
-### vuepress-theme-plume
+原 `kkbot` 使用 `ts` 重构产物
 
-<NpmBadgeGroup repo="pengzhanbo/vuepress-theme-plume">
-  <NpmBadge type="stars" />
-  <NpmBadge type="version" label="npm" />
-  <NpmBadge type="dy" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
+## HkList
 
-**说明：**
+![stars](https://img.shields.io/github/stars/huankong233/HkList?style=social)
 
-vuepress-theme-plume 是一个基于 VuePress 的主题。适用于 博客、文档 和 知识笔记 。
+仓库地址: [HkList](https://github.com/huankong233/HkList) [94list-laravel](https://github.com/huankong233/94list-laravel)
 
-与 vuepress 默认主题相比：
+**说明:**
 
-- 大幅度优化了界面、交互，更具美观度，更好的用户体验。
-- 同时，还添加了大量的丰富实用的功能，如 代码分组、提示容器、任务列表、数学公式、代码演示、 内容搜索、文章评论、加密 等。
-- 大幅度简化了配置，更易于使用，同时还保留了丰富灵活的配置项，满足个性化的需求。
+百度网盘解析工具
 
-plume 主题尽可能的内置你可能需要的功能，以及搭建站点所需要的一般性配置，您无需关注这些细节。 目的是，让您更专注于 内容的创作，更好的表达你的想法，享受 Markdown 增强语法带来的便利。
+原 `94list-laravel` 因名称存在疑惑性改名
 
-[查看 **vuepress-theme-plume** 使用文档](https://theme-plume.vuejs.press/){.read-more}
+## node-open-shamrock
 
----
+![stars](https://img.shields.io/github/stars/huankong233/node-open-shamrock?style=social)
+![version](https://img.shields.io/npm/v/node-open-shamrock?style=flat-square)
+![download](https://img.shields.io/npm/dt/node-open-shamrock?style=flat-square)
 
-### vite-plugin-image-placeholder
+仓库地址: [node-open-shamrock](https://github.com/huankong233/node-open-shamrock)
 
-<NpmBadgeGroup repo="pengzhanbo/vite-plugin-image-placeholder">
-  <NpmBadge type="stars" />
-  <NpmBadge type="version" label="npm" />
-  <NpmBadge type="dt" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
+**说明:**
 
-**说明：**
+已弃用
 
-在项目开发过程中，为未准备好图片资源的内容区域，生成占位图片。
+对接 `openShamrock` 的 `SDK`
 
----
+## balogo-ts
 
-### rspack-plugin-mock
+![stars](https://img.shields.io/github/stars/huankong233/balogo-ts?style=social)
 
-<NpmBadgeGroup repo="pengzhanbo/rspack-plugin-mock">
-  <NpmBadge type="stars" />
-  <NpmBadge type="version" label="npm" />
-  <NpmBadge type="dm" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
+仓库地址: [balogo-ts](https://github.com/huankong233/balogo-ts)
 
-**说明：**
+**说明:**
 
-`vite-plugin-mock-dev-server` 对标 `vite-plugin-mock-dev-server` 在 `rspack/rsbuild` 上的实现， 专注于在 `rspack / rsbuild` 开发环境下 提供 Mock 服务。
+`BlueArchiveLogo` 生成器
 
-[查看 **rspack-plugin-mock** 使用文档](https://github.com/pengzhanbo/rspack-plugin-mock){.read-more}
+## ImageSearcher-ts
 
----
+![stars](https://img.shields.io/github/stars/huankong233/ImageSearcher-ts?style=social)
+![version](https://img.shields.io/npm/v/image_searcher?style=flat-square)
+![download](https://img.shields.io/npm/dt/image_searcher?style=flat-square)
 
-### vulcan
+仓库地址: [ImageSearcher-ts](https://github.com/huankong233/ImageSearcher-ts) [ImageSearcher](https://github.com/huankong233/ImageSearcher)
 
-<NpmBadgeGroup repo="pengzhanbo/vulcan">
-  <NpmBadge type="stars" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
+**说明:**
 
-**说明：**
+用于提供给 `kkbot/Minato` 中的搜图功能
 
-基于 vite + vue3 的项目模板，帮助快速创建 Mobile Web 应用。
+新版已用 `ts` 重写，原 `js` 版本已弃用
 
----
+## lanzou_url
 
-### @any-hooks/solid
+![stars](https://img.shields.io/github/stars/huankong233/lanzou_url?style=social)
 
-<NpmBadgeGroup repo="any-hooks/solid-hooks" name="@any-hooks/solid">
-  <NpmBadge type="stars" />
-  <NpmBadge type="version" label="npm" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
+仓库地址: [lanzou_url](https://github.com/huankong233/lanzou_url)
 
-**说明：**
+**说明:**
 
-一套高质量可靠的 Solidjs Hooks 库。
+一个使用 `php` 编写的蓝奏网盘解析程序
 
-[使用文档](https://solid-hooks.netlify.app/en-US)
+支持解析单文件和多文件
 
----
+## ChatSydney-FastAPI
 
-### stylelint-define-config
+![stars](https://img.shields.io/github/stars/huankong233/ChatSydney-FastAPI?style=social)
 
-<NpmBadgeGroup repo="stylelint-types/stylelint-define-config">
-  <NpmBadge type="stars" />
-  <NpmBadge type="version" label="npm" />
-  <NpmBadge type="dt" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
+仓库地址: [ChatSydney-FastAPI](https://github.com/huankong233/ChatSydney-FastAPI)
 
-**说明：**
+**说明:**
 
-为 `stylelint` 提供 `defineConfig` 配置类型帮助，可以在 `stylelint.config.js` 中配置自定义配置。
+已停止开发
 
----
+一个快捷的 `ChatSydney` 的 `Api` 实现
 
-### @pengzhanbo/utils
+## scripts
 
-<NpmBadgeGroup repo="pengzhanbo/utils" name="@pengzhanbo/utils">
-  <NpmBadge type="stars" />
-  <NpmBadge type="version" label="npm" />
-  <NpmBadge type="dm" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
+![stars](https://img.shields.io/github/stars/huankong233/scripts?style=social)
 
-**说明：**
+仓库地址: [scripts](https://github.com/huankong233/scripts)
 
-一个常用的工具类库, 无依赖， 任何运行时。
+**说明:**
 
-[使用文档](http://jsr.io/@pengzhanbo/utils)
+整合了一些我平时会用的脚本
 
----
+## parseExcel
 
-### geo-pattern-ts
+![stars](https://img.shields.io/github/stars/huankong233/parseExcel?style=social)
 
-<NpmBadgeGroup repo="pengzhanbo/geo-pattern-ts">
-  <NpmBadge type="stars" />
-  <NpmBadge type="version" label="npm" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
+仓库地址: [parseExcel](https://github.com/huankong233/parseExcel)
 
-**说明：**
+**说明:**
 
-生成漂亮的SVG图案。
+脚本中 `parseExcel` 的 `vue` 版
 
-[使用文档](https://github.com/pengzhanbo/geo-pattern-ts) | [在线演示](https://geo-pattern.netlify.app)
+## LiteLoaderQQNT-HK-Theme
 
----
+![stars](https://img.shields.io/github/stars/huankong233/LiteLoaderQQNT-HK-Theme?style=social)
 
-### chinese-simple2traditional
+仓库地址: [LiteLoaderQQNT-HK-Theme](https://github.com/huankong233/LiteLoaderQQNT-HK-Theme)
 
-<NpmBadgeGroup repo="pengzhanbo/chinese-simple2traditional">
-  <NpmBadge type="stars" />
-  <NpmBadge type="version" label="npm" />
-  <NpmBadge type="dt" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
+**说明:**
 
-**说明：**
+一个简易的 [LiteLoaderQQNT](https://github.com/mo-jinran/LiteLoaderQQNT) 主题
 
-中文繁简体转换。
+## NOWPayments
 
-- 内置字库，零依赖，支持任何运行环境。
-- 支持 3077+ 常用简体字 和 4919+ 繁体字/异体字。
-- 支持 3577+ 简体短语转繁体的特殊情况。
-- 支持 117+ 繁体短语/异体短语 转简体的特殊情况。
+![stars](https://img.shields.io/github/stars/huankong233/NOWPayments?style=social)
 
-[使用文档](https://github.com/pengzhanbo/chinese-simple2traditional) | [在线演示](https://han-convert.netlify.app/)
+仓库地址: [NOWPayments](https://github.com/huankong233/NOWPayments)
 
----
+**说明:**
 
-### caniuse-embed
-
-<NpmBadgeGroup repo="pengzhanbo/caniuse-embed">
-  <NpmBadge type="stars" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
-
-**说明：**
-
-基于 `Astro` 开发的 `caniuse-embed` 组件。
-
-从 [caniuse.com](https://caniuse.com/) 和 [mozilla's browser compat data](https://github.com/mdn/browser-compat-data) 嵌入最新数据。
-
-显示10个主要浏览器多个版本的功能支持数据。可配置、可靠且完全响应。
-
-[使用文档](https://caniuse-embed.vercel.app/zh-CN)
-
----
-
-### spearjs
-
-<NpmBadgeGroup repo="pengzhanbo/spearjs">
-  <NpmBadge type="stars" />
-  <NpmBadge type="license" />
-  <NpmBadge type="source" />
-</NpmBadgeGroup>
-
-**说明：**
-
-一个 低代码平台。使用 vite 构建。前端基于 vue， 后端基于 nestjs。
+用于独角数码添加对加密货币交易平台 [NOWPayments](https://nowpayments.io/) 支持的插件

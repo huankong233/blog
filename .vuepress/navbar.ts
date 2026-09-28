@@ -74,7 +74,7 @@ export default defineNavbarConfig([
       },
       {
         text: 'SvelteKit',
-        link: '/notes/sveltekit/',
+        link: '/notes/svelte-kit/',
         icon: 'logos:svelte-icon',
       },
     ],
