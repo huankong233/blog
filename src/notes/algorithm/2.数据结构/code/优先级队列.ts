@@ -1,51 +1,59 @@
-namespace 优先级队列 {
-  class element {
-    value: any
-    priority: number
-    constructor(value: any, priority: number) {
-      this.value = value
-      this.priority = priority
-    }
+/* eslint-disable unused-imports/no-unused-vars */
+class ProiorityQueueElement {
+  #value: any
+  #priority: number
+
+  constructor(value: any, priority: number) {
+    this.#value = value
+    this.#priority = priority
   }
 
-  class proiorityQueue {
-    #value: element[] = []
+  getValue() {
+    return this.#value
+  }
 
-    enqueue(value: any, priority: number) {
-      const newElement = new element(value, priority)
+  getPriority() {
+    return this.#priority
+  }
+}
 
-      if (this.#value.length !== 0) {
-        for (let i = 0; i < this.#value.length; i++) {
-          if (this.#value[i].priority > newElement.priority) {
-            this.#value.splice(i, 0, newElement)
-            return newElement
-          }
+class ProiorityQueue {
+  #value: ProiorityQueueElement[] = []
+
+  enqueue(value: any, priority: number) {
+    const newElement = new ProiorityQueueElement(value, priority)
+
+    if (this.#value.length !== 0) {
+      for (let i = 0; i < this.#value.length; i++) {
+        if (this.#value[i].getPriority() > newElement.getPriority()) {
+          this.#value.splice(i, 0, newElement)
+          return newElement
         }
       }
-
-      this.#value.push(newElement)
-
-      return newElement
     }
 
-    dequeue() {
-      return this.#value.shift()
-    }
+    this.#value.push(newElement)
 
-    front() {
-      return this.#value[0]
-    }
+    return newElement
+  }
 
-    isEmpty() {
-      return this.#value.length === 0
-    }
+  dequeue() {
+    return this.#value.shift()
+  }
 
-    size() {
-      return this.#value.length
-    }
+  front() {
+    return this.#value[0]
+  }
 
-    toString() {
-      return JSON.stringify(this.#value)
-    }
+  isEmpty() {
+    return this.#value.length === 0
+  }
+
+  size() {
+    return this.#value.length
+  }
+
+  toString() {
+    return JSON.stringify(this.#value)
   }
 }

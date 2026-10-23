@@ -1,43 +1,42 @@
-namespace 栈 {
-  class Stack {
-    #value: any[] = []
+class Stack {
+  #value: any[] = []
 
-    push(val: any) {
-      return this.#value.push(val)
-    }
-
-    pop() {
-      return this.#value.pop()
-    }
-
-    peek() {
-      return this.#value[this.#value.length - 1]
-    }
-
-    isEmpty() {
-      return this.#value.length === 0
-    }
-
-    size() {
-      return this.#value.length
-    }
-
-    toString() {
-      return this.#value.toString()
-    }
+  push(val: any) {
+    return this.#value.push(val)
   }
 
-  function dec2bin(number: number) {
-    const stack = new Stack()
-    while (number > 0) {
-      stack.push(number % 2)
-      number = Math.floor(number / 2)
-    }
-
-    let bin = ''
-    while (!stack.isEmpty()) {
-      bin += stack.pop()
-    }
-    return bin
+  pop() {
+    return this.#value.pop()
   }
+
+  peek() {
+    return this.#value[this.#value.length - 1]
+  }
+
+  isEmpty() {
+    return this.#value.length === 0
+  }
+
+  size() {
+    return this.#value.length
+  }
+
+  toString() {
+    return this.#value.toString()
+  }
+}
+
+// eslint-disable-next-line unused-imports/no-unused-vars
+function dec2bin(number: number) {
+  const stack = new Stack()
+  while (number > 0) {
+    stack.push(number % 2)
+    number = Math.floor(number / 2)
+  }
+
+  let bin = ''
+  while (!stack.isEmpty()) {
+    bin += stack.pop()
+  }
+  return bin
 }

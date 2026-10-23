@@ -1,276 +1,328 @@
-namespace 双向链表 {
-  /**
-   * 判断是否为-0
-   */
-  const isNegativeZero = (num: number) => num === 0 && 1 / num < 0
+export class DoublyLinkedListNode<T> {
+  #value: T
+  #next: DoublyLinkedListNode<T> | null
+  #prev: DoublyLinkedListNode<T> | null
 
-  export class Node {
-    #value: any
-    #next: Node | null
-    #prev: Node | null
+  constructor(value: T) {
+    this.#value = value
+    this.#next = null
+    this.#prev = null
+  }
 
-    constructor(value: any) {
-      this.#value = value
-      this.#next = null
-      this.#prev = null
+  setValue(value: T) {
+    this.#value = value
+    return value
+  }
+
+  getValue() {
+    return this.#value
+  }
+
+  setNext(next: DoublyLinkedListNode<T> | null) {
+    this.#next = next
+    return next
+  }
+
+  getNext() {
+    return this.#next
+  }
+
+  setPrev(prev: DoublyLinkedListNode<T> | null) {
+    this.#prev = prev
+    return prev
+  }
+
+  getPrev() {
+    return this.#prev
+  }
+}
+
+export class DoublyLinkedList<T = any> {
+  #head: DoublyLinkedListNode<T> | null = null
+  #tail: DoublyLinkedListNode<T> | null = null
+  #length = 0
+
+  isNegativeZero(num: number) {
+    return num === 0 && 1 / num < 0
+  }
+
+  isReverseOrder(index: number) {
+    return this.isNegativeZero(index) || index < 0
+  }
+
+  #getNode(index: number): DoublyLinkedListNode<T> | null {
+    if (!Number.isInteger(index) || Math.abs(index) >= this.#length) {
+      return null
     }
 
-    setValue(value: any) {
-      this.#value = value
-      return value
+    if (this.isNegativeZero(index) || index === this.#length - 1) {
+      return this.#tail
+    }
+    else if (index === 0 || index === -1 * (this.#length - 1)) {
+      return this.#head
     }
 
-    getValue() {
-      return structuredClone(this.#value)
+    if (!this.isReverseOrder(index)) {
+      let current: DoublyLinkedListNode<T> | null = this.#head
+      for (let i = 0; i < index; i++) {
+        if (current === null) {
+          return current
+        }
+        current = current.getNext()
+      }
+      return current
     }
-
-    setNext(next: Node | null) {
-      this.#next = next
-      return next
-    }
-
-    getNext() {
-      return this.#next
-    }
-
-    setPrev(prev: Node | null) {
-      this.#prev = prev
-      return prev
-    }
-
-    getPrev() {
-      return this.#prev
+    else {
+      let current: DoublyLinkedListNode<T> | null = this.#tail
+      for (let i = 0; i > index; i--) {
+        if (current === null) {
+          return current
+        }
+        current = current.getPrev()
+      }
+      return current
     }
   }
 
-  export class DoublyLinkedList {
-    #head: Node | null = null
-    #tail: Node | null = null
-    #length = 0
+  append(value: T): boolean {
+    const newNode = new DoublyLinkedListNode(value)
 
-    #getNode(index: number) {
-      const getNode = (index: number) => {
-        if (!isNegativeZero(index) && index >= 0) {
-          let current: Node | null = this.#head
-          for (let i = 0; i < index; i++) {
-            if (current === null)
-              return current
-            current = current.getNext()
-          }
-          return current
-        }
-        else {
-          let current: Node | null = this.#tail
-          for (let i = 0; i > index; i--) {
-            if (current === null)
-              return current
-            current = current.getPrev()
-          }
-          return current
-        }
-      }
-
-      if (isNegativeZero(index)) {
-        return this.#tail
-      }
-      else if (index === 0) {
-        return this.#head
-      }
-      else if (index === this.#length - 1) {
-        return this.#tail
-      }
-      else if (index === -1 * (this.#length - 1)) {
-        return this.#head
-      }
-
-      if (Math.abs(index) <= Math.floor(this.#length / 2)) {
-        // 如果双向都小于长度的一半就直接访问
-        return getNode(index)
-      }
-      else if (Math.abs(index) < this.#length) {
-        // 小于链表长度否则就是超出范围了
-        return getNode(index > 0 ? (this.#length - 1 - index) * -1 : this.#length - 1 + index)
-      }
-      else {
-        throw new RangeError(`Index ${index} is out of bounds!`)
-      }
+    if (this.#length === 0) {
+      this.#head = newNode
+      this.#tail = newNode
     }
-
-    append(value: any) {
-      const newNode = new Node(value)
-
-      if (this.#head !== null) {
-        this.#head = newNode
-        this.#tail = newNode
-      }
-      else {
-        newNode.setPrev(this.#tail)
-        if (this.#tail === null)
-          return this.#tail
-        this.#tail.setNext(newNode)
-        this.#tail = newNode
-      }
-
-      this.#length++
-
-      return value
-    }
-
-    insert(index: number, value: any) {
-      const newNode = new Node(value)
-
-      if (this.#length === 0) {
-        if (index !== 0) {
-          throw new RangeError(`Index ${index} is out of bounds!`)
-        }
-        this.#head = newNode
-        this.#tail = newNode
-      }
-      else {
-        if (index === 0) {
-          if (this.#head === null)
-            return this.#head
-          this.#head.setPrev(newNode)
-          newNode.setNext(this.#head)
-          this.#head = newNode
-        }
-        else if (index === this.#length) {
-          if (this.#tail === null)
-            return this.#tail
-          this.#tail.setNext(newNode)
-          newNode.setPrev(this.#tail)
-          this.#tail = newNode
-        }
-        else {
-          const prev = this.#getNode(index - 1)
-          if (prev === null)
-            return prev
-          const next = prev.getNext()
-          if (next === null)
-            return next
-          prev.setNext(newNode)
-          next.setPrev(newNode)
-          newNode.setNext(next)
-          newNode.setPrev(prev)
-        }
-      }
-
-      this.#length++
-
-      return value
-    }
-
-    get(index: number) {
-      return this.#getNode(index)?.getValue()
-    }
-
-    indexOf(value: any) {
-      let current: Node | null = this.#head
-
-      for (let i = 0; i < this.#length; i++) {
-        if (current === null)
-          return current
-        if (current.getValue() === value)
-          return i
-        current = current.getNext()
-      }
-
-      return -1
-    }
-
-    indexOfName(name: any) {
-      let current: Node | null = this.#head
-
-      for (let i = 0; i < this.#length; i++) {
-        if (current === null)
-          return current
-        if (current.getValue()[0] === name)
-          return i
-        current = current.getNext()
-      }
-
-      return -1
-    }
-
-    update(index: number, value: any) {
-      const current = this.#getNode(index)
-      if (current === null)
-        return current
-      current.setValue(value)
-      return value
-    }
-
-    remove(value: any) {
-      const index = this.indexOf(value)
-      if (index === null)
-        return index
-      if (index === -1)
+    else {
+      if (this.#tail === null) {
         return false
-      return this.removeAt(index)
+      }
+
+      newNode.setPrev(this.#tail)
+      this.#tail.setNext(newNode)
+      this.#tail = newNode
     }
 
-    removeAt(index: number) {
-      let value = this.#head
+    this.#length++
+
+    return true
+  }
+
+  insert(index: number, value: T): boolean {
+    if (!Number.isInteger(index) || Math.abs(index) > this.#length) {
+      return false
+    }
+
+    const newNode = new DoublyLinkedListNode(value)
+
+    if (this.#length === 0) {
+      if (index !== 0 && !this.isNegativeZero(index)) {
+        return false
+      }
+
+      this.#head = newNode
+      this.#tail = newNode
+    }
+    else if (this.isNegativeZero(index)) {
+      if (this.#tail === null) {
+        return false
+      }
+
+      this.#tail.setNext(newNode)
+      newNode.setPrev(this.#tail)
+      this.#tail = newNode
+    }
+    else if (index === 0) {
+      if (this.#head === null) {
+        return false
+      }
+
+      this.#head.setPrev(newNode)
+      newNode.setNext(this.#head)
+      this.#head = newNode
+    }
+    else if (this.isReverseOrder(index)) {
+      // 获取index的上一个节点, 也就是向右移动1, 所以是 +1
+      const prev = this.#getNode((index + 1) === 0 ? -0 : index + 1)
+      if (prev === null) {
+        return false
+      }
+
+      // 因为需要插入到prev的前面, 所以需要获取到prev的再上一个节点
+      const next = prev.getPrev()
+      if (next) {
+        next.setNext(newNode)
+      }
+
+      prev.setPrev(newNode)
+      newNode.setPrev(next)
+      newNode.setNext(prev)
+
+      if (Math.abs(index) === this.#length) {
+        this.#head = newNode
+      }
+    }
+    else {
+      // 正序插入
+      const prev = this.#getNode(index - 1)
+      if (prev === null) {
+        return false
+      }
+
+      const next = prev.getNext()
+      if (next) {
+        next.setPrev(newNode)
+      }
+
+      prev.setNext(newNode)
+      newNode.setNext(next)
+      newNode.setPrev(prev)
+
+      if (index === this.#length) {
+        this.#tail = newNode
+      }
+    }
+
+    this.#length++
+
+    return true
+  }
+
+  get(index: number): [true, T] | [false, null] {
+    const node = this.#getNode(index)
+    if (node === null) {
+      return [false, null]
+    }
+
+    return [true, node.getValue()]
+  }
+
+  indexOf(value: T): number {
+    let current: DoublyLinkedListNode<T> | null = this.#head
+
+    for (let i = 0; i < this.#length; i++) {
+      if (current === null) {
+        return -1
+      }
+      if (current.getValue() === value) {
+        return i
+      }
+
+      current = current.getNext()
+    }
+
+    return -1
+  }
+
+  update(index: number, value: T): boolean {
+    const current = this.#getNode(index)
+    if (current === null) {
+      return false
+    }
+
+    current.setValue(value)
+    return true
+  }
+
+  remove(value: T): boolean {
+    const index = this.indexOf(value)
+    if (index === -1)
+      return false
+
+    return this.removeAt(index)
+  }
+
+  removeAt(index: number): boolean {
+    if (!Number.isInteger(index) || Math.abs(index) >= this.#length) {
+      return false
+    }
+
+    if (this.isNegativeZero(index)) {
+      const tail = this.#tail
+      if (tail === null) {
+        return false
+      }
 
       if (this.#length === 1) {
-        if (index !== 0) {
-          throw new RangeError(`Index ${index} is out of bounds!`)
-        }
         this.#head = null
         this.#tail = null
       }
       else {
-        if (index === 0) {
-          if (this.#head === null)
-            return this.#head
-          this.#head = this.#head.getNext()
-        }
-        else if (index === this.#length - 1) {
-          const prev = this.#getNode(index - 1)
-          if (prev === null)
-            return prev
-          value = prev.getNext()?.getValue()
-          prev.setNext(null)
-          this.#tail = prev
-        }
-        else {
-          const prev = this.#getNode(index - 1)
-          if (prev === null)
-            return prev
-          value = prev.getNext()?.getValue()
-          const next = prev.getNext()?.getNext()
-          if (!prev)
-            return prev
-          if (!next)
-            return next
-          prev.setNext(next)
-          next.setPrev(prev)
-        }
+        this.#tail = tail.getPrev()
+        this.#tail?.setNext(null)
+      }
+    }
+    else if (index === 0) {
+      const head = this.#head
+      if (head === null) {
+        return false
       }
 
-      this.#length--
-
-      return true
+      if (this.#length === 1) {
+        this.#head = null
+        this.#tail = null
+      }
+      else {
+        this.#head = head.getNext()
+        this.#head?.setPrev(null)
+      }
     }
-
-    isEmpty() {
-      return this.#length === 0
-    }
-
-    size() {
-      return this.#length
-    }
-
-    toString(direction: '->' | '<-' = '->') {
-      const result: any[] = []
-      let current = direction === '->' ? this.#head : this.#tail
-
-      while (current) {
-        result.push(current.getValue())
-        current = direction === '->' ? current.getNext() : current.getPrev()
+    else if (this.isReverseOrder(index)) {
+      const next = this.#getNode((index + 1) === 0 ? -0 : index + 1)
+      if (next === null) {
+        return false
       }
 
-      return result.join(` ${direction} `)
+      const prev = next.getPrev()?.getPrev() ?? null
+      // 因为删除的时候可能正好只有两个元素 -0 和 -1, 所以prev可能为null, 但是next不可能为null
+      if (prev) {
+        prev.setNext(next)
+      }
+
+      next.setPrev(prev)
+
+      if (Math.abs(index) === this.#length - 1) {
+        this.#head = next
+      }
     }
+    else {
+      const prev = this.#getNode(index - 1)
+      if (prev === null) {
+        return false
+      }
+
+      const next = prev.getNext()?.getNext() ?? null
+      if (next) {
+        next.setPrev(prev)
+      }
+
+      prev.setNext(next)
+
+      if (index === this.#length - 1) {
+        this.#tail = prev
+      }
+    }
+
+    this.#length--
+
+    return true
+  }
+
+  isEmpty() {
+    return this.#length === 0
+  }
+
+  size() {
+    return this.#length
+  }
+
+  toString(direction: '->' | '<-' = '->') {
+    const result: T[] = []
+    let current = direction === '->' ? this.#head : this.#tail
+
+    while (current) {
+      result.push(current.getValue())
+      current = direction === '->' ? current.getNext() : current.getPrev()
+    }
+
+    return result.join(` ${direction} `)
   }
 }
