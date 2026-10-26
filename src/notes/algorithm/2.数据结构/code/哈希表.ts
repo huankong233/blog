@@ -30,7 +30,7 @@ class HashTable {
 
     for (let i = 0; i < size; i++) {
       const [success, value] = list.get(i)
-      if (!success || value[0] !== key) {
+      if (!success || value.getValue()[0] !== key) {
         continue
       }
 
@@ -72,12 +72,13 @@ class HashTable {
       const size = bucket.size()
 
       for (let i = 0; i < size; i++) {
-        const [success, value] = bucket.get(i)
+        const [success, bucketValue] = bucket.get(i)
         if (!success) {
           continue
         }
 
-        this.put(value[0], value[1])
+        const [key, value] = bucketValue.getValue()
+        this.put(key, value)
       }
     })
 
@@ -133,7 +134,7 @@ class HashTable {
       return [false, null]
     }
 
-    return [true, value[1]]
+    return [true, value.getValue()[1]]
   }
 
   remove(key: string): boolean {

@@ -186,13 +186,13 @@ export class DoublyLinkedList<T = any> {
     return true
   }
 
-  get(index: number): [true, T] | [false, null] {
+  get(index: number): [true, DoublyLinkedListNode<T>] | [false, null] {
     const node = this.#getNode(index)
     if (node === null) {
       return [false, null]
     }
 
-    return [true, node.getValue()]
+    return [true, node]
   }
 
   indexOf(value: T): number {
